@@ -138,6 +138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4417126507897174}
+  - component: {fileID: 65744241254181060}
   m_Layer: 0
   m_Name: bench press
   m_TagString: Untagged
@@ -322,9 +323,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1441246116293664}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 3.720848, y: 0.29590416, z: -28.647064}
+  m_LocalScale: {x: 1, y: 1, z: 7.7243943}
   m_Children:
   - {fileID: 4820227481952500}
   - {fileID: 4776583743938284}
@@ -342,7 +343,7 @@ Transform:
   - {fileID: 4550717286899284}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4452187783769490
 Transform:
   m_ObjectHideFlags: 1
@@ -1061,3 +1062,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1056336266450430}
   m_Mesh: {fileID: 4300008, guid: cffaf7b5b62a59a41bc63b4f725f5d58, type: 3}
+--- !u!65 &65744241254181060
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1441246116293664}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4127998, y: 1.4697695, z: 2.0940218}
+  m_Center: {x: -0.27262688, y: 0.23488474, z: 0.15720892}
