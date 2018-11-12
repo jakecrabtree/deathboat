@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4259258576010808}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hand (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   - component: {fileID: 4452172685960356}
   - component: {fileID: 33345355932389882}
   - component: {fileID: 23306258468951576}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   - component: {fileID: 33734353307302102}
   - component: {fileID: 23499844517379098}
   - component: {fileID: 136673506665332952}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: blackjack stool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4974435561702760}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hand (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 33095781808552056}
   - component: {fileID: 23735924486750678}
   - component: {fileID: 64674228141968680}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 4435558735427910}
   - component: {fileID: 33134477247335882}
   - component: {fileID: 23603836962532830}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: deck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 4913018646506202}
   - component: {fileID: 33948705951049316}
   - component: {fileID: 23566146550793502}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: card 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 4082067857765830}
   - component: {fileID: 33929437697810946}
   - component: {fileID: 23090401475334700}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 4710175123637974}
   - component: {fileID: 33825893169703506}
   - component: {fileID: 23672938624147578}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 4433800878647140}
   - component: {fileID: 33282549508492444}
   - component: {fileID: 23422957848591086}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: card 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 33375386000191526}
   - component: {fileID: 23483687020507466}
   - component: {fileID: 136026698728448320}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: blackjack stool (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 4532313236408998}
   - component: {fileID: 33051560507497230}
   - component: {fileID: 23606129496317464}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: card 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 4130417692065708}
   - component: {fileID: 33581360274798804}
   - component: {fileID: 23598035407695694}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 33744940728286724}
   - component: {fileID: 23905167216604386}
   - component: {fileID: 136304116406982142}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: blackjack stool (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4200737657500208}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hand (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 4152612397957738}
   - component: {fileID: 33695430665194498}
   - component: {fileID: 23493080201943666}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 4797510125018800}
   - component: {fileID: 33576826254416086}
   - component: {fileID: 23383859364707092}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: card 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 33938294671370416}
   - component: {fileID: 23788218481710400}
   - component: {fileID: 136282709418167722}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: blackjack stool (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4663528751119164}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 4935243153140864}
   - component: {fileID: 33318533534206440}
   - component: {fileID: 23413550314414060}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: card 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   - component: {fileID: 33218379660804846}
   - component: {fileID: 23975321949104764}
   - component: {fileID: 136946461594321500}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: blackjack stool (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4880436620440740}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: blackjack table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,7 +389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4856486965109518}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hand (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1191,8 +1191,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100010, guid: 947285e6c8c2012429298a2921bb842c, type: 3}
-  - {fileID: 2100012, guid: 947285e6c8c2012429298a2921bb842c, type: 3}
+  - {fileID: 2100000, guid: f3f61fd2b01ba8d4ba9f73bc45454d9c, type: 2}
+  - {fileID: 2100000, guid: ea269989efa3a1540908e16a81c88662, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

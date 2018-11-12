@@ -19,7 +19,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4262215223844756}
-  m_Layer: 0
+  - component: {fileID: 65745955170811662}
+  - component: {fileID: 65273871714113888}
+  m_Layer: 9
   m_Name: 'Beach Chair '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +38,7 @@ GameObject:
   - component: {fileID: 4967169776926000}
   - component: {fileID: 33177134411933306}
   - component: {fileID: 23543901964464978}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Beach_Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,8 +51,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1287168849332768}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.83, y: 8.09, z: -23.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4967169776926000}
@@ -112,3 +114,27 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1937132919836026}
   m_Mesh: {fileID: 4300000, guid: 1d0af4430e25cc74f9d259257d85f9b2, type: 3}
+--- !u!65 &65273871714113888
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1287168849332768}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.87685037, y: 0.61564636, z: 0.34617996}
+  m_Center: {x: -0.061574817, y: 0.3083763, z: -0.5510311}
+--- !u!65 &65745955170811662
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1287168849332768}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.89822865, y: 0.58013344, z: 1.6846447}
+  m_Center: {x: -0.050885677, y: -0.2932005, z: -0.04625988}

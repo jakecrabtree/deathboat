@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4738947608706710}
   - component: {fileID: 33377857637293996}
   - component: {fileID: 23764970375381342}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mesh_1522119243
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4813244900432092}
   - component: {fileID: 33099691886951724}
   - component: {fileID: 23566962932220176}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mesh_387190953
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4042598598264838}
   - component: {fileID: 33819820075100550}
   - component: {fileID: 23602439063817300}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mesh_1993919047
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4580144722020342}
   - component: {fileID: 65250784773279130}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: slots 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 4159812812269120}
   - component: {fileID: 33101793787594138}
   - component: {fileID: 23147205221307510}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mesh_1432497878
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 4477457315089496}
   - component: {fileID: 33840566310360588}
   - component: {fileID: 23765495933995650}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mesh_2031033889
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 4012848582766164}
   - component: {fileID: 33470656391510340}
   - component: {fileID: 23706858630425716}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mesh_1821488053
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1286435405371750}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -12.72, y: 0.52, z: -29.85}
+  m_LocalPosition: {x: -6.51, y: 0.52, z: -29.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4813244900432092}
@@ -381,7 +381,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ee35c0a326df9a34990ae8d3b806b17a, type: 3}
+  - {fileID: 2100000, guid: f9181c6a90d7e754684067fcd712f7a9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
