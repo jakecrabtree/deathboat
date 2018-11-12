@@ -150,7 +150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 52
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -167,6 +167,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -208,7 +216,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 72
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -226,6 +234,14 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
@@ -240,7 +256,7 @@ GameObject:
   - component: {fileID: 50825425}
   - component: {fileID: 50825424}
   - component: {fileID: 50825423}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +335,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -335,15 +351,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -351,7 +367,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 21
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -360,6 +376,14 @@ Prefab:
     - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_Name
       value: Beach Chair (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
@@ -401,7 +425,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 104
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -419,6 +443,14 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
@@ -427,7 +459,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -443,15 +475,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -459,7 +491,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 22
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -468,6 +500,14 @@ Prefab:
     - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_Name
       value: Beach Chair (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
@@ -509,7 +549,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4212414526585872, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_RootOrder
-      value: 83
+      value: 59
       objectReference: {fileID: 0}
     - target: {fileID: 4576343545909796, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_LocalScale.x
@@ -542,6 +582,38 @@ Prefab:
     - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_Name
       value: table (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
@@ -583,7 +655,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4212414526585872, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_RootOrder
-      value: 100
+      value: 76
       objectReference: {fileID: 0}
     - target: {fileID: 4576343545909796, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_LocalScale.x
@@ -617,6 +689,38 @@ Prefab:
       propertyPath: m_Name
       value: table (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
   m_IsPrefabAsset: 0
@@ -631,7 +735,7 @@ GameObject:
   - component: {fileID: 142107930}
   - component: {fileID: 142107929}
   - component: {fileID: 142107928}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -710,7 +814,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -726,7 +830,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
@@ -734,7 +838,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -742,7 +846,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -751,6 +855,14 @@ Prefab:
     - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_Name
       value: Beach Chair (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
@@ -792,7 +904,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 38
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -810,6 +922,14 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
@@ -818,7 +938,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -834,7 +954,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
@@ -842,7 +962,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -850,7 +970,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -859,6 +979,14 @@ Prefab:
     - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_Name
       value: Beach Chair (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
@@ -900,7 +1028,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_RootOrder
-      value: 75
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_LocalScale.x
@@ -917,6 +1045,18 @@ Prefab:
     - target: {fileID: 1129710907360272, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_Name
       value: umbrella (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129710907360272, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1410579939371694, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146861457426470, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
@@ -972,6 +1112,14 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 76.328
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
@@ -980,7 +1128,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -996,7 +1144,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
@@ -1004,7 +1152,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -1012,7 +1160,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1021,6 +1169,14 @@ Prefab:
     - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_Name
       value: Beach Chair (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
@@ -1062,7 +1218,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 51
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1079,6 +1235,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -1120,7 +1284,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 111
+      value: 87
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1137,6 +1301,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -1178,7 +1350,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 93
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1196,6 +1368,14 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
@@ -1204,7 +1384,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1220,7 +1400,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
@@ -1228,7 +1408,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -1236,7 +1416,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1245,6 +1425,14 @@ Prefab:
     - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_Name
       value: Beach Chair (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
@@ -1286,7 +1474,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_RootOrder
-      value: 39
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_LocalScale.x
@@ -1303,6 +1491,18 @@ Prefab:
     - target: {fileID: 1129710907360272, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_Name
       value: umbrella (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129710907360272, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1410579939371694, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146861457426470, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
@@ -1344,7 +1544,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 36
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1361,6 +1561,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -1402,7 +1610,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 102
+      value: 78
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1419,6 +1627,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -1460,7 +1676,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_RootOrder
-      value: 106
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_LocalScale.x
@@ -1477,6 +1693,18 @@ Prefab:
     - target: {fileID: 1129710907360272, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_Name
       value: umbrella (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129710907360272, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1410579939371694, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146861457426470, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
@@ -1518,7 +1746,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 48
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1536,6 +1764,14 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
@@ -1544,7 +1780,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1560,15 +1796,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -1576,7 +1812,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1585,6 +1821,14 @@ Prefab:
     - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_Name
       value: Beach Chair (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
@@ -1600,7 +1844,7 @@ GameObject:
   - component: {fileID: 339326325}
   - component: {fileID: 339326324}
   - component: {fileID: 339326323}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1711,7 +1955,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 49
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1728,6 +1972,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -1769,7 +2021,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 50
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1787,15 +2039,28 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &373365671 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 223984312}
 --- !u!1001 &388849553
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1811,15 +2076,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -1827,7 +2092,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 29
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1836,6 +2101,14 @@ Prefab:
     - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_Name
       value: Beach Chair (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
@@ -1877,7 +2150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4212414526585872, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_RootOrder
-      value: 91
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 4576343545909796, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_LocalScale.x
@@ -1910,6 +2183,38 @@ Prefab:
     - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_Name
       value: table (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
@@ -1951,7 +2256,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 67
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1969,6 +2274,14 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
@@ -1977,7 +2290,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1993,15 +2306,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -2009,7 +2322,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 32
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2019,15 +2332,28 @@ Prefab:
       propertyPath: m_Name
       value: Beach Chair (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &419821246 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 996352488}
 --- !u!1001 &424907368
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2043,15 +2369,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -2059,7 +2385,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 23
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2068,6 +2394,14 @@ Prefab:
     - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_Name
       value: Beach Chair (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
@@ -2083,7 +2417,7 @@ GameObject:
   - component: {fileID: 467429559}
   - component: {fileID: 467429558}
   - component: {fileID: 467429557}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2157,6 +2491,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 467429555}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &470115151 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 618780510}
 --- !u!1001 &484315022
 Prefab:
   m_ObjectHideFlags: 0
@@ -2194,7 +2533,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 108
+      value: 84
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2212,15 +2551,28 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &488339462 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1615823120}
 --- !u!1001 &493859448
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2236,15 +2588,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -2252,7 +2604,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 31
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2262,6 +2614,14 @@ Prefab:
       propertyPath: m_Name
       value: Beach Chair (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
   m_IsPrefabAsset: 0
@@ -2270,7 +2630,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2286,15 +2646,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -2302,7 +2662,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 24
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2312,6 +2672,14 @@ Prefab:
       propertyPath: m_Name
       value: Beach Chair (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
   m_IsPrefabAsset: 0
@@ -2320,7 +2688,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2336,15 +2704,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -2352,7 +2720,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 25
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2361,6 +2729,14 @@ Prefab:
     - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_Name
       value: Beach Chair (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
@@ -2402,7 +2778,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 89
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2419,6 +2795,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -2460,7 +2844,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 110
+      value: 86
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2477,6 +2861,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -2518,7 +2910,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 76
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2535,6 +2927,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -2576,7 +2976,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 58
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2593,6 +2993,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -2634,7 +3042,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4212414526585872, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_RootOrder
-      value: 53
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 4576343545909796, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_LocalScale.x
@@ -2667,6 +3075,38 @@ Prefab:
     - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_Name
       value: table (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
@@ -2708,7 +3148,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 95
+      value: 71
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2726,15 +3166,28 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &608100190 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 493859448}
 --- !u!1001 &618780510
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2750,7 +3203,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
@@ -2758,7 +3211,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -2766,7 +3219,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2775,6 +3228,14 @@ Prefab:
     - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_Name
       value: Beach Chair (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
@@ -2816,7 +3277,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4212414526585872, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_RootOrder
-      value: 55
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 4576343545909796, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_LocalScale.x
@@ -2849,6 +3310,38 @@ Prefab:
     - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_Name
       value: table (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
@@ -2890,7 +3383,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 101
+      value: 77
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2907,6 +3400,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -2948,7 +3449,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 56
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2966,6 +3467,14 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
@@ -2980,7 +3489,7 @@ GameObject:
   - component: {fileID: 653631957}
   - component: {fileID: 653631956}
   - component: {fileID: 653631955}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3054,6 +3563,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 653631953}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &671159967 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1249672624}
 --- !u!1001 &731392363
 Prefab:
   m_ObjectHideFlags: 0
@@ -3091,7 +3605,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 81
+      value: 57
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -3108,6 +3622,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -3149,7 +3671,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4212414526585872, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_RootOrder
-      value: 47
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 4576343545909796, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_LocalScale.x
@@ -3182,6 +3704,38 @@ Prefab:
     - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_Name
       value: table (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
@@ -3223,7 +3777,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_RootOrder
-      value: 88
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_LocalScale.x
@@ -3241,6 +3795,18 @@ Prefab:
       propertyPath: m_Name
       value: umbrella (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1129710907360272, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1410579939371694, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146861457426470, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
   m_IsPrefabAsset: 0
@@ -3255,7 +3821,7 @@ GameObject:
   - component: {fileID: 740134225}
   - component: {fileID: 740134224}
   - component: {fileID: 740134223}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3329,6 +3895,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 740134221}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &761335474 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1785849140}
 --- !u!1001 &769057881
 Prefab:
   m_ObjectHideFlags: 0
@@ -3366,7 +3937,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 73
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -3383,6 +3954,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -3424,7 +4003,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 92
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -3442,6 +4021,14 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
@@ -3453,7 +4040,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 808355564}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CaptainsQuarters (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3481,8 +4068,13 @@ Transform:
   - {fileID: 885656204}
   - {fileID: 2144440499}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &813236889 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 160242147}
 --- !u!1001 &864745712
 Prefab:
   m_ObjectHideFlags: 0
@@ -3520,7 +4112,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 40
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -3538,9 +4130,22 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &870329899 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 495638796}
 --- !u!1001 &874055943
 Prefab:
   m_ObjectHideFlags: 0
@@ -3578,7 +4183,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 41
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -3596,6 +4201,14 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
@@ -3610,7 +4223,7 @@ GameObject:
   - component: {fileID: 880612293}
   - component: {fileID: 880612292}
   - component: {fileID: 880612291}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3695,7 +4308,7 @@ GameObject:
   - component: {fileID: 881280562}
   - component: {fileID: 881280561}
   - component: {fileID: 881280560}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3806,7 +4419,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4212414526585872, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_RootOrder
-      value: 109
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 4576343545909796, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_LocalScale.x
@@ -3840,6 +4453,38 @@ Prefab:
       propertyPath: m_Name
       value: table (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
   m_IsPrefabAsset: 0
@@ -3854,7 +4499,7 @@ GameObject:
   - component: {fileID: 885656207}
   - component: {fileID: 885656206}
   - component: {fileID: 885656205}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3965,7 +4610,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 34
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -3983,9 +4628,22 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &902572734 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1309761347}
 --- !u!1001 &914967781
 Prefab:
   m_ObjectHideFlags: 0
@@ -4023,7 +4681,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 78
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -4040,6 +4698,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -4081,7 +4747,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_RootOrder
-      value: 46
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_LocalScale.x
@@ -4099,6 +4765,18 @@ Prefab:
       propertyPath: m_Name
       value: umbrella (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1129710907360272, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1410579939371694, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146861457426470, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
   m_IsPrefabAsset: 0
@@ -4113,7 +4791,7 @@ GameObject:
   - component: {fileID: 945401992}
   - component: {fileID: 945401991}
   - component: {fileID: 945401990}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4192,7 +4870,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -4208,15 +4886,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -4224,7 +4902,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 27
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -4234,15 +4912,75 @@ Prefab:
       propertyPath: m_Name
       value: Beach Chair (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &995213358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 995213359}
+  m_Layer: 0
+  m_Name: pool chairs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &995213359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 995213358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.9, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 761335474}
+  - {fileID: 419821246}
+  - {fileID: 1852451454}
+  - {fileID: 1695080329}
+  - {fileID: 1238456727}
+  - {fileID: 470115151}
+  - {fileID: 373365671}
+  - {fileID: 1622699340}
+  - {fileID: 813236889}
+  - {fileID: 671159967}
+  - {fileID: 2035045190}
+  - {fileID: 1422928546}
+  - {fileID: 1512839768}
+  - {fileID: 1882517104}
+  - {fileID: 870329899}
+  - {fileID: 1341584910}
+  - {fileID: 488339462}
+  - {fileID: 1499943447}
+  - {fileID: 1016899641}
+  - {fileID: 1103221158}
+  - {fileID: 2056660366}
+  - {fileID: 608100190}
+  - {fileID: 2047350092}
+  - {fileID: 902572734}
+  m_Father: {fileID: 0}
+  m_RootOrder: 89
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &996352488
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -4258,7 +4996,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
@@ -4266,7 +5004,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -4274,7 +5012,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -4284,9 +5022,22 @@ Prefab:
       propertyPath: m_Name
       value: Beach Chair (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1016899641 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1491796055}
 --- !u!1001 &1032407861
 Prefab:
   m_ObjectHideFlags: 0
@@ -4324,7 +5075,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4212414526585872, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_RootOrder
-      value: 87
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 4576343545909796, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_LocalScale.x
@@ -4357,6 +5108,38 @@ Prefab:
     - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_Name
       value: table (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
@@ -4398,7 +5181,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 90
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -4416,15 +5199,28 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1103221158 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 388849553}
 --- !u!1001 &1170378784
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -4440,7 +5236,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
@@ -4448,7 +5244,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -4456,7 +5252,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -4465,6 +5261,14 @@ Prefab:
     - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_Name
       value: Beach Chair (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
@@ -4506,7 +5310,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 44
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -4523,6 +5327,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -4564,7 +5376,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4212414526585872, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_RootOrder
-      value: 62
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 4576343545909796, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_LocalScale.x
@@ -4598,6 +5410,38 @@ Prefab:
       propertyPath: m_Name
       value: table (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
   m_IsPrefabAsset: 0
@@ -4612,7 +5456,7 @@ GameObject:
   - component: {fileID: 1197105052}
   - component: {fileID: 1197105051}
   - component: {fileID: 1197105050}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4697,7 +5541,7 @@ GameObject:
   - component: {fileID: 1221584565}
   - component: {fileID: 1221584564}
   - component: {fileID: 1221584563}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4782,7 +5626,7 @@ GameObject:
   - component: {fileID: 1221627885}
   - component: {fileID: 1221627884}
   - component: {fileID: 1221627883}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4893,7 +5737,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_RootOrder
-      value: 54
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_LocalScale.x
@@ -4911,15 +5755,32 @@ Prefab:
       propertyPath: m_Name
       value: umbrella (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1129710907360272, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1410579939371694, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146861457426470, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1238456727 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1170378784}
 --- !u!1001 &1249672624
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -4935,7 +5796,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
@@ -4943,7 +5804,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -4951,7 +5812,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 19
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -4960,6 +5821,14 @@ Prefab:
     - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_Name
       value: Beach Chair (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
@@ -5001,7 +5870,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 60
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -5018,6 +5887,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -5073,6 +5950,18 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.302
       objectReference: {fileID: 0}
+    - target: {fileID: 1129710907360272, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1410579939371694, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146861457426470, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
   m_IsPrefabAsset: 0
@@ -5081,7 +5970,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -5097,7 +5986,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
@@ -5105,7 +5994,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -5113,11 +6002,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
@@ -5133,7 +6030,7 @@ GameObject:
   - component: {fileID: 1319196436}
   - component: {fileID: 1319196435}
   - component: {fileID: 1319196434}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5203,11 +6100,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1319196433}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.96, y: 7.75, z: -12.08}
-  m_LocalScale: {x: 2.0294983, y: 1.7319, z: 1.7319}
+  m_LocalPosition: {x: 4.72, y: 7.01, z: -12.08}
+  m_LocalScale: {x: 1.7190224, y: 1.7319, z: 1.7319}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 112
+  m_RootOrder: 88
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1323708334
 Prefab:
@@ -5246,7 +6143,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 86
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -5264,6 +6161,14 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
@@ -5272,7 +6177,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -5288,7 +6193,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
@@ -5296,7 +6201,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -5304,7 +6209,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -5314,9 +6219,22 @@ Prefab:
       propertyPath: m_Name
       value: Beach Chair (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1341584910 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 501455711}
 --- !u!1 &1342687639
 GameObject:
   m_ObjectHideFlags: 0
@@ -5328,7 +6246,7 @@ GameObject:
   - component: {fileID: 1342687643}
   - component: {fileID: 1342687642}
   - component: {fileID: 1342687641}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5413,7 +6331,7 @@ GameObject:
   - component: {fileID: 1351057450}
   - component: {fileID: 1351057449}
   - component: {fileID: 1351057448}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5524,7 +6442,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 94
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -5542,6 +6460,14 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
@@ -5556,7 +6482,7 @@ GameObject:
   - component: {fileID: 1362346112}
   - component: {fileID: 1362346111}
   - component: {fileID: 1362346110}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5635,7 +6561,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -5651,7 +6577,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
@@ -5659,7 +6585,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -5667,7 +6593,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -5676,6 +6602,14 @@ Prefab:
     - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_Name
       value: Beach Chair (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
@@ -5691,7 +6625,7 @@ GameObject:
   - component: {fileID: 1370514370}
   - component: {fileID: 1370514369}
   - component: {fileID: 1370514368}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5776,7 +6710,7 @@ GameObject:
   - component: {fileID: 1421057160}
   - component: {fileID: 1421057159}
   - component: {fileID: 1421057158}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5850,6 +6784,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1421057156}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1422928546 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 70295006}
 --- !u!1001 &1468787313
 Prefab:
   m_ObjectHideFlags: 0
@@ -5887,7 +6826,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 68
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -5904,6 +6843,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -5945,7 +6892,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4212414526585872, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_RootOrder
-      value: 42
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4576343545909796, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_LocalScale.x
@@ -5979,6 +6926,38 @@ Prefab:
       propertyPath: m_Name
       value: table (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
   m_IsPrefabAsset: 0
@@ -5987,7 +6966,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -6003,15 +6982,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -6019,7 +6998,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 28
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -6028,6 +7007,14 @@ Prefab:
     - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_Name
       value: Beach Chair (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
@@ -6069,7 +7056,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 107
+      value: 83
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -6087,9 +7074,27 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1499943447 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 947361088}
+--- !u!4 &1512839768 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 92854099}
 --- !u!1001 &1546713134
 Prefab:
   m_ObjectHideFlags: 0
@@ -6127,7 +7132,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 77
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -6144,6 +7149,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -6185,7 +7198,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 45
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -6203,6 +7216,14 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
@@ -6211,7 +7232,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -6227,15 +7248,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -6243,7 +7264,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 26
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -6253,9 +7274,22 @@ Prefab:
       propertyPath: m_Name
       value: Beach Chair (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1622699340 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 164866913}
 --- !u!1001 &1679448630
 Prefab:
   m_ObjectHideFlags: 0
@@ -6293,7 +7327,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 63
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -6311,9 +7345,22 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1695080329 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1365160794}
 --- !u!1001 &1696474185
 Prefab:
   m_ObjectHideFlags: 0
@@ -6351,7 +7398,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 79
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -6368,6 +7415,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -6409,7 +7464,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 33
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -6426,6 +7481,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -6467,7 +7530,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4212414526585872, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_RootOrder
-      value: 105
+      value: 81
       objectReference: {fileID: 0}
     - target: {fileID: 4576343545909796, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_LocalScale.x
@@ -6500,6 +7563,38 @@ Prefab:
     - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_Name
       value: table (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
@@ -6541,7 +7636,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 70
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -6559,6 +7654,14 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
@@ -6570,7 +7673,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1780914595}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CafeChairs (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6588,14 +7691,14 @@ Transform:
   m_LocalScale: {x: 3.3051, y: 0.3863, z: 3.5345}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1785849140
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 995213359}
     m_Modifications:
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -6611,7 +7714,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.y
@@ -6619,7 +7722,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalRotation.w
@@ -6627,7 +7730,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -6636,6 +7739,14 @@ Prefab:
     - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
       propertyPath: m_Name
       value: Beach Chair (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287168849332768, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937132919836026, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc8b47d4776c10b4480be83555b5b93b, type: 2}
@@ -6648,7 +7759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813088419}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FloorDown (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6662,7 +7773,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1813088418}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.09, y: 18.580822, z: -14.666565}
+  m_LocalPosition: {x: -25.93, y: 18.580822, z: -16.66}
   m_LocalScale: {x: 1.1069, y: 1, z: 1.20428}
   m_Children:
   - {fileID: 945401989}
@@ -6671,7 +7782,7 @@ Transform:
   - {fileID: 1370514367}
   - {fileID: 1351057447}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1813563643
 GameObject:
@@ -6681,7 +7792,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813563644}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Chairs (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6709,7 +7820,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1817497131}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PoolStuff (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6733,7 +7844,7 @@ Transform:
   - {fileID: 740134222}
   - {fileID: 339326322}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1839855073
 Prefab:
@@ -6772,7 +7883,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 43
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -6790,9 +7901,22 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1852451454 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 286412723}
 --- !u!1001 &1863689253
 Prefab:
   m_ObjectHideFlags: 0
@@ -6830,7 +7954,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4212414526585872, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_RootOrder
-      value: 80
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: 4576343545909796, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_LocalScale.x
@@ -6863,6 +7987,38 @@ Prefab:
     - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_Name
       value: table (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
@@ -6934,6 +8090,38 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.700325
       objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
   m_IsPrefabAsset: 0
@@ -6948,7 +8136,7 @@ GameObject:
   - component: {fileID: 1878614718}
   - component: {fileID: 1878614717}
   - component: {fileID: 1878614716}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7059,7 +8247,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 35
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -7077,9 +8265,22 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1882517104 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 424907368}
 --- !u!1001 &1902519266
 Prefab:
   m_ObjectHideFlags: 0
@@ -7117,7 +8318,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_RootOrder
-      value: 97
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_LocalScale.x
@@ -7134,6 +8335,18 @@ Prefab:
     - target: {fileID: 1129710907360272, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_Name
       value: umbrella (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129710907360272, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1410579939371694, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146861457426470, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
@@ -7175,7 +8388,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_RootOrder
-      value: 84
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_LocalScale.x
@@ -7192,6 +8405,18 @@ Prefab:
     - target: {fileID: 1129710907360272, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_Name
       value: umbrella (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129710907360272, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1410579939371694, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146861457426470, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
@@ -7233,7 +8458,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 69
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -7250,6 +8475,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -7291,7 +8524,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 64
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -7308,6 +8541,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -7349,7 +8590,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 98
+      value: 74
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -7366,6 +8607,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -7407,7 +8656,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4212414526585872, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_RootOrder
-      value: 37
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4576343545909796, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_LocalScale.x
@@ -7441,6 +8690,38 @@ Prefab:
       propertyPath: m_Name
       value: table (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
   m_IsPrefabAsset: 0
@@ -7452,7 +8733,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1977952659}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CafeTable (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7470,7 +8751,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1978930531
 Prefab:
@@ -7509,7 +8790,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 99
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -7526,6 +8807,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -7567,7 +8856,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4212414526585872, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_RootOrder
-      value: 74
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4576343545909796, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_LocalScale.x
@@ -7600,6 +8889,38 @@ Prefab:
     - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_Name
       value: table (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
@@ -7641,7 +8962,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4212414526585872, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_RootOrder
-      value: 96
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 4576343545909796, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_LocalScale.x
@@ -7675,9 +8996,46 @@ Prefab:
       propertyPath: m_Name
       value: table (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &2035045190 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1329161965}
 --- !u!1001 &2038781999
 Prefab:
   m_ObjectHideFlags: 0
@@ -7715,7 +9073,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 82
+      value: 58
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -7733,9 +9091,22 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &2047350092 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 409660535}
 --- !u!1 &2051688002
 GameObject:
   m_ObjectHideFlags: 0
@@ -7747,7 +9118,7 @@ GameObject:
   - component: {fileID: 2051688006}
   - component: {fileID: 2051688005}
   - component: {fileID: 2051688004}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7858,7 +9229,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 57
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -7875,6 +9246,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -7916,7 +9295,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 61
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -7934,9 +9313,22 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &2056660366 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4262215223844756, guid: fc8b47d4776c10b4480be83555b5b93b,
+    type: 2}
+  m_PrefabInternal: {fileID: 339315517}
 --- !u!1001 &2056986358
 Prefab:
   m_ObjectHideFlags: 0
@@ -7974,7 +9366,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_RootOrder
-      value: 66
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 4455183287491358, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_LocalScale.x
@@ -7991,6 +9383,18 @@ Prefab:
     - target: {fileID: 1129710907360272, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
       propertyPath: m_Name
       value: umbrella (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129710907360272, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1410579939371694, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146861457426470, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23fa856550e30a84fa46228754161ed3, type: 2}
@@ -8032,7 +9436,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4212414526585872, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_RootOrder
-      value: 71
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 4576343545909796, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_LocalScale.x
@@ -8065,6 +9469,38 @@ Prefab:
     - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_Name
       value: table (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
@@ -8106,7 +9542,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4212414526585872, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_RootOrder
-      value: 65
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 4576343545909796, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_LocalScale.x
@@ -8139,6 +9575,38 @@ Prefab:
     - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
       propertyPath: m_Name
       value: table (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1679583024089064, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552783723111938, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484885257624640, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203382356218218, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626001020146212, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540496182704452, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537361237451874, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962106013309150, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e6e05e506b87b45bc858ce5fa2650f, type: 2}
@@ -8180,7 +9648,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 59
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -8197,6 +9665,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -8238,7 +9714,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 85
+      value: 61
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -8255,6 +9731,14 @@ Prefab:
     - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_Name
       value: wooden chair (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
@@ -8296,7 +9780,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_RootOrder
-      value: 103
+      value: 79
       objectReference: {fileID: 0}
     - target: {fileID: 4012941561062492, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -8314,6 +9798,14 @@ Prefab:
       propertyPath: m_Name
       value: wooden chair (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 1350319039866710, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795978912651390, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b9f1ccf0a296440a91da11ca614192, type: 2}
   m_IsPrefabAsset: 0
@@ -8328,7 +9820,7 @@ GameObject:
   - component: {fileID: 2144440502}
   - component: {fileID: 2144440501}
   - component: {fileID: 2144440500}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
