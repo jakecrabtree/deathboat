@@ -14,8 +14,9 @@ ModelImporter:
     2100000: floor 3
     2100002: floor 1 bottom
     2100004: floor 1 top
-    2100006: floor 2 bottom
-    2100008: floor 2 top
+    2100006: pool
+    2100008: floor 2 bottom
+    2100010: floor 2 top
     2300000: floor 1
     2300002: floor 2
     2300004: Plane.002
