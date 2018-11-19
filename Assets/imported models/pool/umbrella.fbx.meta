@@ -1,17 +1,16 @@
 fileFormatVersion: 2
-guid: a2bba84d1227146a29f8847eaf5c014f
+guid: a078987fd20301344b099da3fcbddb46
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: default
-    100002: //RootNode
-    400000: default
-    400002: //RootNode
-    2100000: Mat.1
-    2100002: Mat
-    2300000: default
-    3300000: default
-    4300000: default
+    100000: //RootNode
+    400000: //RootNode
+    2100000: umbrella rod
+    2100002: umbrella 2
+    2100004: umbrella 1
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: umbrella
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -43,7 +42,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.8
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
