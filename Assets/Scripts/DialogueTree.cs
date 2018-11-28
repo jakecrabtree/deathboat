@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine; 
-
 
 [System.Serializable]
 public class Edges{
@@ -31,9 +31,9 @@ public class DialogueNode {
     [SerializeField]
     public string text;
     [SerializeField]
-    string trigger;
+    public string trigger;
     [SerializeField]
-    int priority;
+    public int priority;
     [SerializeField]
     int id;
     [SerializeField]
@@ -54,11 +54,16 @@ public class DialogueNode {
     }
 
     public NodeWindow toNodeWindow(){
-        /* if (id == 0){
-            editorBox = new Rect(NodeWindow.DEFAULT_WINDOW_X_POS, NodeWindow.DEFAULT_WINDOW_Y_POS, 
-                            NodeWindow.DEFAULT_WINDOW_WIDTH, NodeWindow.DEFAULT_WINDOW_HEIGHT/2);
-        }*/
         return new NodeWindow(editorBox, id, text, trigger!="", trigger, priority);
+    }
+
+    public int CompareTo(DialogueNode other){
+        Boolean hasTrigger = trigger != "";
+        int compareTriggers = hasTrigger.CompareTo(other.trigger != "");
+        if (compareTriggers == 0){
+            return other.priority.CompareTo(priority);
+        }
+        return compareTriggers;
     }
 }
 
@@ -70,11 +75,23 @@ public class DialogueTree : MonoBehaviour{
     [SerializeField]
     private List<Edges> adjList = new List<Edges>();
 
+    [SerializeField]
     private int root = 0;
+
+    [SerializeField]
     private int curr = 0;
 
     public string current(){
         return nodes[curr].text;
+    }
+
+    public void Start(){
+        foreach(DialogueNode node in nodes){
+            TriggerManager.AddTrigger(node.trigger, false);
+        }
+        foreach(Edges edges in adjList){
+            edges.edges.Sort((x,y) => nodes[y].CompareTo(nodes[x]));
+        }
     }
 
     public string next(){
@@ -85,7 +102,18 @@ public class DialogueTree : MonoBehaviour{
     }
 
     private int selectChild(){
-        return adjList[curr].edges[0]; 
+        int ret = 0;
+        foreach(int node in adjList[curr].edges){
+            if (nodes[node].trigger != ""){
+                if (TriggerManager.GetTrigger(nodes[node].trigger)){
+                    return node;
+                }
+            }
+            else{
+                return node;
+            }
+        }
+        return ret;
     }
 
     public bool isEnd(){

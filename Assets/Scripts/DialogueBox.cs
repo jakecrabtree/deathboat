@@ -35,7 +35,9 @@ public class DialogueBox : MonoBehaviour {
 		if(tree.isEnd()){
 			EndDialogue();
 		}
-		this.dialogueText.text = tree.next();
+		else{
+			this.dialogueText.text = tree.next();
+		}
 	}
 
 	void EndDialogue(){

@@ -246,7 +246,7 @@ public class DialogueSystem : EditorWindow {
 		}
 		if (list.nodes.Count == 0){
 			windows.Add(new NodeWindow(new Rect(NodeWindow.DEFAULT_WINDOW_X_POS, NodeWindow.DEFAULT_WINDOW_Y_POS, 
-                            NodeWindow.DEFAULT_WINDOW_WIDTH, NodeWindow.DEFAULT_WINDOW_HEIGHT/2), windows.Count, "Don't Forget to Add Real Text Here!"));
+                            NodeWindow.DEFAULT_WINDOW_WIDTH, NodeWindow.DEFAULT_WINDOW_HEIGHT/2), windows.Count));
 		}
 		connectedEdges = list.edges;
 	}

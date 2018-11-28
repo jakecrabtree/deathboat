@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueManager : MonoBehaviour {
+public static class TriggerManager {
 	
-	private static DialogueManager instance;
+	//private static DialogueManager instance;
 
-	[SerializeField]
-	private static Dictionary<string, bool> triggers;
+	//[SerializeField]
+	private static Dictionary<string, bool> triggers = new Dictionary<string,bool>();
 
-	private void Awake(){
+	/* private void Awake(){
 		if (instance != null && instance != this){
 			Destroy(this.gameObject);
 		}
@@ -17,9 +17,9 @@ public class DialogueManager : MonoBehaviour {
 			instance = this;
 			triggers = new Dictionary<string,bool>();
 		}
-	}
+	}*/
 	
-	public static void SetTrigger(string trigger, bool val){
+	public static void UpdateTrigger(string trigger, bool val){
 		if (triggers.ContainsKey(trigger)){
 			triggers[trigger] = val;
 		}
@@ -29,15 +29,24 @@ public class DialogueManager : MonoBehaviour {
 	}
 
 	public static bool GetTrigger(string trigger){
-		return triggers[trigger];
+		if (triggers.ContainsKey(trigger)){
+			return triggers[trigger];
+		}
+		else {
+			Debug.Log("Trigger " + trigger + " not found.");
+			return false;
+		}
 	}
 
 	public static void AddTrigger(string trigger, bool val){
-		if (!triggers.ContainsKey(trigger)){
+		if (trigger.Length == 0){
+
+		}
+		else if (!triggers.ContainsKey(trigger)){
 			triggers.Add(trigger,val);
 		}
 		else{
-			Debug.Log("Trigger " + trigger + " is already a trigger.");
+			triggers[trigger] = val;
 		}
 	}
 }
