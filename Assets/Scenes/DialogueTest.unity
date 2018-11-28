@@ -701,6 +701,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nodes:
+  - text: root
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 10
+      y: 10
+      width: 100
+      height: 75
+  - text: 
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 33
+      y: 173
+      width: 100
+      height: 150
+  adjList:
+  - edges: 
+  - edges: 00000000
 --- !u!1 &1428777054
 GameObject:
   m_ObjectHideFlags: 0
