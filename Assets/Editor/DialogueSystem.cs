@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEditor; 
+using UnityEditor.SceneManagement;
 
 public class DialogueSystem : EditorWindow {
 
@@ -210,7 +211,6 @@ public class DialogueSystem : EditorWindow {
 		detachString = "Detach";
 	}
 
-
 	void MakeWindow(int width, int height){
 		windows.Add(new NodeWindow(new Rect(NodeWindow.DEFAULT_WINDOW_X_POS, NodeWindow.DEFAULT_WINDOW_Y_POS, width, height), windows.Count));
 		Debug.Log("made" + windows[windows.Count-1].id);
@@ -242,13 +242,14 @@ public class DialogueSystem : EditorWindow {
 			return;
 		}
 		DialogueEdgeList list = tree.toEdgeList();
+		if (list.nodes.Count == 0){
+			DialogueNode newRoot = new DialogueNode("root", 0);
+			tree.AddNode(newRoot);
+		}
 		foreach(DialogueNode node in list.nodes){
 			windows.Add(node.toNodeWindow());
 		}
-		windows.Sort((x,y)=> x.id.CompareTo(y.id));
-		foreach(KeyValuePair<int,int> edge in list.edges){
-			connectedEdges.Add(edge);
-		}
+		connectedEdges = list.edges;
 	}
 
 	void WriteToTree(DialogueTree tree){
@@ -259,13 +260,9 @@ public class DialogueSystem : EditorWindow {
 		foreach (NodeWindow window in windows){
 			nodes.Add(window.toDialogueNode());
 		}
-		DialogueNode root = nodes[0];
-		foreach (KeyValuePair<int,int> edge in connectedEdges){
-			//Debug.Log("Added " + edge.Key + " to " + edge.Value);
-			nodes[edge.Key].addChild(nodes[edge.Value]);
-		}
-		if (currentTree){
-			currentTree.setRoot(root);
-		}
+		Undo.RecordObject(currentTree, "Tree Written");
+		currentTree.fromEdgeList(new DialogueEdgeList(nodes, connectedEdges));
+		EditorUtility.SetDirty(currentTree);
+		EditorSceneManager.MarkAllScenesDirty();
 	}
 }
