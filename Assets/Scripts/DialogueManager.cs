@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour {
 		}
 		else{
 			instance = this;
+			triggers = new Dictionary<string,bool>();
 		}
 	}
 	

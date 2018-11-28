@@ -1,78 +1,116 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEditor; 
- 
-
-public class NodeWindow {
-	public Rect window;
-	public string text;
-	public bool hasTrigger;
-	public string triggerString;
-	public int triggerPriority;
-
-	public NodeWindow(Rect window, string text = "", bool hasTrigger = false, string triggerString = "", int triggerPriority  = 0){
-		this.window = window;
-		this.text = text;
-		this.hasTrigger = hasTrigger;
-		this.triggerString = triggerString;
-		this.triggerPriority = triggerPriority;
-	}
-}
 
 public class DialogueSystem : EditorWindow {
 
-    HashSet<int> windowsToAttach = new HashSet<int>();
-	HashSet<int> windowsToDetach = new HashSet<int>();
-    List<int> attachedWindows = new List<int>();
-	List<NodeWindow> windows = new List<NodeWindow>();
-	string attachString = "Attach";
-	string detachString = "Detach";
-	int nodeBeingAttached = -1;
-	int nodeBeingDetached = -1;
+    HashSet<int> windowsToAttach;
+	HashSet<int> windowsToDetach;
+	HashSet<KeyValuePair<int,int>> connectedEdges;
+	List<NodeWindow> windows;
+	DialogueTree currentTree;
+	
+	string attachString;
+	string detachString;
+	int nodeBeingAttached;
+	int nodeBeingDetached;
  
     [MenuItem("Window/Speakeasy")]
     static void ShowEditor() {
         DialogueSystem editor = EditorWindow.GetWindow<DialogueSystem>();
 		editor.Init();
     }
+
+	void ResetTree(){
+		windowsToAttach = new HashSet<int>();
+		windowsToDetach = new HashSet<int>();
+		connectedEdges = new HashSet<KeyValuePair<int, int>>();
+		windows = new List<NodeWindow>();
+		attachString = "Attach";
+		detachString = "Detach";
+		nodeBeingAttached = -1;
+		nodeBeingDetached = -1;
+	}
+
+	void LoadFromSelection(){
+		foreach (GameObject obj in Selection.gameObjects){
+			if (currentTree = obj.GetComponent<DialogueTree>()){
+				Debug.Log("found tree");
+				LoadFromTree(currentTree);
+				break;
+			}
+		}
+	}
  
 	void Init(){
-		MakeWindow(100,75);
+		ResetTree();
+		LoadFromSelection();
+	}
+
+	void OnDestroy()
+	{
+		WriteToTree(currentTree);
+	}
+
+	void OnSelectionChange(){
+		Debug.Log("Selection changed");
+		WriteToTree(currentTree);
+		ResetTree();
+		LoadFromSelection();
 	}
  
     void OnGUI() {
         if (windowsToAttach.Count == 2) {
-            foreach(int window in windowsToAttach){
-				attachedWindows.Add(window);
+			List<int> windowsList = windowsToAttach.ToList();
+			KeyValuePair<int,int> pair = new KeyValuePair<int, int>(windowsList[0], windowsList[1]);
+			KeyValuePair<int,int> pairReverse = new KeyValuePair<int, int>(windowsList[1], windowsList[0]);
+			if (connectedEdges.Contains(pair) || connectedEdges.Contains(pairReverse)){
+				Debug.Log("in set");
+			}
+			else{
+				connectedEdges.Add(pair);
 			}
 			windowsToAttach.Clear();
         }
-        if (attachedWindows.Count >= 2) {
-            for (int i = 0; i < attachedWindows.Count; i += 2) {
-				if (windowsToDetach.Contains(attachedWindows[i]) && 
-					windowsToDetach.Contains(attachedWindows[i+1])){
-						attachedWindows.RemoveRange(i, 2);
-						i-=2;
-				}else{
-                	DrawNodeCurve(windows[attachedWindows[i]].window, windows[attachedWindows[i + 1]].window);
-				}
-            }
-        }
-
 		if (windowsToDetach.Count == 2){
+			List<int> windowsList = windowsToDetach.ToList();
+			connectedEdges.RemoveWhere(x => x.Key == windowsList[0] && x.Value == windowsList[1]);
+			connectedEdges.RemoveWhere(x => x.Key == windowsList[1] && x.Value == windowsList[0]);
 			windowsToDetach.Clear();
 		}
+
+		if (connectedEdges.Count >= 1) {
+			foreach(KeyValuePair<int,int> edge in connectedEdges){
+				Debug.Log("Drawing:" + edge.Key + edge.Value);
+				DrawNodeCurve(windows[edge.Key].window, windows[edge.Value].window);
+			}
+        }
  
         BeginWindows();
  
-        if (GUILayout.Button("Create Dialogue Node")) {
-            MakeWindow(100,150);
-        }
+		if (currentTree){
+        	if (GUILayout.Button("Create Dialogue Node")) {
+            	MakeWindow(NodeWindow.DEFAULT_WINDOW_WIDTH,NodeWindow.DEFAULT_WINDOW_HEIGHT);
+        	}
+			if (GUILayout.Button("Save Tree")) {
+            	WriteToTree(currentTree);
+        	}
+		}
+		else{
+			GUILayout.Label("Selection does not contain a Dialogue Tree Component");
+		}
  
-		windows[0].window = GUI.Window(0, windows[0].window, DrawNodeWindow, "Root Node");
-        for (int i = 1; i < windows.Count; i++) {
-            windows[i].window = GUI.Window(i, windows[i].window, DrawNodeWindow, "Dialogue Node " + i);
+        for (int i = 0; i < windows.Count; i++) {
+			string name;
+			if (i==0){
+				name = "Root Node";
+			}
+			else{
+				name = "Dialogue Node " + i;
+			}
+            windows[i].window = GUI.Window(i, windows[i].window, DrawNodeWindow, name);
         }
  
         EndWindows();
@@ -174,23 +212,16 @@ public class DialogueSystem : EditorWindow {
 
 
 	void MakeWindow(int width, int height){
-		windows.Add(new NodeWindow(new Rect(10, 10, width, height)));
+		windows.Add(new NodeWindow(new Rect(NodeWindow.DEFAULT_WINDOW_X_POS, NodeWindow.DEFAULT_WINDOW_Y_POS, width, height), windows.Count));
+		Debug.Log("made" + windows[windows.Count-1].id);
 	}
 
 	void DeleteNode(int id){
 		windows.RemoveAt(id);
 		windowsToAttach.Remove(id);
 		windowsToDetach.Remove(id);
-		for (int i = 0; i < attachedWindows.Count; i += 2) {
-			if (attachedWindows[i] == id || 
-				attachedWindows[i+1] == id){
-					attachedWindows.RemoveRange(i, 2);
-					i-=2;
-			}
-		}
+		connectedEdges.RemoveWhere(x => x.Key == id || x.Value == id);
 	}
- 
- 
     void DrawNodeCurve(Rect start, Rect end) {
         Vector3 startPos = new Vector3(start.x + start.width, start.y + start.height / 2, 0);
         Vector3 endPos = new Vector3(end.x, end.y + end.height / 2, 0);
@@ -201,7 +232,40 @@ public class DialogueSystem : EditorWindow {
         for (int i = 0; i < 3; i++) {// Draw a shadow
             Handles.DrawBezier(startPos, endPos, startTan, endTan, shadowCol, null, (i + 1) * 5);
         }
- 
         Handles.DrawBezier(startPos, endPos, startTan, endTan, Color.black, null, 1);
     }
+
+	void LoadFromTree(DialogueTree tree){
+		ResetTree();
+		if (tree == null){
+			Debug.Log("Null Tree");
+			return;
+		}
+		DialogueEdgeList list = tree.toEdgeList();
+		foreach(DialogueNode node in list.nodes){
+			windows.Add(node.toNodeWindow());
+		}
+		windows.Sort((x,y)=> x.id.CompareTo(y.id));
+		foreach(KeyValuePair<int,int> edge in list.edges){
+			connectedEdges.Add(edge);
+		}
+	}
+
+	void WriteToTree(DialogueTree tree){
+		if (tree == null){
+			return;
+		}
+		List<DialogueNode> nodes = new List<DialogueNode>();
+		foreach (NodeWindow window in windows){
+			nodes.Add(window.toDialogueNode());
+		}
+		DialogueNode root = nodes[0];
+		foreach (KeyValuePair<int,int> edge in connectedEdges){
+			//Debug.Log("Added " + edge.Key + " to " + edge.Value);
+			nodes[edge.Key].addChild(nodes[edge.Value]);
+		}
+		if (currentTree){
+			currentTree.setRoot(root);
+		}
+	}
 }
