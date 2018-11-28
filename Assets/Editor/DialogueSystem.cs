@@ -213,7 +213,6 @@ public class DialogueSystem : EditorWindow {
 
 	void MakeWindow(int width, int height){
 		windows.Add(new NodeWindow(new Rect(NodeWindow.DEFAULT_WINDOW_X_POS, NodeWindow.DEFAULT_WINDOW_Y_POS, width, height), windows.Count));
-		Debug.Log("made" + windows[windows.Count-1].id);
 	}
 
 	void DeleteNode(int id){
@@ -242,12 +241,12 @@ public class DialogueSystem : EditorWindow {
 			return;
 		}
 		DialogueEdgeList list = tree.toEdgeList();
-		if (list.nodes.Count == 0){
-			DialogueNode newRoot = new DialogueNode("root", 0);
-			tree.AddNode(newRoot);
-		}
 		foreach(DialogueNode node in list.nodes){
 			windows.Add(node.toNodeWindow());
+		}
+		if (list.nodes.Count == 0){
+			windows.Add(new NodeWindow(new Rect(NodeWindow.DEFAULT_WINDOW_X_POS, NodeWindow.DEFAULT_WINDOW_Y_POS, 
+                            NodeWindow.DEFAULT_WINDOW_WIDTH, NodeWindow.DEFAULT_WINDOW_HEIGHT/2), windows.Count));
 		}
 		connectedEdges = list.edges;
 	}

@@ -702,29 +702,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodes:
-  - text: root
+  - text: 
     trigger: 
     priority: 0
     id: 0
     editorBox:
       serializedVersion: 2
-      x: 10
-      y: 10
+      x: 69
+      y: 70
       width: 100
       height: 75
-  - text: 
+  - text: ',mlml'
     trigger: 
     priority: 0
     id: 1
     editorBox:
       serializedVersion: 2
-      x: 33
-      y: 173
+      x: 107
+      y: 239
       width: 100
-      height: 150
+      height: 225
   adjList:
+  - edges: 01000000
   - edges: 
-  - edges: 00000000
 --- !u!1 &1428777054
 GameObject:
   m_ObjectHideFlags: 0

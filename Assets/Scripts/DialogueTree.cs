@@ -54,10 +54,10 @@ public class DialogueNode {
     }
 
     public NodeWindow toNodeWindow(){
-        if (id == 0){
+        /* if (id == 0){
             editorBox = new Rect(NodeWindow.DEFAULT_WINDOW_X_POS, NodeWindow.DEFAULT_WINDOW_Y_POS, 
                             NodeWindow.DEFAULT_WINDOW_WIDTH, NodeWindow.DEFAULT_WINDOW_HEIGHT/2);
-        }
+        }*/
         return new NodeWindow(editorBox, id, text, trigger!="", trigger, priority);
     }
 }
