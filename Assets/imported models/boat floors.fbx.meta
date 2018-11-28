@@ -7,10 +7,18 @@ ModelImporter:
     100002: floor 1
     100004: floor 2
     100006: Plane.002
+    100008: floor 1.001
+    100010: floor 2.001
+    100012: Plane
+    100014: Plane.001
     400000: //RootNode
     400002: floor 1
     400004: floor 2
     400006: Plane.002
+    400008: floor 1.001
+    400010: floor 2.001
+    400012: Plane
+    400014: Plane.001
     2100000: floor 3
     2100002: floor 1 bottom
     2100004: floor 1 top
@@ -20,12 +28,24 @@ ModelImporter:
     2300000: floor 1
     2300002: floor 2
     2300004: Plane.002
+    2300006: floor 1.001
+    2300008: floor 2.001
+    2300010: Plane
+    2300012: Plane.001
     3300000: floor 1
     3300002: floor 2
     3300004: Plane.002
+    3300006: floor 1.001
+    3300008: floor 2.001
+    3300010: Plane
+    3300012: Plane.001
     4300000: Plane.002
     4300002: floor 1
     4300004: floor 2
+    4300006: Plane.001
+    4300008: floor 2.001
+    4300010: floor 1.001
+    4300012: Plane
   externalObjects: {}
   materials:
     importMaterials: 1
