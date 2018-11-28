@@ -89,7 +89,7 @@ public class DialogueTree : MonoBehaviour{
     }
 
     public bool isEnd(){
-        return (adjList.Count >= curr) && adjList[curr].edges.Count > 0;
+        return (adjList.Count < curr) || adjList[curr].edges.Count == 0;
     }
 
     public void reset(){

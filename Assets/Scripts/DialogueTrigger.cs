@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DialogueTrigger : MonoBehaviour {
     [SerializeField]
     private DialogueBox dialogueBox;
+    [SerializeField]
     private DialogueTree tree;
 
     void Start(){
@@ -13,7 +14,7 @@ public class DialogueTrigger : MonoBehaviour {
     }
 
     void OnTriggerStay(Collider other){
-        if (Input.GetKeyDown(KeyCode.X)){
+        if (Input.GetKeyDown(KeyCode.Q)){
             if (other.CompareTag("Player")){
                 dialogueBox.UseDialogueTree(tree);
             }
