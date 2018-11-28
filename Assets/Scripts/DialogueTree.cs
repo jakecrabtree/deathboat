@@ -29,7 +29,7 @@ public class DialogueEdgeList{
 [System.Serializable]
 public class DialogueNode {
     [SerializeField]
-    string text;
+    public string text;
     [SerializeField]
     string trigger;
     [SerializeField]
@@ -73,11 +73,11 @@ public class DialogueTree : MonoBehaviour{
     private int root = 0;
     private int curr = 0;
 
-    public DialogueNode current(){
-        return nodes[curr];
+    public string current(){
+        return nodes[curr].text;
     }
 
-    public DialogueNode next(){
+    public string next(){
         if (!isEnd()){
             curr = selectChild();
         }
