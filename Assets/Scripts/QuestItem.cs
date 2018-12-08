@@ -10,26 +10,27 @@ public class QuestItem : MonoBehaviour {
 	string itemName = "";
 
 	[SerializeField]
-	string triggerName;
-	bool collected = false;
+	string triggerName = "";
+	public bool collected = false;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	void Start(){
+		if (triggerName != ""){
+			TriggerManager.AddTrigger(triggerName, false);
+		}
 	}
 
 	void OnTriggerStay(Collider other){
-        if (Input.GetKeyDown(KeyCode.E)){
-            if (other.CompareTag("Player") && !collected){
-				TriggerManager.UpdateTrigger(triggerName, true);
-            }
+        if (Input.GetKeyDown(KeyCode.E) && other.CompareTag("Player")){
+			Collect();
         }
     }
+
+	void Collect(){
+		if (!collected && quest != null && quest.CollectItem(this)){
+			TriggerManager.UpdateTrigger(triggerName, true);
+			collected = false;
+		}
+	}
 
 	public void AssignQuest(Quest quest){
 		this.quest = quest;
