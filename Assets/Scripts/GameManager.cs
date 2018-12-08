@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour {
 	int upperScoreBound = 100;
 
 	int currentScore;
+	int scoreOffset = 0;
+	public SimpleHealthBar healthBar;
 	
 
 	void Awake()
@@ -37,6 +39,7 @@ public class GameManager : MonoBehaviour {
 	void InitGame(){
 		currentScore = startingScore;
 		timeRemaining = totalTime;
+		scoreOffset = -1 * lowerScoreBound;
 	}
 
 	void GameOver(){
@@ -53,9 +56,11 @@ public class GameManager : MonoBehaviour {
 
 	public void AddScore(int scoreValue){
 		currentScore += scoreValue;
+		healthBar.UpdateBar(currentScore + scoreOffset, upperScoreBound + scoreOffset);
 	}
 
 	public void SubtractScore(int scoreValue){
 		currentScore -= scoreValue;
+		healthBar.UpdateBar(currentScore + scoreOffset, upperScoreBound + scoreOffset);
 	}
 }
