@@ -1,26 +1,37 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 	
 	public static GameManager instance = null;
 	
-	public float totalTime = 120f; //2 minutes
+	public float totalTime = 119f; //2 minutes
 	public float timeRemaining;
 
 	[SerializeField]
-	int lowerScoreBound = -100;
+	int[] scoreThresholds;
 
 	[SerializeField]
-	int startingScore = 0;
+	string[] scoreLevelNames;
 
 	[SerializeField]
-	int upperScoreBound = 100;
+	int startingScore = -25;
+
+	[SerializeField]
+	int lowerScoreBound;
+
+	[SerializeField]
+	int upperScoreBound;
 
 	int currentScore;
 	int scoreOffset = 0;
 	public SimpleHealthBar healthBar;
+	public Text scoreText;
+	public Text scoreThresholdText;
+
+	public Text timerText;
 	
 
 	void Awake()
@@ -40,6 +51,8 @@ public class GameManager : MonoBehaviour {
 		currentScore = startingScore;
 		timeRemaining = totalTime;
 		scoreOffset = -1 * lowerScoreBound;
+		UpdateScoreBar();
+		UpdateTimerUI();
 	}
 
 	void GameOver(){
@@ -49,6 +62,11 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		timeRemaining = Mathf.Max(timeRemaining - Time.deltaTime, 0);
+		UpdateTimerUI();
+	}
+
+	void UpdateTimerUI(){
+		timerText.text = timeRemaining.ToString("F0");
 		if (timeRemaining <= 0){
 			GameOver();
 		}
@@ -56,11 +74,26 @@ public class GameManager : MonoBehaviour {
 
 	public void AddScore(int scoreValue){
 		currentScore += scoreValue;
-		healthBar.UpdateBar(currentScore + scoreOffset, upperScoreBound + scoreOffset);
+		UpdateScoreBar();
 	}
 
 	public void SubtractScore(int scoreValue){
 		currentScore -= scoreValue;
+		UpdateScoreBar();
+	}
+
+	void UpdateScoreBar(){
 		healthBar.UpdateBar(currentScore + scoreOffset, upperScoreBound + scoreOffset);
+		scoreText.text = currentScore.ToString();
+		scoreThresholdText.text = CurrentLevel(currentScore);
+	}
+
+	string CurrentLevel(int score){
+		for (int i = 0; i < scoreThresholds.Length; ++i){
+			if (score < scoreThresholds[i]){
+				return scoreLevelNames[i];
+			}
+		}
+		return scoreLevelNames[scoreLevelNames.Length-1];
 	}
 }
