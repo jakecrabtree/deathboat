@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -73,12 +74,12 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void AddScore(int scoreValue){
-		currentScore += scoreValue;
+		currentScore = Math.Min(scoreValue+currentScore, upperScoreBound);
 		UpdateScoreBar();
 	}
 
 	public void SubtractScore(int scoreValue){
-		currentScore -= scoreValue;
+		currentScore = Math.Max(currentScore-scoreValue, lowerScoreBound);
 		UpdateScoreBar();
 	}
 

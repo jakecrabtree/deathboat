@@ -31,12 +31,14 @@ public class DialogueBox : MonoBehaviour {
 		this.dialogueText.text = tree.current();
 	}
 
-	public void ShowNextDialogue(){
+	public bool ShowNextDialogue(){
 		if(tree.isEnd()){
 			EndDialogue();
+			return true;
 		}
 		else{
 			this.dialogueText.text = tree.next();
+			return false;
 		}
 	}
 
