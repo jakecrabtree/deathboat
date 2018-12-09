@@ -36,7 +36,6 @@ public class SimpleCasinoGame : MonoBehaviour {
 		manager = GameManager.instance;
         TriggerManager.AddTrigger(winTriggerStrimg, false);
         TriggerManager.AddTrigger(loseTriggerStrimg, false);
-
     }
 
     void OnTriggerStay(Collider other){

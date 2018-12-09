@@ -12,14 +12,17 @@ public class CollectionQuest : Quest {
 	int remaining; 
 	// Use this for initialization
 	void Start () {
-		AssignQuests();
+		AssignQuestItems();
 		remaining = items.Length;
-		if (triggerName != ""){
-			TriggerManager.AddTrigger(triggerName, false);
+		if (questEnabledTrigger != ""){
+			TriggerManager.AddTrigger(questEnabledTrigger, questEnabled);
+		}
+		if (questCompletedTrigger != ""){
+			TriggerManager.AddTrigger(questCompletedTrigger, questCompleted);
 		}
 	}
 
-	protected void AssignQuests(){
+	protected void AssignQuestItems(){
 		foreach(QuestItem item in items){
 			if (item != null){
 				item.AssignQuest(this);
@@ -31,18 +34,23 @@ public class CollectionQuest : Quest {
 	}
 	
 	public override bool CollectItem(QuestItem collectedItem){
-		for(int i = 0; i < items.Length; ++i){
+		/* for(int i = 0; i < items.Length; ++i){
 			if (items[i] == collectedItem){
 				if (--remaining == 0){
 					CompleteQuest();
 				}
 				return true;
 			}
+		}*/
+		if (--remaining == 0){
+			CompleteQuest();
 		}
-		return false;
+		return true;
 	}
 
 	protected override void CompleteQuest(){
-		TriggerManager.UpdateTrigger(triggerName, true);
+		TriggerManager.UpdateTrigger(questCompletedTrigger, true);
+		TriggerManager.UpdateTrigger(questEnabledTrigger, false);
+		questEnabled = true;
 	}
 }

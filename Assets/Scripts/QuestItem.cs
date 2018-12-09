@@ -11,7 +11,13 @@ public class QuestItem : MonoBehaviour {
 
 	[SerializeField]
 	string triggerName = "";
+
+	[SerializeField]
+	bool disappearOnCollect = true;
+
 	public bool collected = false;
+
+
 
 	void Start(){
 		if (triggerName != ""){
@@ -27,8 +33,13 @@ public class QuestItem : MonoBehaviour {
 
 	void Collect(){
 		if (!collected && quest != null && quest.CollectItem(this)){
-			TriggerManager.UpdateTrigger(triggerName, true);
-			collected = false;
+			if (triggerName != ""){
+				TriggerManager.UpdateTrigger(triggerName, true);
+			}
+			collected = true;
+			if(disappearOnCollect){
+				gameObject.SetActive(false);
+			}
 		}
 	}
 
