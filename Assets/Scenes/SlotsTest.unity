@@ -558,11 +558,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 2030926135}
   tree: {fileID: 1180506621}
+  gameName: Slot Machine
   winChance: 0.2
   winAmount: 10
   loseAmount: 5
-  winTriggerStrimg: slot_win
-  loseTriggerStrimg: slot_lose
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
 --- !u!65 &1180506623
 BoxCollider:
   m_ObjectHideFlags: 0

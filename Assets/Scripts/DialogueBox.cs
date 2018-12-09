@@ -11,17 +11,23 @@ public class DialogueBox : MonoBehaviour {
 	private Text nameText;
 	[SerializeField]
 	private Text nextButtonText;
+
+	[SerializeField]
+	private Text quitButtonText;
+
 	[SerializeField]
 	private DialogueTree tree;
 
 	void Start(){
 		nextButtonText = transform.GetChild(1).GetComponentInChildren<Text>();
-		dialogueText = transform.GetChild(2).GetComponent<Text>();
-		nameText = transform.GetChild(3).GetComponent<Text>();
+		quitButtonText = transform.GetChild(2).GetComponentInChildren<Text>();
+		dialogueText = transform.GetChild(3).GetComponent<Text>();
+		nameText = transform.GetChild(4).GetComponent<Text>();
 		gameObject.SetActive(false);
 	}
 
-	public void UseDialogueTree(DialogueTree tree){
+	public void UseDialogueTree(DialogueTree tree, string name){
+		this.nameText.text = name;
 		this.tree = tree;
 		gameObject.SetActive(true);
 		ShowNextDialogue();
@@ -42,7 +48,7 @@ public class DialogueBox : MonoBehaviour {
 		}
 	}
 
-	void EndDialogue(){
+	public void EndDialogue(){
 		tree.reset();
 		gameObject.SetActive(false);
 	}

@@ -9,6 +9,9 @@ public class SimpleCasinoGame : MonoBehaviour {
     [SerializeField]
     private DialogueTree tree;
 
+    [SerializeField]
+    string gameName = "Slot Machine";
+
 	[SerializeField]
 	public float winChance = 0.2f;
 
@@ -19,10 +22,10 @@ public class SimpleCasinoGame : MonoBehaviour {
 	public int loseAmount = 5;
 
     [SerializeField]
-    string winTriggerStrimg = "slot_win";
+    string winTriggerString = "slot_win";
 
     [SerializeField]
-    string loseTriggerStrimg = "slot_lose";
+    string loseTriggerString = "slot_lose";
 
 
 	GameManager manager;
@@ -34,14 +37,14 @@ public class SimpleCasinoGame : MonoBehaviour {
     void Start(){
         tree = GetComponent<DialogueTree>();
 		manager = GameManager.instance;
-        TriggerManager.AddTrigger(winTriggerStrimg, false);
-        TriggerManager.AddTrigger(loseTriggerStrimg, false);
+        TriggerManager.AddTrigger(winTriggerString, false);
+        TriggerManager.AddTrigger(loseTriggerString, false);
     }
 
     void OnTriggerStay(Collider other){
         if (Input.GetKeyDown(KeyCode.E)){
             if (other.CompareTag("Player")){
-                dialogueBox.UseDialogueTree(tree);
+                dialogueBox.UseDialogueTree(tree, gameName);
                 started = true;
             }
         }else if (Input.GetKeyDown(KeyCode.Return) && started){
@@ -56,23 +59,29 @@ public class SimpleCasinoGame : MonoBehaviour {
                 }
                 ResetTriggers();
             }
-        }
+        }else if (Input.GetKeyDown(KeyCode.Escape) && started){
+            if (other.CompareTag("Player")){
+                started = false;
+                dialogueBox.EndDialogue();
+                ResetTriggers();
+            }
+        }  
     } 
 
 	void PlayGame(){
 		float roll = Random.Range(0,1.0f);
         if (roll <= winChance){
             manager.AddScore(winAmount);
-            TriggerManager.UpdateTrigger(winTriggerStrimg, true);
+            TriggerManager.UpdateTrigger(winTriggerString, true);
         }
         else{
             manager.SubtractScore(loseAmount);
-            TriggerManager.UpdateTrigger(loseTriggerStrimg, true); 
+            TriggerManager.UpdateTrigger(loseTriggerString, true); 
         }
 	}
 
     void ResetTriggers(){
-        TriggerManager.UpdateTrigger(winTriggerStrimg, false);
-        TriggerManager.UpdateTrigger(loseTriggerStrimg, false);
+        TriggerManager.UpdateTrigger(winTriggerString, false);
+        TriggerManager.UpdateTrigger(loseTriggerString, false);
     }
 }

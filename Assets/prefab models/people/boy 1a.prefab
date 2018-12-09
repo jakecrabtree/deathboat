@@ -353,6 +353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4664466180421414}
   - component: {fileID: 95093354907188478}
+  - component: {fileID: 114815846051723098}
   m_Layer: 9
   m_Name: boy 1a
   m_TagString: Untagged
@@ -809,7 +810,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1718734899725120}
   m_LocalRotation: {x: -0, y: 0.9796853, z: -0, w: 0.20054105}
-  m_LocalPosition: {x: -2.69, y: 7.69, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4513324150703754}
@@ -945,6 +946,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114815846051723098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1718734899725120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c47ed696dbf02425cb0d8b25dd9243c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endColor: {r: 0.33, g: 0.745, b: 0.216, a: 0.588}
 --- !u!137 &137764854810376336
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

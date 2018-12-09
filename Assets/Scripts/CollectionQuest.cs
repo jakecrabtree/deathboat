@@ -14,8 +14,14 @@ public class CollectionQuest : Quest {
 	void Start () {
 		AssignQuestItems();
 		remaining = items.Length;
+		if (questEnabled){
+			EnableQuest();
+		}
 		if (questEnabledTrigger != ""){
 			TriggerManager.AddTrigger(questEnabledTrigger, questEnabled);
+		}
+		if (questStartedTrigger != ""){
+			TriggerManager.AddTrigger(questStartedTrigger, questStarted);
 		}
 		if (questCompletedTrigger != ""){
 			TriggerManager.AddTrigger(questCompletedTrigger, questCompleted);
@@ -34,23 +40,20 @@ public class CollectionQuest : Quest {
 	}
 	
 	public override bool CollectItem(QuestItem collectedItem){
-		/* for(int i = 0; i < items.Length; ++i){
-			if (items[i] == collectedItem){
-				if (--remaining == 0){
-					CompleteQuest();
-				}
-				return true;
+		if (questEnabled && questStarted){
+			if (--remaining == 0){
+				CompleteQuest();
 			}
-		}*/
-		if (--remaining == 0){
-			CompleteQuest();
+			return true;
 		}
-		return true;
+		return false;
 	}
 
 	protected override void CompleteQuest(){
 		TriggerManager.UpdateTrigger(questCompletedTrigger, true);
 		TriggerManager.UpdateTrigger(questEnabledTrigger, false);
-		questEnabled = true;
+		TriggerManager.UpdateTrigger(questStartedTrigger, false);
+		ChangeQuestIndicatorColor(Color.green);
+		questCompleted = true;
 	}
 }

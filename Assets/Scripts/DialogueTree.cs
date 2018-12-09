@@ -117,7 +117,20 @@ public class DialogueTree : MonoBehaviour{
     }
 
     public bool isEnd(){
-        return (adjList.Count < curr) || adjList[curr].edges.Count == 0;
+        if((adjList.Count < curr) || adjList[curr].edges.Count == 0){
+            return true;
+        }
+        foreach(int node in adjList[curr].edges){
+            if (nodes[node].trigger != ""){
+                if (TriggerManager.GetTrigger(nodes[node].trigger)){
+                    return false;
+                }
+            }
+            else{
+                return false;
+            }
+        }
+        return true;
     }
 
     public void reset(){
