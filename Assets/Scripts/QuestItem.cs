@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class QuestItem : MonoBehaviour {
 
-	Quest quest;
+	List<Quest> quests = new List<Quest>();
 	
 	[SerializeField]
 	string itemName = "";
@@ -32,18 +32,19 @@ public class QuestItem : MonoBehaviour {
     }
 
 	void Collect(){
-		if (!collected && quest != null && quest.CollectItem(this)){
-			if (triggerName != ""){
-				TriggerManager.UpdateTrigger(triggerName, true);
-			}
-			collected = true;
-			if(disappearOnCollect){
-				gameObject.SetActive(false);
+		foreach(Quest quest in quests){
+			if (quest.CollectItem(this)){
+				if (triggerName != ""){
+					TriggerManager.UpdateTrigger(triggerName, true);
+				}
+				if(disappearOnCollect){
+					gameObject.SetActive(false);
+				}
 			}
 		}
 	}
 
 	public void AssignQuest(Quest quest){
-		this.quest = quest;
+		this.quests.Add(quest);
 	}
 }

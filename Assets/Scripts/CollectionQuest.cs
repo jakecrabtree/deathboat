@@ -10,10 +10,15 @@ public class CollectionQuest : Quest {
 
 	[SerializeField]
 	int remaining; 
+
+	bool[] collected;
 	// Use this for initialization
 	void Start () {
 		AssignQuestItems();
 		remaining = items.Length;
+		if (items.Length > 0){
+			collected = new bool[items.Length];
+		}
 		if (questEnabled){
 			EnableQuest();
 		}
@@ -41,10 +46,15 @@ public class CollectionQuest : Quest {
 	
 	public override bool CollectItem(QuestItem collectedItem){
 		if (questEnabled && questStarted){
-			if (--remaining == 0){
-				CompleteQuest();
+			for (int i = 0; i < items.Length; ++i){
+				if (collectedItem == items[i] && !collected[i]){
+					collected[i] = true;
+					if (--remaining == 0){
+						CompleteQuest();
+					}
+					return true;
+				}
 			}
-			return true;
 		}
 		return false;
 	}
