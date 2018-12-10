@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 2bd8959f5fbd3644aa33af1a155fc147, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -371,13 +371,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
+  questName: charon
+  questCompletedTrigger: charon_completed
+  questStartedTrigger: charon_started
+  questEnabledTrigger: charon_enabled
+  karmaValue: 10
   questEnabled: 0
-  questStarted: 0
+  questStarted: 1
   questCompleted: 0
   questTurnedIn: 0
   defaultDialogueAfterTurnIn: 0
@@ -1811,7 +1811,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Cal
 --- !u!114 &155970205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1823,10 +1823,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Apple
-  questCompletedTrigger: apple_completed
-  questStartedTrigger: apple_started
-  questEnabledTrigger: apple_enabled
+  questName: maitenance
+  questCompletedTrigger: mait_completed
+  questStartedTrigger: mait_started
+  questEnabledTrigger: mait_enabled
   karmaValue: 10
   questEnabled: 1
   questStarted: 0
@@ -1834,7 +1834,7 @@ MonoBehaviour:
   questTurnedIn: 0
   defaultDialogueAfterTurnIn: 1
   items:
-  - {fileID: 389421455}
+  - {fileID: 893425754}
   remaining: 0
 --- !u!114 &155970206
 MonoBehaviour:
@@ -1854,56 +1854,79 @@ MonoBehaviour:
     id: 0
     editorBox:
       serializedVersion: 2
-      x: 20
-      y: 68
+      x: 5
+      y: 51
       width: 100
       height: 75
-  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
-      I\u2019m starving."
-    trigger: apple_enabled
+  - text: "Oh hey there, I\u2019m super swamped with maintenance work, you mind lending
+      me a hand?"
+    trigger: mait_enabled
     priority: 0
     id: 1
     editorBox:
       serializedVersion: 2
-      x: 208
-      y: 68
+      x: 120
+      y: 62
       width: 100
       height: 225
-  - text: An apple? Sure, that will do.
-    trigger: apple_completed
+  - text: So apparently someone put up a rather offensive picture up in the casino
+      that really pissed off some gods. If you find it, do you mind taking it down?
+    trigger: 
     priority: 0
     id: 2
     editorBox:
       serializedVersion: 2
-      x: 374
-      y: 173
+      x: 248
+      y: 68
       width: 100
-      height: 225
-  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
-    trigger: 
+      height: 150
+  - text: "ou took it down? Thank you so much, you have no idea how much of a help
+      you were. Maybe I\u2019ll actually finish everything on my to-do list for once."
+    trigger: mait_completed
     priority: 0
     id: 3
     editorBox:
       serializedVersion: 2
-      x: 532
-      y: 201
+      x: 208
+      y: 327
       width: 100
-      height: 150
-  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
-      rate.
-    trigger: apple_started
+      height: 225
+  - text: I hope the rest of the ride goes well, and again thanks for the help!
+    trigger: 
     priority: 0
     id: 4
     editorBox:
       serializedVersion: 2
-      x: 139
-      y: 333
+      x: 384
+      y: 310
+      width: 100
+      height: 150
+  - text: So much to do...
+    trigger: mait_started
+    priority: 0
+    id: 5
+    editorBox:
+      serializedVersion: 2
+      x: 25
+      y: 315
       width: 100
       height: 225
+  - text: So much to do... Oh, hey friend!
+    trigger: 
+    priority: 0
+    id: 6
+    editorBox:
+      serializedVersion: 2
+      x: 407
+      y: 109
+      width: 100
+      height: 150
   adjList:
-  - edges: 010000000200000004000000
+  - edges: 01000000030000000500000006000000
   - edges: 02000000
   - edges: 03000000
+  - edges: 04000000
+  - edges: 
   - edges: 
   - edges: 
   root: 0
@@ -9758,7 +9781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: 
   triggerName: 
-  disappearOnCollect: 1
+  disappearOnCollect: 0
   collected: 0
 --- !u!114 &457834351
 MonoBehaviour:
@@ -9845,6 +9868,38 @@ CapsuleCollider:
   m_Height: 2.11
   m_Direction: 1
   m_Center: {x: 0, y: 0.73, z: 0}
+--- !u!1 &472785664 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 0c3a27d80d26bcc4aa9c5d03bccc520f,
+    type: 3}
+  m_PrefabInternal: {fileID: 1260799951}
+--- !u!65 &472785665
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 472785664}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &472785666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 472785664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
 --- !u!1 &497614505 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1500583030020254, guid: 1888e0d52c3b9b2478ff44fd6518dca7,
@@ -19001,6 +19056,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4853051293998244, guid: fbdfb0ae5013fca4f83e29733e0bec2b,
     type: 2}
   m_PrefabInternal: {fileID: 892670691}
+--- !u!1 &893425753 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1528687381924372, guid: 875c4026ae8f166498446ff12f4b3998,
+    type: 2}
+  m_PrefabInternal: {fileID: 302442289}
+--- !u!114 &893425754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 893425753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
+--- !u!65 &893425755
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 893425753}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4, y: 6, z: 1.97}
+  m_Center: {x: 0, y: 0, z: 0.53}
 --- !u!1 &895353994 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1500583030020254, guid: 1888e0d52c3b9b2478ff44fd6518dca7,
@@ -24965,7 +25052,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Joseph
 --- !u!114 &1085284346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24974,22 +25061,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1085284343}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Apple
-  questCompletedTrigger: apple_completed
-  questStartedTrigger: apple_started
-  questEnabledTrigger: apple_enabled
-  karmaValue: 10
-  questEnabled: 1
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 1
-  items:
-  - {fileID: 389421455}
-  remaining: 0
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 0
+  collected: 0
 --- !u!114 &1085284347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25008,57 +25086,47 @@ MonoBehaviour:
     id: 0
     editorBox:
       serializedVersion: 2
-      x: 20
-      y: 68
+      x: 24
+      y: 100
       width: 100
       height: 75
-  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
-      I\u2019m starving."
-    trigger: apple_enabled
+  - text: Are you kidding me? He wants me to forgive him for killing me? I had so
+      much going for me, I was about to hit Plat in League!
+    trigger: murder_started
     priority: 0
     id: 1
     editorBox:
       serializedVersion: 2
-      x: 208
-      y: 68
+      x: 144
+      y: 100
       width: 100
       height: 225
-  - text: An apple? Sure, that will do.
-    trigger: apple_completed
+  - text: Wait, what? He said that it was an accident? Oh, well when you put it that
+      way, I guess that makes sense.
+    trigger: 
     priority: 0
     id: 2
     editorBox:
       serializedVersion: 2
-      x: 374
-      y: 173
+      x: 293
+      y: 143
       width: 100
-      height: 225
-  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
+      height: 150
+  - text: "Yeah I guess tell him no worries, shit happens, you know? Tell him I\u2019ll
+      see him around!"
     trigger: 
     priority: 0
     id: 3
     editorBox:
       serializedVersion: 2
-      x: 532
-      y: 201
+      x: 430
+      y: 98
       width: 100
       height: 150
-  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
-      rate.
-    trigger: apple_started
-    priority: 0
-    id: 4
-    editorBox:
-      serializedVersion: 2
-      x: 139
-      y: 333
-      width: 100
-      height: 225
   adjList:
-  - edges: 010000000200000004000000
+  - edges: 01000000
   - edges: 02000000
   - edges: 03000000
-  - edges: 
   - edges: 
   root: 0
   curr: 0
@@ -25118,10 +25186,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Apple
-  questCompletedTrigger: apple_completed
-  questStartedTrigger: apple_started
-  questEnabledTrigger: apple_enabled
+  questName: diving
+  questCompletedTrigger: diving_completed
+  questStartedTrigger: diving_started
+  questEnabledTrigger: diving_enabled
   karmaValue: 10
   questEnabled: 1
   questStarted: 0
@@ -25142,65 +25210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes:
-  - text: 
-    trigger: 
-    priority: 0
-    id: 0
-    editorBox:
-      serializedVersion: 2
-      x: 20
-      y: 68
-      width: 100
-      height: 75
-  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
-      I\u2019m starving."
-    trigger: apple_enabled
-    priority: 0
-    id: 1
-    editorBox:
-      serializedVersion: 2
-      x: 208
-      y: 68
-      width: 100
-      height: 225
-  - text: An apple? Sure, that will do.
-    trigger: apple_completed
-    priority: 0
-    id: 2
-    editorBox:
-      serializedVersion: 2
-      x: 374
-      y: 173
-      width: 100
-      height: 225
-  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
-    trigger: 
-    priority: 0
-    id: 3
-    editorBox:
-      serializedVersion: 2
-      x: 532
-      y: 201
-      width: 100
-      height: 150
-  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
-      rate.
-    trigger: apple_started
-    priority: 0
-    id: 4
-    editorBox:
-      serializedVersion: 2
-      x: 139
-      y: 333
-      width: 100
-      height: 225
-  adjList:
-  - edges: 010000000200000004000000
-  - edges: 02000000
-  - edges: 03000000
-  - edges: 
-  - edges: 
+  nodes: []
+  adjList: []
   root: 0
   curr: 0
 --- !u!65 &1105600343
@@ -25234,7 +25245,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Monique
 --- !u!136 &1108129259
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -25256,22 +25267,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1108129257}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Apple
-  questCompletedTrigger: apple_completed
-  questStartedTrigger: apple_started
-  questEnabledTrigger: apple_enabled
-  karmaValue: 10
-  questEnabled: 1
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 1
-  items:
-  - {fileID: 389421455}
-  remaining: 0
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 0
+  collected: 0
 --- !u!114 &1108129261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25290,57 +25292,48 @@ MonoBehaviour:
     id: 0
     editorBox:
       serializedVersion: 2
-      x: 20
-      y: 68
+      x: 9
+      y: 76
       width: 100
       height: 75
-  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
-      I\u2019m starving."
-    trigger: apple_enabled
+  - text: "Oh my god, I can\u2019t believe I\u2019m dead, now who is going to remember
+      me? I had so many followers on YouTube, I was just about to break 150 people\u2026"
+    trigger: fan_started
     priority: 0
     id: 1
     editorBox:
       serializedVersion: 2
-      x: 208
-      y: 68
+      x: 174
+      y: 57
       width: 100
       height: 225
-  - text: An apple? Sure, that will do.
-    trigger: apple_completed
+  - text: "Huh? That girl over there is a huge fan? OMG of course people would still
+      recognize me, who wouldn\u2019t recognize me even down here? After all I\u2019m
+      basically an A-list celebrity."
+    trigger: 
     priority: 0
     id: 2
     editorBox:
       serializedVersion: 2
-      x: 374
-      y: 173
+      x: 323
+      y: 79
       width: 100
-      height: 225
-  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
+      height: 150
+  - text: "Maybe I\u2019ll go grace her with my presence later. Oh and you can go
+      now, thanks for all of your help."
     trigger: 
     priority: 0
     id: 3
     editorBox:
       serializedVersion: 2
-      x: 532
-      y: 201
+      x: 480
+      y: 105
       width: 100
       height: 150
-  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
-      rate.
-    trigger: apple_started
-    priority: 0
-    id: 4
-    editorBox:
-      serializedVersion: 2
-      x: 139
-      y: 333
-      width: 100
-      height: 225
   adjList:
-  - edges: 010000000200000004000000
+  - edges: 01000000
   - edges: 02000000
   - edges: 03000000
-  - edges: 
   - edges: 
   root: 0
   curr: 0
@@ -32198,7 +32191,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Micah
 --- !u!136 &1496459816
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32223,10 +32216,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Apple
-  questCompletedTrigger: apple_completed
-  questStartedTrigger: apple_started
-  questEnabledTrigger: apple_enabled
+  questName: bible
+  questCompletedTrigger: bible_completed
+  questStartedTrigger: bible_started
+  questEnabledTrigger: bible_enabled
   karmaValue: 10
   questEnabled: 1
   questStarted: 0
@@ -32234,7 +32227,7 @@ MonoBehaviour:
   questTurnedIn: 0
   defaultDialogueAfterTurnIn: 1
   items:
-  - {fileID: 389421455}
+  - {fileID: 472785666}
   remaining: 0
 --- !u!114 &1496459818
 MonoBehaviour:
@@ -32254,56 +32247,80 @@ MonoBehaviour:
     id: 0
     editorBox:
       serializedVersion: 2
-      x: 20
-      y: 68
+      x: 23
+      y: 87
       width: 100
       height: 75
-  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
-      I\u2019m starving."
-    trigger: apple_enabled
+  - text: Hello good Sir, have you seen my Bible anywhere? I absolutely must find
+      it in order to lead people to salvation before we finally arrive at the Kingdom
+      of Heaven.
+    trigger: bible_enabled
     priority: 0
     id: 1
     editorBox:
       serializedVersion: 2
-      x: 208
-      y: 68
+      x: 184
+      y: 94
       width: 100
       height: 225
-  - text: An apple? Sure, that will do.
-    trigger: apple_completed
+  - text: Oh thank you so much for finding it! You certainly have a kind and just
+      soul. You will certainly find a place in salvation once we arrive
+    trigger: bible_completed
     priority: 0
     id: 2
     editorBox:
       serializedVersion: 2
-      x: 374
-      y: 173
+      x: 220
+      y: 329
       width: 100
       height: 225
-  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
+  - text: "I\u2019m sure that this is just one final obstacle to test our true loyalty
+      and belief in our Lord."
     trigger: 
     priority: 0
     id: 3
     editorBox:
       serializedVersion: 2
-      x: 532
-      y: 201
+      x: 374
+      y: 319
       width: 100
       height: 150
-  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
-      rate.
-    trigger: apple_started
+  - text: By the way would you like to hear about our Lord and Saviour?
+    trigger: 
     priority: 0
     id: 4
     editorBox:
       serializedVersion: 2
-      x: 139
-      y: 333
+      x: 538
+      y: 287
+      width: 100
+      height: 150
+  - text: Without the word of God, we are lost in this troubling land.
+    trigger: bible_started
+    priority: 0
+    id: 5
+    editorBox:
+      serializedVersion: 2
+      x: 35
+      y: 297
       width: 100
       height: 225
+  - text: Have you heard the good news about Jesus?
+    trigger: 
+    priority: 0
+    id: 6
+    editorBox:
+      serializedVersion: 2
+      x: 342
+      y: 105
+      width: 100
+      height: 150
   adjList:
-  - edges: 010000000200000004000000
+  - edges: 01000000020000000500000006000000
   - edges: 02000000
   - edges: 03000000
+  - edges: 04000000
+  - edges: 
   - edges: 
   - edges: 
   root: 0
@@ -38897,7 +38914,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Kelly
 --- !u!136 &1770656116
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -38922,10 +38939,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Apple
-  questCompletedTrigger: apple_completed
-  questStartedTrigger: apple_started
-  questEnabledTrigger: apple_enabled
+  questName: fan
+  questCompletedTrigger: fan_completed
+  questStartedTrigger: fan_started
+  questEnabledTrigger: fan_enabled
   karmaValue: 10
   questEnabled: 1
   questStarted: 0
@@ -38933,7 +38950,7 @@ MonoBehaviour:
   questTurnedIn: 0
   defaultDialogueAfterTurnIn: 1
   items:
-  - {fileID: 389421455}
+  - {fileID: 1108129260}
   remaining: 0
 --- !u!114 &1770656118
 MonoBehaviour:
@@ -38953,56 +38970,67 @@ MonoBehaviour:
     id: 0
     editorBox:
       serializedVersion: 2
-      x: 20
-      y: 68
+      x: 74
+      y: 84
       width: 100
       height: 75
-  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
-      I\u2019m starving."
-    trigger: apple_enabled
+  - text: OMG is that who I think it is over there? OMG I loved her videos so much,
+      her content is sooo deep yet sooo funny.
+    trigger: fan_enabled
     priority: 0
     id: 1
     editorBox:
       serializedVersion: 2
-      x: 208
-      y: 68
+      x: 224
+      y: 80
       width: 100
       height: 225
-  - text: An apple? Sure, that will do.
-    trigger: apple_completed
+  - text: "Could you talk to her for me? I could never approach her, I\u2019d barely
+      be able to form a sentence."
+    trigger: 
     priority: 0
     id: 2
     editorBox:
       serializedVersion: 2
-      x: 374
-      y: 173
+      x: 390
+      y: 92
       width: 100
-      height: 225
-  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
-    trigger: 
+      height: 150
+  - text: She liked it? OMG YAAAAS!! And she said she would come talk to me? OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG
+    trigger: fan_completed
     priority: 0
     id: 3
     editorBox:
       serializedVersion: 2
-      x: 532
-      y: 201
+      x: 76
+      y: 293
       width: 100
-      height: 150
-  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
-      rate.
-    trigger: apple_started
+      height: 225
+  - text: Have you seen her yet? What is she like in person?
+    trigger: fan_started
     priority: 0
     id: 4
     editorBox:
       serializedVersion: 2
-      x: 139
-      y: 333
+      x: 321
+      y: 305
       width: 100
       height: 225
+  - text: OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG
+    trigger: 
+    priority: 0
+    id: 5
+    editorBox:
+      serializedVersion: 2
+      x: 517
+      y: 314
+      width: 100
+      height: 150
   adjList:
-  - edges: 010000000200000004000000
+  - edges: 01000000030000000400000005000000
   - edges: 02000000
   - edges: 03000000
+  - edges: 
   - edges: 
   - edges: 
   root: 0
@@ -39894,7 +39922,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Andy
 --- !u!114 &1826732815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39906,10 +39934,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Apple
-  questCompletedTrigger: apple_completed
-  questStartedTrigger: apple_started
-  questEnabledTrigger: apple_enabled
+  questName: murder
+  questCompletedTrigger: murder_completed
+  questStartedTrigger: murder_started
+  questEnabledTrigger: murder_enabled
   karmaValue: 10
   questEnabled: 1
   questStarted: 0
@@ -39917,7 +39945,7 @@ MonoBehaviour:
   questTurnedIn: 0
   defaultDialogueAfterTurnIn: 1
   items:
-  - {fileID: 389421455}
+  - {fileID: 1085284346}
   remaining: 0
 --- !u!114 &1826732816
 MonoBehaviour:
@@ -39937,56 +39965,102 @@ MonoBehaviour:
     id: 0
     editorBox:
       serializedVersion: 2
-      x: 20
-      y: 68
+      x: 7
+      y: 59
       width: 100
       height: 75
-  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
-      I\u2019m starving."
-    trigger: apple_enabled
+  - text: Oh hey do you mind helping mediate an argument for me?
+    trigger: murder_enabled
     priority: 0
     id: 1
     editorBox:
       serializedVersion: 2
-      x: 208
-      y: 68
+      x: 113
+      y: 48
       width: 100
       height: 225
-  - text: An apple? Sure, that will do.
-    trigger: apple_completed
+  - text: "So anyway I kinda killed that guy over there and he\u2019s a little bit
+      pissed off at me."
+    trigger: 
     priority: 0
     id: 2
     editorBox:
       serializedVersion: 2
-      x: 374
-      y: 173
+      x: 224
+      y: 49
       width: 100
-      height: 225
-  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
+      height: 150
+  - text: "Can you talk to him and tell him that I didn\u2019t mean to kill him? I
+      was trying to kill the person in the next room over but got confused."
     trigger: 
     priority: 0
     id: 3
     editorBox:
       serializedVersion: 2
-      x: 532
-      y: 201
+      x: 340
+      y: 51
       width: 100
       height: 150
-  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
-      rate.
-    trigger: apple_started
+  - text: 'It would be a huge help if you cleared this up for me. '
+    trigger: 
     priority: 0
     id: 4
     editorBox:
       serializedVersion: 2
-      x: 139
-      y: 333
+      x: 453
+      y: 53
+      width: 100
+      height: 150
+  - text: Oh he said it was all cool? Sweet!
+    trigger: murder_completed
+    priority: 0
+    id: 5
+    editorBox:
+      serializedVersion: 2
+      x: 105
+      y: 334
+      width: 100
+      height: 225
+  - text: Man I felt real bad for killing the wrong dude, guess it was karma that
+      I ended up here too.
+    trigger: 
+    priority: 0
+    id: 6
+    editorBox:
+      serializedVersion: 2
+      x: 236
+      y: 353
+      width: 100
+      height: 150
+  - text: Welp, glad it all worked out, shit happens, you know?
+    trigger: 
+    priority: 0
+    id: 7
+    editorBox:
+      serializedVersion: 2
+      x: 355
+      y: 358
+      width: 100
+      height: 150
+  - text: I really hope this guy is okay with everything. From our brief interaction,  he
+      seemed nice
+    trigger: murder_started
+    priority: 0
+    id: 8
+    editorBox:
+      serializedVersion: 2
+      x: 254
+      y: 222
       width: 100
       height: 225
   adjList:
-  - edges: 010000000200000004000000
+  - edges: 010000000500000008000000
   - edges: 02000000
   - edges: 03000000
+  - edges: 04000000
+  - edges: 05000000
+  - edges: 06000000
+  - edges: 07000000
   - edges: 
   - edges: 
   root: 0
@@ -41473,7 +41547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: 
   triggerName: 
-  disappearOnCollect: 1
+  disappearOnCollect: 0
   collected: 0
 --- !u!114 &2035452829
 MonoBehaviour:
