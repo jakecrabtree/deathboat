@@ -793,8 +793,8 @@ MonoBehaviour:
     id: 2
     editorBox:
       serializedVersion: 2
-      x: 270
-      y: 202
+      x: 205
+      y: 251
       width: 100
       height: 225
   - text: Thanks for finding my boys
@@ -803,8 +803,8 @@ MonoBehaviour:
     id: 3
     editorBox:
       serializedVersion: 2
-      x: 474
-      y: 134
+      x: 424
+      y: 83
       width: 100
       height: 225
   adjList:
@@ -865,7 +865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 1394007300}
   tree: {fileID: 1345886807}
-  quest: {fileID: 0}
+  quest: {fileID: 1345886808}
   speakerName: Boy Leader
 --- !u!114 &1394007300 stripped
 MonoBehaviour:

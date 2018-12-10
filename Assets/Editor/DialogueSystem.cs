@@ -148,17 +148,17 @@ public class DialogueSystem : EditorWindow {
 				deleted = true;
 			}
 			GUILayout.Label("Dialogue Text");
-			window.text = GUILayout.TextField(window.text);
+			window.text = EditorGUILayout.TextField(window.text);
 			bool prevHasTrigger = window.hasTrigger;
 			if (window.hasTrigger = GUILayout.Toggle(window.hasTrigger, "Trigger")){
 				if (window.hasTrigger != prevHasTrigger){
 					windows[id].window.height += 75;
 				}
 				GUILayout.Label("Trigger Name");
-				window.triggerString = GUILayout.TextField(window.triggerString, 20);
+				window.triggerString = EditorGUILayout.TextField(window.triggerString);
 				GUILayout.Label("Priority");
 				int val;
-				if (int.TryParse(GUILayout.TextField(window.triggerPriority.ToString(), 1), out val)){
+				if (int.TryParse(EditorGUILayout.TextField(window.triggerPriority.ToString()), out val)){
 					window.triggerPriority = val;
 				}
 				else{
