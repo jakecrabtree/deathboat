@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 	
@@ -18,6 +19,12 @@ public class GameManager : MonoBehaviour {
 	string[] scoreLevelNames;
 
 	[SerializeField]
+	string[] scoreLevelDescriptions;
+
+	[SerializeField]
+	string[] scoreLevelFlavorTexts;
+
+	[SerializeField]
 	int startingScore = -25;
 
 	[SerializeField]
@@ -28,11 +35,19 @@ public class GameManager : MonoBehaviour {
 
 	int currentScore;
 	int scoreOffset = 0;
+
+	bool gameIsOver = false;
 	public SimpleHealthBar healthBar;
+
 	public Text scoreText;
 	public Text scoreThresholdText;
 
 	public Text timerText;
+
+	[SerializeField]
+	private GameObject endGameBox;
+
+	
 	
 
 	void Awake()
@@ -44,9 +59,9 @@ public class GameManager : MonoBehaviour {
 		else if (instance != this){
 			Destroy(gameObject);   
 		} 
-		DontDestroyOnLoad(gameObject);
 		InitGame();
 	}
+	
 
 	void InitGame(){
 		currentScore = startingScore;
@@ -54,16 +69,32 @@ public class GameManager : MonoBehaviour {
 		scoreOffset = -1 * lowerScoreBound;
 		UpdateScoreBar();
 		UpdateTimerUI();
+		endGameBox.SetActive(false);
 	}
 
 	void GameOver(){
 		Debug.Log("game over");
+		Time.timeScale = 0.0f;
+		endGameBox.SetActive(true);
+		int finalLevel = CurrentLevel(currentScore);
+		endGameBox.transform.GetChild(3).GetComponent<Text>().text = scoreLevelFlavorTexts[finalLevel];
+		endGameBox.transform.GetChild(4).GetComponent<Text>().text = scoreLevelDescriptions[finalLevel];
+		gameIsOver = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		timeRemaining = Mathf.Max(timeRemaining - Time.deltaTime, 0);
 		UpdateTimerUI();
+		if (gameIsOver){
+			if (Input.GetKeyDown(KeyCode.Return)){
+				Scene scene = SceneManager.GetActiveScene(); 
+				SceneManager.LoadScene(scene.name);
+				Time.timeScale = 1.0f;
+			}else if (Input.GetKeyDown(KeyCode.Escape)){
+				Application.Quit();
+			}
+		}
 	}
 
 	void UpdateTimerUI(){
@@ -86,15 +117,15 @@ public class GameManager : MonoBehaviour {
 	void UpdateScoreBar(){
 		healthBar.UpdateBar(currentScore + scoreOffset, upperScoreBound + scoreOffset);
 		scoreText.text = currentScore.ToString();
-		scoreThresholdText.text = CurrentLevel(currentScore);
+		scoreThresholdText.text = scoreLevelNames[CurrentLevel(currentScore)];
 	}
 
-	string CurrentLevel(int score){
+	int CurrentLevel(int score){
 		for (int i = 0; i < scoreThresholds.Length; ++i){
 			if (score < scoreThresholds[i]){
-				return scoreLevelNames[i];
+				return i;
 			}
 		}
-		return scoreLevelNames[scoreLevelNames.Length-1];
+		return scoreLevelNames.Length-1;
 	}
 }

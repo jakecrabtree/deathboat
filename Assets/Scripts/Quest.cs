@@ -6,7 +6,7 @@ public abstract class Quest : MonoBehaviour {
 
 	private static string questIndicatorPrefabPath = "exclamation";
 
-	private static Vector3 questIndicatorPositionOffset = new Vector3(0, 0.91f, 0);
+	private static Vector3 questIndicatorPositionOffset = new Vector3(0, 1.85f, 0);
 
 
 	[SerializeField]
