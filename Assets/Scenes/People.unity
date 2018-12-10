@@ -360,6 +360,32 @@ CapsuleCollider:
   m_Height: 2.11
   m_Direction: 1
   m_Center: {x: 0, y: 0.73, z: 0}
+--- !u!114 &40929811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 40929809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edbabfa15a66a4a94a3045bc4ef9dcd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 1260094928}
+  tree: {fileID: 0}
+  quest: {fileID: 0}
+  nextTriggerStrings:
+  - charon_1
+  - charon_2
+  - charon_3
+  - charon_4
+  - charon_5
+  - charon_6
+  - charon_7
+  - charon_8
+  - charon_9
+  - charon_10
+  speakerName: Charon
 --- !u!114 &40929812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,8 +429,8 @@ MonoBehaviour:
     id: 0
     editorBox:
       serializedVersion: 2
-      x: 9
-      y: 67
+      x: 170
+      y: 77
       width: 100
       height: 75
   - text: Oh Timothy? Hides in the corner of the second floor?
@@ -413,8 +439,8 @@ MonoBehaviour:
     id: 1
     editorBox:
       serializedVersion: 2
-      x: 137
-      y: 60
+      x: 259
+      y: 145
       width: 100
       height: 300
   - text: "Yeah I know em, don\u2019t care. I already got his coin anyway. If he wants
@@ -425,31 +451,304 @@ MonoBehaviour:
     id: 2
     editorBox:
       serializedVersion: 2
-      x: 292
-      y: 44
+      x: 215
+      y: 71
       width: 100
       height: 150
+  - text: Welcome to my boat!
+    trigger: 
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 56
+      y: 274
+      width: 100
+      height: 150
+  - text: "Hello, my name is Charon, I\u2019m the captain of this ship. Feel free
+      to do whatever you want, it\u2019s gonna be the last chance you get..."
+    trigger: charon_1
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 374
+      y: 74
+      width: 100
+      height: 225
+  - text: Yes? What do you want?
+    trigger: charon_2
+    priority: 0
+    id: 5
+    editorBox:
+      serializedVersion: 2
+      x: 201
+      y: 78
+      width: 100
+      height: 225
+  - text: "The music? My music is my soul, don\u2019t you dare question it unless
+      you enjoy damnation."
+    trigger: 
+    priority: 0
+    id: 6
+    editorBox:
+      serializedVersion: 2
+      x: 17
+      y: 132
+      width: 100
+      height: 150
+  - text: Why is this a cruise ship, you ask?
+    trigger: charon_3
+    priority: 0
+    id: 7
+    editorBox:
+      serializedVersion: 2
+      x: 7
+      y: 109
+      width: 100
+      height: 225
+  - text: First off, rowing a tiny boat with my tiny arms sucks. And do you realize
+      how many of you humans die everyday, and how many trips that is?
+    trigger: 
+    priority: 0
+    id: 8
+    editorBox:
+      serializedVersion: 2
+      x: 12
+      y: 181
+      width: 100
+      height: 150
+  - text: "And the money? Well let\u2019s just say after taking a cut of all that
+      entry fee gold, someone can buy themselves something nice."
+    trigger: 
+    priority: 0
+    id: 9
+    editorBox:
+      serializedVersion: 2
+      x: 13
+      y: 186
+      width: 100
+      height: 150
+  - text: "Am I supposed to take a cut of the gold? Ehhhhh what the Big Guy isn\u2019t
+      aware of won\u2019t hurt\u2026 me."
+    trigger: charon_4
+    priority: 0
+    id: 10
+    editorBox:
+      serializedVersion: 2
+      x: 11
+      y: 119
+      width: 100
+      height: 225
+  - text: "I mean I\u2019m slaving away, bringing him all the souls of the world,
+      and he just gets to chill down there in his palace. I feel like I deserve some
+      luxuries too ya know?"
+    trigger: 
+    priority: 0
+    id: 11
+    editorBox:
+      serializedVersion: 2
+      x: 30
+      y: 160
+      width: 100
+      height: 150
+  - text: "You like all the pictures I got up all over the place? Yeah they\u2019re
+      alright, I was forced to put them all up, those narcissistic bastards."
+    trigger: charon_5
+    priority: 0
+    id: 12
+    editorBox:
+      serializedVersion: 2
+      x: 13
+      y: 171
+      width: 100
+      height: 225
+  - text: "Do they really think everyone wants to look at their faces all the time?
+      Most people didn\u2019t even know that they existed before they arrived here."
+    trigger: 
+    priority: 0
+    id: 13
+    editorBox:
+      serializedVersion: 2
+      x: 20
+      y: 261
+      width: 100
+      height: 150
+  - text: "But it\u2019s not like I care, whatever convinces them to let me keep this
+      boat of mine."
+    trigger: 
+    priority: 0
+    id: 14
+    editorBox:
+      serializedVersion: 2
+      x: 24
+      y: 234
+      width: 100
+      height: 150
+  - text: Do I just stay up here all the time? Yeah basically, I have several underlings
+      to do all the grunt work for me.
+    trigger: charon_6
+    priority: 0
+    id: 15
+    editorBox:
+      serializedVersion: 2
+      x: 35
+      y: 177
+      width: 100
+      height: 225
+  - text: After several millennia of ferrying souls, you just get sick of it all ya
+      know? I prefer to just keep to myself now, none of you humans care about old
+      Charon anyways.
+    trigger: 
+    priority: 0
+    id: 16
+    editorBox:
+      serializedVersion: 2
+      x: 43
+      y: 253
+      width: 100
+      height: 150
+  - text: "I don\u2019t really partake in any of the activities on the ship, I just
+      like the ship itself. Mortal activities don\u2019t really interest me."
+    trigger: charon_7
+    priority: 0
+    id: 17
+    editorBox:
+      serializedVersion: 2
+      x: 507
+      y: 86
+      width: 100
+      height: 225
+  - text: I just added all this stuff so everyone can have one last taste of earthly
+      desires before they get to the fields. Thought that they would appreciate it.
+    trigger: 
+    priority: 0
+    id: 18
+    editorBox:
+      serializedVersion: 2
+      x: 597
+      y: 277
+      width: 100
+      height: 150
+  - text: "You know, being immortal isn\u2019t everything it\u2019s all chalked up
+      to be. I\u2019ve been doing the same gods-damned thing for\u2026 well\u2026
+      ever."
+    trigger: charon_8
+    priority: 0
+    id: 19
+    editorBox:
+      serializedVersion: 2
+      x: 399
+      y: 342
+      width: 100
+      height: 225
+  - text: "I don\u2019t get any contact with others, really. I don\u2019t see any
+      of the other gods, and all of you mortals are just little blips in time for
+      me, why should I get to know them?"
+    trigger: 
+    priority: 0
+    id: 20
+    editorBox:
+      serializedVersion: 2
+      x: 611
+      y: 443
+      width: 100
+      height: 150
+  - text: " wish I could do something else, get a promotion maybe\u2026 Hahaha (wheeze)
+      no way in Hades that would happen."
+    trigger: charon_9
+    priority: 0
+    id: 21
+    editorBox:
+      serializedVersion: 2
+      x: 128
+      y: 370
+      width: 100
+      height: 225
+  - text: "Maybe one day the Big Guy will notice my hard work, but I probably shouldn\u2019t
+      get my hopes up."
+    trigger: 
+    priority: 0
+    id: 22
+    editorBox:
+      serializedVersion: 2
+      x: 310
+      y: 382
+      width: 100
+      height: 150
+  - text: I guess I should focus on appreciating the little things in afterlife...
+      like my boat.
+    trigger: 
+    priority: 0
+    id: 23
+    editorBox:
+      serializedVersion: 2
+      x: 202
+      y: 384
+      width: 100
+      height: 150
+  - text: "Hey man, thanks for taking the time to talk to me. I can\u2019t remember
+      the last time someone actually cared about how I feel."
+    trigger: charon_10
+    priority: 0
+    id: 24
+    editorBox:
+      serializedVersion: 2
+      x: 318
+      y: 88
+      width: 100
+      height: 225
+  - text: "You\u2019re actually a pretty good guy... Ya know, ignoring all that stuff
+      you did while you were alive."
+    trigger: 
+    priority: 0
+    id: 25
+    editorBox:
+      serializedVersion: 2
+      x: 367
+      y: 152
+      width: 100
+      height: 150
+  - text: "Here\u2019s a little something for letting me vent."
+    trigger: charon_completed
+    priority: 0
+    id: 26
+    editorBox:
+      serializedVersion: 2
+      x: 189
+      y: 95
+      width: 100
+      height: 225
   adjList:
-  - edges: 01000000
+  - edges: 01000000030000000400000005000000070000000a0000000c0000000f00000011000000130000001500000018000000
   - edges: 02000000
+  - edges: 
+  - edges: 
+  - edges: 
+  - edges: 06000000
+  - edges: 
+  - edges: 08000000
+  - edges: 09000000
+  - edges: 
+  - edges: 0b000000
+  - edges: 
+  - edges: 0d000000
+  - edges: 0e000000
+  - edges: 
+  - edges: 10000000
+  - edges: 
+  - edges: 12000000
+  - edges: 
+  - edges: 14000000
+  - edges: 
+  - edges: 16000000
+  - edges: 17000000
+  - edges: 
+  - edges: 19000000
+  - edges: 
   - edges: 
   root: 0
   curr: 0
---- !u!114 &40929814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 40929809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68bfe53f2f5584dd6b5e61851d84fd0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 1260094928}
-  tree: {fileID: 0}
-  quest: {fileID: 0}
-  speakerName: Charon
 --- !u!114 &40929815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9885,7 +10184,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 472785664}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
@@ -14226,7 +14525,7 @@ MonoBehaviour:
       width: 100
       height: 150
   - text: He said he save some? But only for more gambling?
-    trigger: addict_complete
+    trigger: addict_completed
     priority: 0
     id: 4
     editorBox:
@@ -25558,7 +25857,7 @@ MonoBehaviour:
   karmaValue: 10
   questEnabled: 1
   questStarted: 0
-  questCompleted: 1
+  questCompleted: 0
   questTurnedIn: 0
   secretQuest: 0
   defaultDialogueAfterTurnIn: 1

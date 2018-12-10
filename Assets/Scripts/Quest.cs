@@ -61,9 +61,11 @@ public abstract class Quest : MonoBehaviour {
 	}
 
 	protected void ChangeQuestIndicatorColor(Color color){
-		Renderer[] renderers = questIndicator.GetComponentsInChildren<Renderer>();
-		foreach(Renderer renderer in renderers){
-			renderer.material.color = color;
+		if (!secretQuest){
+			Renderer[] renderers = questIndicator.GetComponentsInChildren<Renderer>();
+			foreach(Renderer renderer in renderers){
+				renderer.material.color = color;
+			}
 		}
 	}
 
@@ -101,7 +103,16 @@ public abstract class Quest : MonoBehaviour {
 		return false;
 	}
 
-	protected abstract void CompleteQuest();
+	
+	public void CompleteQuest(){
+		if (!questCompleted){
+			TriggerManager.UpdateTrigger(questCompletedTrigger, true);
+			TriggerManager.UpdateTrigger(questEnabledTrigger, false);
+			TriggerManager.UpdateTrigger(questStartedTrigger, false);
+			ChangeQuestIndicatorColor(Color.green);
+			questCompleted = true;
+		}
+	}
 
 
 }

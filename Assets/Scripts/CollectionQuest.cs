@@ -61,12 +61,4 @@ public class CollectionQuest : Quest {
 		}
 		return false;
 	}
-
-	protected override void CompleteQuest(){
-		TriggerManager.UpdateTrigger(questCompletedTrigger, true);
-		TriggerManager.UpdateTrigger(questEnabledTrigger, false);
-		TriggerManager.UpdateTrigger(questStartedTrigger, false);
-		ChangeQuestIndicatorColor(Color.green);
-		questCompleted = true;
-	}
 }
