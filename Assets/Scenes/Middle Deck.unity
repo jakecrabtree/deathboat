@@ -908,6 +908,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65069129735114172, guid: c1f46e44aea08f54c81499d374c784fc,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
   m_IsPrefabAsset: 0
@@ -1564,6 +1569,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65021474193211024, guid: e7828b386c052e0468f0659323b74944,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7828b386c052e0468f0659323b74944, type: 2}
   m_IsPrefabAsset: 0
@@ -1948,6 +1958,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 65021474193211024, guid: e7828b386c052e0468f0659323b74944,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7828b386c052e0468f0659323b74944, type: 2}
   m_IsPrefabAsset: 0
@@ -2069,9 +2084,120 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65069129735114172, guid: c1f46e44aea08f54c81499d374c784fc,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &202465364 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1286435405371750, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1306613651}
+--- !u!114 &202465365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 202465364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &202465366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 202465364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &202465367
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 202465364}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &250731785
 Prefab:
   m_ObjectHideFlags: 0
@@ -2264,6 +2390,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65069129735114172, guid: c1f46e44aea08f54c81499d374c784fc,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
   m_IsPrefabAsset: 0
@@ -2337,6 +2468,11 @@ Prefab:
     - target: {fileID: 1605388740770426, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 65250784773279130, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
@@ -2412,6 +2548,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65250784773279130, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
   m_IsPrefabAsset: 0
@@ -2485,6 +2626,11 @@ Prefab:
     - target: {fileID: 1329784471248648, guid: e7828b386c052e0468f0659323b74944, type: 2}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 65021474193211024, guid: e7828b386c052e0468f0659323b74944,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7828b386c052e0468f0659323b74944, type: 2}
@@ -2564,6 +2710,11 @@ Prefab:
     - target: {fileID: 1329784471248648, guid: e7828b386c052e0468f0659323b74944, type: 2}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 65021474193211024, guid: e7828b386c052e0468f0659323b74944,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7828b386c052e0468f0659323b74944, type: 2}
@@ -2746,6 +2897,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4953926459439942, guid: 8717f9cbcd00ce84aaa971d81b17fa0a,
     type: 2}
   m_PrefabInternal: {fileID: 312333290}
+--- !u!1 &314327988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1206941603574484, guid: c1f46e44aea08f54c81499d374c784fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 260559815}
+--- !u!114 &314327989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 314327988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &314327990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 314327988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &314327991
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 314327988}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &316704283 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1159077361914802, guid: e7828b386c052e0468f0659323b74944,
@@ -2864,6 +3121,112 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a1963e3ab78e43b7f212207a63157, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &336396422 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1286435405371750, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+    type: 2}
+  m_PrefabInternal: {fileID: 262351875}
+--- !u!114 &336396423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 336396422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &336396424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 336396422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &336396425
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 336396422}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &348218357 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1286435405371750, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
@@ -2968,6 +3331,11 @@ Prefab:
     - target: {fileID: 1329784471248648, guid: e7828b386c052e0468f0659323b74944, type: 2}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 65021474193211024, guid: e7828b386c052e0468f0659323b74944,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7828b386c052e0468f0659323b74944, type: 2}
@@ -3138,6 +3506,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65069129735114172, guid: c1f46e44aea08f54c81499d374c784fc,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
   m_IsPrefabAsset: 0
@@ -3241,6 +3614,11 @@ Prefab:
     - target: {fileID: 1605388740770426, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 65250784773279130, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
@@ -3382,6 +3760,11 @@ Prefab:
     - target: {fileID: 1605388740770426, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 65250784773279130, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
@@ -3617,6 +4000,112 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a1963e3ab78e43b7f212207a63157, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &455919635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159077361914802, guid: e7828b386c052e0468f0659323b74944,
+    type: 2}
+  m_PrefabInternal: {fileID: 1296873525}
+--- !u!114 &455919636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 455919635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &455919637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 455919635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &455919638
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 455919635}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &457678543 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4297910140985456, guid: e7828b386c052e0468f0659323b74944,
@@ -3767,6 +4256,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4953926459439942, guid: 8717f9cbcd00ce84aaa971d81b17fa0a,
     type: 2}
   m_PrefabInternal: {fileID: 498080511}
+--- !u!1 &498952653 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1286435405371750, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1330455555}
+--- !u!114 &498952654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 498952653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &498952655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 498952653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &498952656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 498952653}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &502982925
 Prefab:
   m_ObjectHideFlags: 0
@@ -3902,6 +4497,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65250784773279130, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
   m_IsPrefabAsset: 0
@@ -3981,9 +4581,120 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65250784773279130, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &546751927 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1286435405371750, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1386164496}
+--- !u!114 &546751928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546751927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &546751929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546751927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &546751930
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546751927}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &581924400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4580144722020342, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
@@ -4060,6 +4771,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65250784773279130, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
   m_IsPrefabAsset: 0
@@ -4073,6 +4789,218 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4297910140985456, guid: e7828b386c052e0468f0659323b74944,
     type: 2}
   m_PrefabInternal: {fileID: 1853499503}
+--- !u!1 &607277547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159077361914802, guid: e7828b386c052e0468f0659323b74944,
+    type: 2}
+  m_PrefabInternal: {fileID: 157222696}
+--- !u!114 &607277548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 607277547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &607277549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 607277547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &607277550
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 607277547}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &609325532 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159077361914802, guid: e7828b386c052e0468f0659323b74944,
+    type: 2}
+  m_PrefabInternal: {fileID: 1517886343}
+--- !u!114 &609325533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 609325532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &609325534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 609325532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &609325535
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 609325532}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &611483562
 Prefab:
   m_ObjectHideFlags: 0
@@ -4144,6 +5072,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4953926459439942, guid: 8717f9cbcd00ce84aaa971d81b17fa0a,
     type: 2}
   m_PrefabInternal: {fileID: 611483562}
+--- !u!1 &615501058 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1286435405371750, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+    type: 2}
+  m_PrefabInternal: {fileID: 582956719}
+--- !u!114 &615501059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 615501058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &615501060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 615501058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &615501061
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 615501058}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &624465494
 Prefab:
   m_ObjectHideFlags: 0
@@ -4211,6 +5245,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4953926459439942, guid: 8717f9cbcd00ce84aaa971d81b17fa0a,
     type: 2}
   m_PrefabInternal: {fileID: 624465494}
+--- !u!1 &628121867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1206941603574484, guid: c1f46e44aea08f54c81499d374c784fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 198945489}
+--- !u!114 &628121868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 628121867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &628121869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 628121867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &628121870
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 628121867}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &634145938
 Prefab:
   m_ObjectHideFlags: 0
@@ -4955,6 +6095,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4297910140985456, guid: e7828b386c052e0468f0659323b74944,
     type: 2}
   m_PrefabInternal: {fileID: 1115156227}
+--- !u!1 &749689029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1286435405371750, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+    type: 2}
+  m_PrefabInternal: {fileID: 424776473}
+--- !u!114 &749689030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 749689029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &749689031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 749689029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &749689032
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 749689029}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &754318337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4297910140985456, guid: e7828b386c052e0468f0659323b74944,
@@ -5140,6 +6386,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4580144722020342, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
     type: 2}
   m_PrefabInternal: {fileID: 1716947390}
+--- !u!1 &782193982 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1206941603574484, guid: c1f46e44aea08f54c81499d374c784fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1224535308}
+--- !u!114 &782193983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 782193982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &782193984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 782193982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &782193985
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 782193982}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &804377219
 GameObject:
   m_ObjectHideFlags: 0
@@ -5291,6 +6643,11 @@ Prefab:
     - target: {fileID: 1108420408727756, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 65069129735114172, guid: c1f46e44aea08f54c81499d374c784fc,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
@@ -5466,6 +6823,11 @@ Prefab:
     - target: {fileID: 1605388740770426, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 65250784773279130, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
@@ -5656,6 +7018,112 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &825880670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1286435405371750, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+    type: 2}
+  m_PrefabInternal: {fileID: 262966687}
+--- !u!114 &825880671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 825880670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &825880672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 825880670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &825880673
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 825880670}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &829551961 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4297910140985456, guid: e7828b386c052e0468f0659323b74944,
@@ -5785,6 +7253,112 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a1963e3ab78e43b7f212207a63157, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &856859074 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1206941603574484, guid: c1f46e44aea08f54c81499d374c784fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1372947939}
+--- !u!114 &856859075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 856859074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &856859076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 856859074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &856859077
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 856859074}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &863805597
 GameObject:
   m_ObjectHideFlags: 0
@@ -5870,6 +7444,112 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 863805597}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &868245630 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1206941603574484, guid: c1f46e44aea08f54c81499d374c784fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1731032620}
+--- !u!114 &868245631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 868245630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &868245632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 868245630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &868245633
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 868245630}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &878140344
 GameObject:
   m_ObjectHideFlags: 0
@@ -5973,6 +7653,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65021474193211024, guid: e7828b386c052e0468f0659323b74944,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7828b386c052e0468f0659323b74944, type: 2}
   m_IsPrefabAsset: 0
@@ -6046,6 +7731,11 @@ Prefab:
     - target: {fileID: 1108420408727756, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 65069129735114172, guid: c1f46e44aea08f54c81499d374c784fc,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
@@ -6304,6 +7994,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65021474193211024, guid: e7828b386c052e0468f0659323b74944,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7828b386c052e0468f0659323b74944, type: 2}
   m_IsPrefabAsset: 0
@@ -6397,6 +8092,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4297910140985456, guid: e7828b386c052e0468f0659323b74944,
     type: 2}
   m_PrefabInternal: {fileID: 1517886343}
+--- !u!1 &953585897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1286435405371750, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+    type: 2}
+  m_PrefabInternal: {fileID: 2098871442}
+--- !u!114 &953585898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 953585897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &953585899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 953585897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &953585900
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 953585897}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &961741322
 GameObject:
   m_ObjectHideFlags: 0
@@ -13830,6 +15631,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65069129735114172, guid: c1f46e44aea08f54c81499d374c784fc,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
   m_IsPrefabAsset: 0
@@ -13871,6 +15677,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4297910140985456, guid: e7828b386c052e0468f0659323b74944,
     type: 2}
   m_PrefabInternal: {fileID: 350360541}
+--- !u!1 &1011513620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159077361914802, guid: e7828b386c052e0468f0659323b74944,
+    type: 2}
+  m_PrefabInternal: {fileID: 1115156227}
+--- !u!114 &1011513621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1011513620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1011513622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1011513620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1011513623
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1011513620}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1019182396 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4580144722020342, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
@@ -14056,6 +15968,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4297910140985456, guid: e7828b386c052e0468f0659323b74944,
     type: 2}
   m_PrefabInternal: {fileID: 284879246}
+--- !u!1 &1041735679 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159077361914802, guid: e7828b386c052e0468f0659323b74944,
+    type: 2}
+  m_PrefabInternal: {fileID: 139966293}
+--- !u!114 &1041735680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1041735679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1041735681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1041735679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1041735682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1041735679}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1044342561
 Prefab:
   m_ObjectHideFlags: 0
@@ -14126,6 +16144,11 @@ Prefab:
     - target: {fileID: 1329784471248648, guid: e7828b386c052e0468f0659323b74944, type: 2}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 65021474193211024, guid: e7828b386c052e0468f0659323b74944,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7828b386c052e0468f0659323b74944, type: 2}
@@ -14518,6 +16541,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 65069129735114172, guid: c1f46e44aea08f54c81499d374c784fc,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
   m_IsPrefabAsset: 0
@@ -14596,6 +16624,11 @@ Prefab:
     - target: {fileID: 1329784471248648, guid: e7828b386c052e0468f0659323b74944, type: 2}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 65021474193211024, guid: e7828b386c052e0468f0659323b74944,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7828b386c052e0468f0659323b74944, type: 2}
@@ -14847,9 +16880,226 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65069129735114172, guid: c1f46e44aea08f54c81499d374c784fc,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1231537441 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1206941603574484, guid: c1f46e44aea08f54c81499d374c784fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1373889164}
+--- !u!114 &1231537442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1231537441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1231537443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1231537441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1231537444
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1231537441}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1233083616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159077361914802, guid: e7828b386c052e0468f0659323b74944,
+    type: 2}
+  m_PrefabInternal: {fileID: 917613230}
+--- !u!114 &1233083617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1233083616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1233083618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1233083616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1233083619
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1233083616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1233858547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4600570949371038, guid: c1f46e44aea08f54c81499d374c784fc,
@@ -14982,6 +17232,11 @@ Prefab:
     - target: {fileID: 1206941603574484, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
       propertyPath: m_Name
       value: slots 3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 65069129735114172, guid: c1f46e44aea08f54c81499d374c784fc,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
@@ -15142,6 +17397,218 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1261665822}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1263353294 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1206941603574484, guid: c1f46e44aea08f54c81499d374c784fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 79622783}
+--- !u!114 &1263353295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263353294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1263353296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263353294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1263353297
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263353294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1263468578 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1206941603574484, guid: c1f46e44aea08f54c81499d374c784fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1293211577}
+--- !u!114 &1263468579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263468578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1263468580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263468578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1263468581
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263468578}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1270648670
 GameObject:
   m_ObjectHideFlags: 0
@@ -15312,6 +17779,112 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1275668436}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1279431330 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1286435405371750, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+    type: 2}
+  m_PrefabInternal: {fileID: 820394321}
+--- !u!114 &1279431331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1279431330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1279431332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1279431330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1279431333
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1279431330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1282717255
 Prefab:
   m_ObjectHideFlags: 0
@@ -15382,6 +17955,11 @@ Prefab:
     - target: {fileID: 1108420408727756, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 65069129735114172, guid: c1f46e44aea08f54c81499d374c784fc,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
@@ -15543,6 +18121,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65069129735114172, guid: c1f46e44aea08f54c81499d374c784fc,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
   m_IsPrefabAsset: 0
@@ -15612,6 +18195,11 @@ Prefab:
     - target: {fileID: 1329784471248648, guid: e7828b386c052e0468f0659323b74944, type: 2}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 65021474193211024, guid: e7828b386c052e0468f0659323b74944,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7828b386c052e0468f0659323b74944, type: 2}
@@ -15692,9 +18280,120 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65250784773279130, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1321181925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159077361914802, guid: e7828b386c052e0468f0659323b74944,
+    type: 2}
+  m_PrefabInternal: {fileID: 1853499503}
+--- !u!114 &1321181926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1321181925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1321181927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1321181925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1321181928
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1321181925}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1330455555
 Prefab:
   m_ObjectHideFlags: 0
@@ -15761,6 +18460,11 @@ Prefab:
     - target: {fileID: 1605388740770426, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 65250784773279130, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
@@ -15850,6 +18554,112 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1331040025}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1331559018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1286435405371750, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+    type: 2}
+  m_PrefabInternal: {fileID: 538411036}
+--- !u!114 &1331559019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1331559018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1331559020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1331559018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1331559021
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1331559018}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1335639827
 GameObject:
   m_ObjectHideFlags: 0
@@ -15985,6 +18795,112 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1349198567}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1354789710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159077361914802, guid: e7828b386c052e0468f0659323b74944,
+    type: 2}
+  m_PrefabInternal: {fileID: 1758240213}
+--- !u!114 &1354789711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1354789710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1354789712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1354789710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1354789713
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1354789710}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1372947939
 Prefab:
   m_ObjectHideFlags: 0
@@ -16055,6 +18971,11 @@ Prefab:
     - target: {fileID: 1108420408727756, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 65069129735114172, guid: c1f46e44aea08f54c81499d374c784fc,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
@@ -16130,6 +19051,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65069129735114172, guid: c1f46e44aea08f54c81499d374c784fc,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
   m_IsPrefabAsset: 0
@@ -16138,6 +19064,218 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4600570949371038, guid: c1f46e44aea08f54c81499d374c784fc,
     type: 2}
   m_PrefabInternal: {fileID: 1373889164}
+--- !u!1 &1378092035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159077361914802, guid: e7828b386c052e0468f0659323b74944,
+    type: 2}
+  m_PrefabInternal: {fileID: 1044342561}
+--- !u!114 &1378092036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1378092035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1378092037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1378092035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1378092038
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1378092035}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1380095051 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1206941603574484, guid: c1f46e44aea08f54c81499d374c784fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 879726990}
+--- !u!114 &1380095052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1380095051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1380095053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1380095051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1380095054
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1380095051}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1386164496
 Prefab:
   m_ObjectHideFlags: 0
@@ -16208,6 +19346,11 @@ Prefab:
     - target: {fileID: 1605388740770426, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 65250784773279130, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
@@ -16372,6 +19515,112 @@ Transform:
   m_Father: {fileID: 978602193}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1408476687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1206941603574484, guid: c1f46e44aea08f54c81499d374c784fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1098128745}
+--- !u!114 &1408476688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1408476687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1408476689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1408476687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1408476690
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1408476687}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1415713202
 GameObject:
   m_ObjectHideFlags: 0
@@ -16528,6 +19777,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4953926459439942, guid: 8717f9cbcd00ce84aaa971d81b17fa0a,
     type: 2}
   m_PrefabInternal: {fileID: 1432956466}
+--- !u!1 &1438616626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159077361914802, guid: e7828b386c052e0468f0659323b74944,
+    type: 2}
+  m_PrefabInternal: {fileID: 350360541}
+--- !u!114 &1438616627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1438616626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1438616628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1438616626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1438616629
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1438616626}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1443203301
 Prefab:
   m_ObjectHideFlags: 0
@@ -16603,6 +19958,11 @@ Prefab:
       propertyPath: m_Name
       value: mesh_1821488053
       objectReference: {fileID: 0}
+    - target: {fileID: 65069129735114172, guid: c1f46e44aea08f54c81499d374c784fc,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
   m_IsPrefabAsset: 0
@@ -16640,6 +20000,107 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1443203305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1443203302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1443203306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1443203302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1443203307
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1443203302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1456240615
 GameObject:
   m_ObjectHideFlags: 0
@@ -24165,6 +27626,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4953926459439942, guid: 8717f9cbcd00ce84aaa971d81b17fa0a,
     type: 2}
   m_PrefabInternal: {fileID: 1468531178}
+--- !u!1 &1481095164 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1286435405371750, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+    type: 2}
+  m_PrefabInternal: {fileID: 403355894}
+--- !u!114 &1481095165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1481095164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1481095166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1481095164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1481095167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1481095164}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1514110575
 Prefab:
   m_ObjectHideFlags: 0
@@ -24282,9 +27849,120 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65021474193211024, guid: e7828b386c052e0468f0659323b74944,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7828b386c052e0468f0659323b74944, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1546050315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1206941603574484, guid: c1f46e44aea08f54c81499d374c784fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 808121685}
+--- !u!114 &1546050316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1546050315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1546050317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1546050315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1546050318
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1546050315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1548227115
 Prefab:
   m_ObjectHideFlags: 0
@@ -24352,6 +28030,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65250784773279130, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
   m_IsPrefabAsset: 0
@@ -24360,6 +28043,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4580144722020342, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
     type: 2}
   m_PrefabInternal: {fileID: 262351875}
+--- !u!1 &1565734137 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159077361914802, guid: e7828b386c052e0468f0659323b74944,
+    type: 2}
+  m_PrefabInternal: {fileID: 284879246}
+--- !u!114 &1565734138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1565734137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1565734139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1565734137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1565734140
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1565734137}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1573066909 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4580144722020342, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
@@ -25147,6 +28936,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65069129735114172, guid: c1f46e44aea08f54c81499d374c784fc,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
   m_IsPrefabAsset: 0
@@ -25221,9 +29015,120 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65021474193211024, guid: e7828b386c052e0468f0659323b74944,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7828b386c052e0468f0659323b74944, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1760483899 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1206941603574484, guid: c1f46e44aea08f54c81499d374c784fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1833240409}
+--- !u!114 &1760483900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1760483899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1760483901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1760483899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1760483902
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1760483899}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1777327947
 Prefab:
   m_ObjectHideFlags: 0
@@ -25354,6 +29259,112 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a1963e3ab78e43b7f212207a63157, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1781533231 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1206941603574484, guid: c1f46e44aea08f54c81499d374c784fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 360769026}
+--- !u!114 &1781533232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1781533231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1781533233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1781533231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1781533234
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1781533231}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1782140139 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4600570949371038, guid: c1f46e44aea08f54c81499d374c784fc,
@@ -25444,6 +29455,112 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1783124418}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1785025806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159077361914802, guid: e7828b386c052e0468f0659323b74944,
+    type: 2}
+  m_PrefabInternal: {fileID: 305418166}
+--- !u!114 &1785025807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1785025806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1785025808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1785025806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1785025809
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1785025806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1801416156
 GameObject:
   m_ObjectHideFlags: 0
@@ -25760,9 +29877,120 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65069129735114172, guid: c1f46e44aea08f54c81499d374c784fc,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f46e44aea08f54c81499d374c784fc, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1836793965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159077361914802, guid: e7828b386c052e0468f0659323b74944,
+    type: 2}
+  m_PrefabInternal: {fileID: 878242883}
+--- !u!114 &1836793966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1836793965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1836793967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1836793965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1836793968
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1836793965}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1843843624
 GameObject:
   m_ObjectHideFlags: 0
@@ -25848,6 +30076,112 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1843843624}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1847956528 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1286435405371750, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1548227115}
+--- !u!114 &1847956529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1847956528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1847956530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1847956528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1847956531
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1847956528}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1848004888 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4580144722020342, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
@@ -25924,6 +30258,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65021474193211024, guid: e7828b386c052e0468f0659323b74944,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7828b386c052e0468f0659323b74944, type: 2}
   m_IsPrefabAsset: 0
@@ -25998,6 +30337,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4953926459439942, guid: 8717f9cbcd00ce84aaa971d81b17fa0a,
     type: 2}
   m_PrefabInternal: {fileID: 1860227182}
+--- !u!1 &1866060454 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1206941603574484, guid: c1f46e44aea08f54c81499d374c784fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1251864213}
+--- !u!114 &1866060455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1866060454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1866060456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1866060454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1866060457
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1866060454}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1889636317
 GameObject:
   m_ObjectHideFlags: 0
@@ -26864,6 +31309,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4600570949371038, guid: c1f46e44aea08f54c81499d374c784fc,
     type: 2}
   m_PrefabInternal: {fileID: 360769026}
+--- !u!1 &1983098232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1286435405371750, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+    type: 2}
+  m_PrefabInternal: {fileID: 509932600}
+--- !u!114 &1983098233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1983098232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &1983098234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1983098232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &1983098235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1983098232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1986197193
 Prefab:
   m_ObjectHideFlags: 0
@@ -27046,6 +31597,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4172315882091520, guid: 37cbd863573d00241b1627d1324075ac,
     type: 2}
   m_PrefabInternal: {fileID: 1895989512}
+--- !u!1 &2057449420 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1206941603574484, guid: c1f46e44aea08f54c81499d374c784fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1282717255}
+--- !u!114 &2057449421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2057449420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &2057449422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2057449420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &2057449423
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2057449420}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2066380186
 GameObject:
   m_ObjectHideFlags: 0
@@ -27507,6 +32164,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 65250784773279130, guid: 5fa35582fd3ee3f48a8fc120b35c102b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa35582fd3ee3f48a8fc120b35c102b, type: 2}
   m_IsPrefabAsset: 0
@@ -27613,6 +32275,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4953926459439942, guid: 8717f9cbcd00ce84aaa971d81b17fa0a,
     type: 2}
   m_PrefabInternal: {fileID: 2102010501}
+--- !u!1 &2103584803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1206941603574484, guid: c1f46e44aea08f54c81499d374c784fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 972954453}
+--- !u!114 &2103584804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103584803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec2ae54c5f34c28a4d50cf24550391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  tree: {fileID: 0}
+  gameName: Slot Machine
+  winChance: 0.33
+  winAmount: 10
+  loseAmount: 5
+  winTriggerString: slot_win
+  loseTriggerString: slot_lose
+--- !u!114 &2103584805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103584803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: Don't Forget to Add Real Text Here!
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 106
+      width: 100
+      height: 75
+  - text: Press the play button?
+    trigger: 
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 169
+      y: 80
+      width: 100
+      height: 150
+  - text: You lost some karma... Better luck next life!
+    trigger: slot_lose
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 480
+      y: 123
+      width: 100
+      height: 225
+  - text: You gained some karma! See, death isn't so bad after all
+    trigger: slot_win
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 331
+      y: 324
+      width: 100
+      height: 225
+  - text: It didn't do anything
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 337
+      y: 53
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 020000000300000004000000
+  - edges: 
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
+--- !u!65 &2103584806
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103584803}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 3.82, z: 2.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2113922587
 GameObject:
   m_ObjectHideFlags: 0

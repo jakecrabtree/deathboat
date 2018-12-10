@@ -30,7 +30,7 @@ public class SimpleCasinoGame : MonoBehaviour {
 
 	GameManager manager;
 
-    bool started = false;
+    static bool started = false;
     bool played = false;
     
 

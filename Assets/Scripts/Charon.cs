@@ -45,8 +45,6 @@ public class Charon : MonoBehaviour {
             if (other.CompareTag("Player")){
                 started = !dialogueBox.ShowNextDialogue();
                 if (!started && quest != null){
-                    quest.StartQuest();
-                    quest.TurnIn();
                     TriggerManager.UpdateTrigger(nextTriggerStrings[currTriggerString], false);
                     if(currTriggerString < nextTriggerStrings.Length - 1){
                         TriggerManager.UpdateTrigger(nextTriggerStrings[++currTriggerString], true);
@@ -54,6 +52,8 @@ public class Charon : MonoBehaviour {
                     else{
                         quest.CompleteQuest();
                     }
+                    quest.StartQuest();
+                    quest.TurnIn();
                 }
             }
         }else if (Input.GetKeyDown(KeyCode.Escape) && started){
