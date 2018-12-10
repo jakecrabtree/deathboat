@@ -397,6 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
   questName: charon
   questCompletedTrigger: charon_completed
   questStartedTrigger: charon_started
@@ -2124,6 +2125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
   questName: maitenance
   questCompletedTrigger: mait_completed
   questStartedTrigger: mait_started
@@ -4598,6 +4600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
   questName: mom
   questCompletedTrigger: mom_completed
   questStartedTrigger: mom_started
@@ -6723,58 +6726,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4612365265037564, guid: fc3d5a715c8006343b81e0e7183a18b1,
     type: 2}
   m_PrefabInternal: {fileID: 318762397}
---- !u!1001 &320877342
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4372942286983552, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4372942286983552, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4372942286983552, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4372942286983552, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4372942286983552, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4372942286983552, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4372942286983552, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4372942286983552, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
-      propertyPath: m_RootOrder
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 224198189712602442, guid: 14901c88cc23543e3a6a11e41f79ece0,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 25.400024
-      objectReference: {fileID: 0}
-    - target: {fileID: 224755479697663556, guid: 14901c88cc23543e3a6a11e41f79ece0,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -15.099976
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1001 &323454926
 Prefab:
   m_ObjectHideFlags: 0
@@ -9969,6 +9920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
   questName: Apple
   questCompletedTrigger: apple_completed
   questStartedTrigger: apple_started
@@ -14461,6 +14413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
   questName: Addict
   questCompletedTrigger: addict_completed
   questStartedTrigger: addict_started
@@ -22927,6 +22880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
   questName: hiding_man
   questCompletedTrigger: hiding_man_completed
   questStartedTrigger: hiding_man_started
@@ -24539,6 +24493,72 @@ CapsuleCollider:
   m_Height: 2.11
   m_Direction: 1
   m_Center: {x: 0, y: 0.73, z: 0}
+--- !u!1001 &1061577843
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4113038007444936, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113038007444936, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113038007444936, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113038007444936, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113038007444936, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113038007444936, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113038007444936, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113038007444936, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644627157048880, guid: 14901c88cc23543e3a6a11e41f79ece0,
+        type: 2}
+      propertyPath: endGameBox
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 224020767327045382, guid: 14901c88cc23543e3a6a11e41f79ece0,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224020767327045382, guid: 14901c88cc23543e3a6a11e41f79ece0,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224020767327045382, guid: 14901c88cc23543e3a6a11e41f79ece0,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501419235995512, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1071035466
 GameObject:
   m_ObjectHideFlags: 0
@@ -25497,6 +25517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
   questName: Drink
   questCompletedTrigger: drink_completed
   questStartedTrigger: drink_started
@@ -25689,6 +25710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7682ad1ed51a4628b2aaca1f4ec120a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
   questName: swim
   questCompletedTrigger: swim_completed
   questStartedTrigger: swim_started
@@ -25985,6 +26007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
   questName: music
   questCompletedTrigger: music_completed
   questStartedTrigger: music_started
@@ -27978,6 +28001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
   questName: wife
   questCompletedTrigger: wife_completed
   questStartedTrigger: wife_started
@@ -32810,6 +32834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
   questName: bible
   questCompletedTrigger: bible_completed
   questStartedTrigger: bible_started
@@ -37610,6 +37635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
   questName: tennis
   questCompletedTrigger: tennis_completed
   questStartedTrigger: tennis_started
@@ -39675,6 +39701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
   questName: fan
   questCompletedTrigger: fan_completed
   questStartedTrigger: fan_started
@@ -39743,7 +39770,8 @@ MonoBehaviour:
       y: 293
       width: 100
       height: 225
-  - text: Have you seen her yet? What is she like in person?
+  - text: Have you seen her yet? I modeled my appearance after her so we look just
+      like sisters!
     trigger: fan_started
     priority: 0
     id: 4
@@ -40671,6 +40699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
   questName: murder
   questCompletedTrigger: murder_completed
   questStartedTrigger: murder_started
@@ -44078,6 +44107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
   questName: Weights
   questCompletedTrigger: weights_completed
   questStartedTrigger: weights_started
