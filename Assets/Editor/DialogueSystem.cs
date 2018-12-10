@@ -158,7 +158,7 @@ public class DialogueSystem : EditorWindow {
 				window.triggerString = EditorGUILayout.TextField(window.triggerString);
 				GUILayout.Label("Priority");
 				int val;
-				if (int.TryParse(EditorGUILayout.TextField(window.triggerPriority.ToString(), 1), out val)){
+				if (int.TryParse(EditorGUILayout.TextField(window.triggerPriority.ToString()), out val)){
 					window.triggerPriority = val;
 				}
 				else{
