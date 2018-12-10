@@ -37,6 +37,11 @@ public abstract class Quest : MonoBehaviour {
 	protected bool questTurnedIn = false;
 
 	[SerializeField]
+	protected bool secretQuest = false;
+
+
+
+	[SerializeField]
 	protected bool defaultDialogueAfterTurnIn = false;
 
 	protected GameObject questIndicator;
@@ -50,7 +55,9 @@ public abstract class Quest : MonoBehaviour {
 	}
 
 	protected void CreateQuestIndicator(){
-		questIndicator = Instantiate<GameObject>(Resources.Load<GameObject>(questIndicatorPrefabPath), gameObject.transform.position + questIndicatorPositionOffset, Quaternion.identity);
+		if (!secretQuest){
+			questIndicator = Instantiate<GameObject>(Resources.Load<GameObject>(questIndicatorPrefabPath), gameObject.transform.position + questIndicatorPositionOffset, Quaternion.identity);
+		}
 	}
 
 	protected void ChangeQuestIndicatorColor(Color color){
@@ -94,7 +101,6 @@ public abstract class Quest : MonoBehaviour {
 		return false;
 	}
 
-	public abstract bool CollectItem(QuestItem item);
 	protected abstract void CompleteQuest();
 
 

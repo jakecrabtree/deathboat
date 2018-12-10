@@ -376,12 +376,14 @@ MonoBehaviour:
   questStartedTrigger: charon_started
   questEnabledTrigger: charon_enabled
   karmaValue: 10
-  questEnabled: 0
-  questStarted: 1
+  questEnabled: 1
+  questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
+  secretQuest: 1
+  defaultDialogueAfterTurnIn: 1
+  items:
+  - {fileID: 0}
   remaining: 0
 --- !u!114 &40929813
 MonoBehaviour:
@@ -1832,6 +1834,7 @@ MonoBehaviour:
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
+  secretQuest: 0
   defaultDialogueAfterTurnIn: 1
   items:
   - {fileID: 893425754}
@@ -4305,6 +4308,7 @@ MonoBehaviour:
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
+  secretQuest: 0
   defaultDialogueAfterTurnIn: 1
   items:
   - {fileID: 332003795}
@@ -9670,6 +9674,7 @@ MonoBehaviour:
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
+  secretQuest: 0
   defaultDialogueAfterTurnIn: 1
   items:
   - {fileID: 389421455}
@@ -14161,6 +14166,7 @@ MonoBehaviour:
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
+  secretQuest: 0
   defaultDialogueAfterTurnIn: 1
   items:
   - {fileID: 2035452828}
@@ -14187,7 +14193,7 @@ MonoBehaviour:
       y: 70
       width: 100
       height: 75
-  - text: "-I don\u2019t understand how people can just play slots all day. My friend
+  - text: "I don\u2019t understand how people can just play slots all day. My friend
       has been at it for hours."
     trigger: addict_enabled
     priority: 0
@@ -17949,6 +17955,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4052340458044754, guid: 761e58f7d6c340047bef7fb6cf8edf8a,
     type: 2}
   m_PrefabInternal: {fileID: 828760705}
+--- !u!1 &829851905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 829851909}
+  - component: {fileID: 829851908}
+  - component: {fileID: 829851907}
+  - component: {fileID: 829851906}
+  m_Layer: 0
+  m_Name: PoolTriggerArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &829851906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 829851905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e44db3deb0c14374952563d51889cb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &829851907
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 829851905}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &829851908
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 829851905}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &829851909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 829851905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.38, y: 6.61, z: -12.76}
+  m_LocalScale: {x: 11.631209, y: 1.3881547, z: 13.544919}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &848930697
 Prefab:
   m_ObjectHideFlags: 0
@@ -22435,6 +22502,7 @@ MonoBehaviour:
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
+  secretQuest: 0
   defaultDialogueAfterTurnIn: 1
   items:
   - {fileID: 40929815}
@@ -25004,6 +25072,7 @@ MonoBehaviour:
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
+  secretQuest: 0
   defaultDialogueAfterTurnIn: 1
   items:
   - {fileID: 1080110064}
@@ -25161,7 +25230,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Derek
 --- !u!136 &1105600340
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -25183,22 +25252,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1105600338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: c7682ad1ed51a4628b2aaca1f4ec120a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: diving
-  questCompletedTrigger: diving_completed
-  questStartedTrigger: diving_started
-  questEnabledTrigger: diving_enabled
+  questName: swim
+  questCompletedTrigger: swim_completed
+  questStartedTrigger: swim_started
+  questEnabledTrigger: swim_enabled
   karmaValue: 10
   questEnabled: 1
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 1
-  items:
-  - {fileID: 389421455}
-  remaining: 0
+  secretQuest: 0
+  defaultDialogueAfterTurnIn: 0
+  location: {fileID: 829851906}
 --- !u!114 &1105600342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25210,8 +25278,98 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 10
+      y: 67
+      width: 100
+      height: 75
+  - text: HEY MAAAN, do you think you could do a sick jump into the pool?
+    trigger: swim_enabled
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 134
+      y: 60
+      width: 100
+      height: 225
+  - text: "I would do it myself but I\u2019m too scared, so I like to live vicariously
+      through others, you get my drift?"
+    trigger: 
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 298
+      y: 92
+      width: 100
+      height: 150
+  - text: So yeah go jump into pool. The more dangerous, the better!
+    trigger: 
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 426
+      y: 85
+      width: 100
+      height: 150
+  - text: AWW DUDE THAT WAS SIIICK!!
+    trigger: swim_completed
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 116
+      y: 314
+      width: 100
+      height: 225
+  - text: "I feel so much more alive now\u2026 well as alive as I can be anyway\u2026"
+    trigger: 
+    priority: 0
+    id: 5
+    editorBox:
+      serializedVersion: 2
+      x: 251
+      y: 303
+      width: 100
+      height: 150
+  - text: "Well anyways, I\u2019m going to go find some more thrills to experience
+      through other people. See ya broski!"
+    trigger: 
+    priority: 0
+    id: 6
+    editorBox:
+      serializedVersion: 2
+      x: 416
+      y: 300
+      width: 100
+      height: 150
+  - text: Are you gonna do it, bro?
+    trigger: swim_started
+    priority: 0
+    id: 7
+    editorBox:
+      serializedVersion: 2
+      x: 1
+      y: 204
+      width: 100
+      height: 225
+  adjList:
+  - edges: 010000000400000007000000
+  - edges: 02000000
+  - edges: 03000000
+  - edges: 
+  - edges: 05000000
+  - edges: 06000000
+  - edges: 
+  - edges: 
   root: 0
   curr: 0
 --- !u!65 &1105600343
@@ -25224,7 +25382,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 3}
+  m_Size: {x: 3.3, y: 3.3, z: 3.3}
   m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!1 &1108129257 stripped
 GameObject:
@@ -25402,6 +25560,7 @@ MonoBehaviour:
   questStarted: 0
   questCompleted: 1
   questTurnedIn: 0
+  secretQuest: 0
   defaultDialogueAfterTurnIn: 1
   items:
   - {fileID: 43657230}
@@ -27394,6 +27553,7 @@ MonoBehaviour:
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
+  secretQuest: 0
   defaultDialogueAfterTurnIn: 1
   items:
   - {fileID: 457834350}
@@ -27437,7 +27597,7 @@ MonoBehaviour:
     id: 2
     editorBox:
       serializedVersion: 2
-      x: 350
+      x: 391
       y: 74
       width: 100
       height: 150
@@ -27447,8 +27607,8 @@ MonoBehaviour:
     id: 3
     editorBox:
       serializedVersion: 2
-      x: 143
-      y: 320
+      x: 199
+      y: 311
       width: 100
       height: 225
   - text: Thanks for telling me, I needed to know at some point. Time for me to figure
@@ -27458,8 +27618,8 @@ MonoBehaviour:
     id: 4
     editorBox:
       serializedVersion: 2
-      x: 292
-      y: 306
+      x: 427
+      y: 290
       width: 100
       height: 150
   - text: She always was the independent type, all those late nights at the office
@@ -32225,6 +32385,7 @@ MonoBehaviour:
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
+  secretQuest: 0
   defaultDialogueAfterTurnIn: 1
   items:
   - {fileID: 472785666}
@@ -36884,6 +37045,7 @@ MonoBehaviour:
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
+  secretQuest: 0
   defaultDialogueAfterTurnIn: 1
   items:
   - {fileID: 171340560}
@@ -38948,6 +39110,7 @@ MonoBehaviour:
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
+  secretQuest: 0
   defaultDialogueAfterTurnIn: 1
   items:
   - {fileID: 1108129260}
@@ -39943,6 +40106,7 @@ MonoBehaviour:
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
+  secretQuest: 0
   defaultDialogueAfterTurnIn: 1
   items:
   - {fileID: 1085284346}
@@ -41560,8 +41724,88 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 9
+      y: 46
+      width: 100
+      height: 75
+  - text: AWWW YEAH! GOT A WINNER!!
+    trigger: addict_started
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 131
+      y: 58
+      width: 100
+      height: 225
+  - text: "Now just a few more times and I\u2019ll break even."
+    trigger: 
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 262
+      y: 57
+      width: 100
+      height: 150
+  - text: Oh hey, what do you want?
+    trigger: 
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 391
+      y: 63
+      width: 100
+      height: 150
+  - text: Jack sent you? Gods what a pain. I can do what I want with my karma, I earned
+      it! Why does he care?
+    trigger: 
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 506
+      y: 238
+      width: 100
+      height: 150
+  - text: Wait, he said that there are other karma outlets once we arrive? Do you
+      think there will be a casino?
+    trigger: 
+    priority: 0
+    id: 5
+    editorBox:
+      serializedVersion: 2
+      x: 427
+      y: 399
+      width: 100
+      height: 150
+  - text: "I\u2019ll make sure to keep some extra karma on hand, just in case. Thanks
+      for the info!"
+    trigger: 
+    priority: 0
+    id: 6
+    editorBox:
+      serializedVersion: 2
+      x: 282
+      y: 395
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 02000000
+  - edges: 03000000
+  - edges: 04000000
+  - edges: 05000000
+  - edges: 06000000
+  - edges: 
   root: 0
   curr: 0
 --- !u!65 &2035452830
@@ -43203,6 +43447,7 @@ MonoBehaviour:
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
+  secretQuest: 0
   defaultDialogueAfterTurnIn: 0
   items:
   - {fileID: 1336246770}

@@ -30,6 +30,7 @@ public static class TriggerManager {
 
 	public static bool GetTrigger(string trigger){
 		if (triggers.ContainsKey(trigger)){
+			Debug.Log(trigger + " : " + triggers[trigger]);
 			return triggers[trigger];
 		}
 		else {

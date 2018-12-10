@@ -86,9 +86,6 @@ public class DialogueTree : MonoBehaviour{
     }
 
     public void Start(){
-        foreach(DialogueNode node in nodes){
-            TriggerManager.AddTrigger(node.trigger, false);
-        }
         foreach(Edges edges in adjList){
             edges.edges.Sort((x,y) => nodes[y].CompareTo(nodes[x]));
         }

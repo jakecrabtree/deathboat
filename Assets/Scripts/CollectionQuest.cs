@@ -26,6 +26,7 @@ public class CollectionQuest : Quest {
 		}
 		if (questEnabledTrigger != ""){
 			TriggerManager.AddTrigger(questEnabledTrigger, questEnabled);
+			Debug.Log(questEnabledTrigger + TriggerManager.GetTrigger(questEnabledTrigger));
 		}
 		if (questStartedTrigger != ""){
 			TriggerManager.AddTrigger(questStartedTrigger, questStarted);
@@ -46,7 +47,7 @@ public class CollectionQuest : Quest {
 		}
 	}
 	
-	public override bool CollectItem(QuestItem collectedItem){
+	public bool CollectItem(QuestItem collectedItem){
 		if (questEnabled && questStarted){
 			for (int i = 0; i < items.Length; ++i){
 				if (collectedItem == items[i] && !collected[i]){

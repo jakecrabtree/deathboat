@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class QuestItem : MonoBehaviour {
 
-	List<Quest> quests = new List<Quest>();
+	List<CollectionQuest> quests = new List<CollectionQuest>();
 	
 	[SerializeField]
 	string itemName = "";
@@ -36,7 +36,7 @@ public class QuestItem : MonoBehaviour {
     }
 
 	void Collect(){
-		foreach(Quest quest in quests){
+		foreach(CollectionQuest quest in quests){
 			if (quest.CollectItem(this)){
 				if(soundMng != null){
 					soundMng.playPickup();
@@ -51,7 +51,7 @@ public class QuestItem : MonoBehaviour {
 		}
 	}
 
-	public void AssignQuest(Quest quest){
+	public void AssignQuest(CollectionQuest quest){
 		this.quests.Add(quest);
 	}
 }
