@@ -10076,7 +10076,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Jennifer
 --- !u!114 &457834350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27966,7 +27966,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Phil
 --- !u!114 &1179960341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37598,7 +37598,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Tod
 --- !u!114 &1663054524
 MonoBehaviour:
   m_ObjectHideFlags: 0
