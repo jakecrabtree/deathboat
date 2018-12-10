@@ -220,6 +220,10 @@ Prefab:
       propertyPath: m_AnchoredPosition.y
       value: 26.299927
       objectReference: {fileID: 0}
+    - target: {fileID: 1037567234493794, guid: 57a7449804d314398babcd08dc7af3f4, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57a7449804d314398babcd08dc7af3f4, type: 2}
   m_IsPrefabAsset: 0
@@ -607,6 +611,35 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114249476113526966, guid: 14901c88cc23543e3a6a11e41f79ece0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114006340105509348, guid: 14901c88cc23543e3a6a11e41f79ece0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114016411719626784, guid: 14901c88cc23543e3a6a11e41f79ece0,
+        type: 2}
+      propertyPath: totalTime
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345699561982576, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114302937474304796, guid: 14901c88cc23543e3a6a11e41f79ece0,
+        type: 2}
+      propertyPath: m_Text
+      value: Escape to Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 114849178105390500, guid: 14901c88cc23543e3a6a11e41f79ece0,
+        type: 2}
+      propertyPath: m_Text
+      value: Enter to Play Again
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
   m_IsPrefabAsset: 0
@@ -731,7 +764,7 @@ MonoBehaviour:
   questCompletedTrigger: talk_boys_completed
   questStartedTrigger: 
   questEnabledTrigger: talk_boys_quest
-  karmaValue: 10
+  karmaValue: 50
   questEnabled: 1
   questStarted: 0
   questCompleted: 0
