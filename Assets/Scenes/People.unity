@@ -239,7 +239,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 43e43e185f705a847898cbe2bfb08af6, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 43e43e185f705a847898cbe2bfb08af6, type: 3}
       propertyPath: m_Name
@@ -475,6 +475,49 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3, y: 3, z: 3}
   m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!1 &43657228 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 43e43e185f705a847898cbe2bfb08af6,
+    type: 3}
+  m_PrefabInternal: {fileID: 31434519}
+--- !u!65 &43657229
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43657228}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &43657230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43657228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
+--- !u!114 &43657231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43657228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82c32418945ca2443b6984f2e835a9fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &49138269 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1718734899725120, guid: 3478355fa946f79489bb697466ebddfa,
@@ -566,7 +609,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 2adc343dad62ea24c8a5f7bb2f63849d, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 2adc343dad62ea24c8a5f7bb2f63849d, type: 3}
       propertyPath: m_Name
@@ -622,7 +665,7 @@ Transform:
   - {fileID: 943116989}
   - {fileID: 323454927}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &129839610
 Prefab:
@@ -1877,6 +1920,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3, y: 3, z: 3}
   m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!1 &171340558 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: dee156421a7c95b4a97148bf60a72ddb,
+    type: 3}
+  m_PrefabInternal: {fileID: 393319375}
+--- !u!65 &171340559
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 171340558}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &171340560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 171340558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
 --- !u!1001 &185732448
 Prefab:
   m_ObjectHideFlags: 0
@@ -5243,7 +5318,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4571834912696904, guid: 875c4026ae8f166498446ff12f4b3998, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1528687381924372, guid: 875c4026ae8f166498446ff12f4b3998, type: 2}
       propertyPath: m_Name
@@ -7176,7 +7251,7 @@ Transform:
   - {fileID: 1277065916}
   - {fileID: 1294089829}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &332003792 stripped
 GameObject:
@@ -8395,7 +8470,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: dee156421a7c95b4a97148bf60a72ddb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.8200054
+      value: -26
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: dee156421a7c95b4a97148bf60a72ddb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8403,7 +8478,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: dee156421a7c95b4a97148bf60a72ddb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.8852654
+      value: -18.46
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: dee156421a7c95b4a97148bf60a72ddb, type: 3}
       propertyPath: m_LocalRotation.x
@@ -8423,7 +8498,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: dee156421a7c95b4a97148bf60a72ddb, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: dee156421a7c95b4a97148bf60a72ddb, type: 3}
       propertyPath: m_Layer
@@ -9626,22 +9701,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 457834347}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Apple
-  questCompletedTrigger: apple_completed
-  questStartedTrigger: apple_started
-  questEnabledTrigger: apple_enabled
-  karmaValue: 10
-  questEnabled: 1
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 1
-  items:
-  - {fileID: 389421455}
-  remaining: 0
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
 --- !u!114 &457834351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9653,65 +9719,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes:
-  - text: 
-    trigger: 
-    priority: 0
-    id: 0
-    editorBox:
-      serializedVersion: 2
-      x: 20
-      y: 68
-      width: 100
-      height: 75
-  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
-      I\u2019m starving."
-    trigger: apple_enabled
-    priority: 0
-    id: 1
-    editorBox:
-      serializedVersion: 2
-      x: 208
-      y: 68
-      width: 100
-      height: 225
-  - text: An apple? Sure, that will do.
-    trigger: apple_completed
-    priority: 0
-    id: 2
-    editorBox:
-      serializedVersion: 2
-      x: 374
-      y: 173
-      width: 100
-      height: 225
-  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
-    trigger: 
-    priority: 0
-    id: 3
-    editorBox:
-      serializedVersion: 2
-      x: 532
-      y: 201
-      width: 100
-      height: 150
-  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
-      rate.
-    trigger: apple_started
-    priority: 0
-    id: 4
-    editorBox:
-      serializedVersion: 2
-      x: 139
-      y: 333
-      width: 100
-      height: 225
-  adjList:
-  - edges: 010000000200000004000000
-  - edges: 02000000
-  - edges: 03000000
-  - edges: 
-  - edges: 
+  nodes: []
+  adjList: []
   root: 0
   curr: 0
 --- !u!65 &457834352
@@ -9767,6 +9776,150 @@ CapsuleCollider:
   m_Height: 2.11
   m_Direction: 1
   m_Center: {x: 0, y: 0.73, z: 0}
+--- !u!1 &498560249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1762339175276336, guid: f4dce8a500200e24c8b199e1531a831e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 498560252}
+  - component: {fileID: 498560251}
+  - component: {fileID: 498560250}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &498560250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114140819317769400, guid: f4dce8a500200e24c8b199e1531a831e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 498560249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef6d16ad9ee9e43c1afb208d81e4ab63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pickup: {fileID: 0}
+  KaChing: {fileID: 0}
+  QuestAccepted: {fileID: 0}
+  EyeOfTheTiger: {fileID: 0}
+--- !u!82 &498560251
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 82960252905762968, guid: f4dce8a500200e24c8b199e1531a831e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 498560249}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &498560252
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4676588172922016, guid: f4dce8a500200e24c8b199e1531a831e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 498560249}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -32.393272, y: 11.30949, z: -7.3731575}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &499530983
 GameObject:
   m_ObjectHideFlags: 0
@@ -9808,7 +9961,7 @@ Transform:
   - {fileID: 216906419}
   - {fileID: 1508915735}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &511650810
 Prefab:
@@ -10077,7 +10230,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 437996, guid: 14fb53f2cd63dc748a001cc7b31bf21d, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 108542, guid: 14fb53f2cd63dc748a001cc7b31bf21d, type: 2}
       propertyPath: m_Layer
@@ -13832,7 +13985,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Jack
 --- !u!136 &633169791
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -17244,7 +17397,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: dee156421a7c95b4a97148bf60a72ddb, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: dee156421a7c95b4a97148bf60a72ddb, type: 3}
       propertyPath: m_Layer
@@ -22179,7 +22332,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: dee156421a7c95b4a97148bf60a72ddb, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: dee156421a7c95b4a97148bf60a72ddb, type: 3}
       propertyPath: m_Layer
@@ -25148,7 +25301,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Judy
 --- !u!114 &1109137931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25160,18 +25313,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Apple
-  questCompletedTrigger: apple_completed
-  questStartedTrigger: apple_started
-  questEnabledTrigger: apple_enabled
+  questName: music
+  questCompletedTrigger: music_completed
+  questStartedTrigger: music_started
+  questEnabledTrigger: music_enabled
   karmaValue: 10
   questEnabled: 1
   questStarted: 0
-  questCompleted: 0
+  questCompleted: 1
   questTurnedIn: 0
   defaultDialogueAfterTurnIn: 1
   items:
-  - {fileID: 389421455}
+  - {fileID: 43657230}
   remaining: 0
 --- !u!114 &1109137932
 MonoBehaviour:
@@ -25191,56 +25344,78 @@ MonoBehaviour:
     id: 0
     editorBox:
       serializedVersion: 2
-      x: 20
-      y: 68
+      x: 19
+      y: 84
       width: 100
       height: 75
-  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
-      I\u2019m starving."
-    trigger: apple_enabled
+  - text: Why does no one play any music in here?
+    trigger: music_enabled
     priority: 0
     id: 1
     editorBox:
       serializedVersion: 2
-      x: 208
-      y: 68
+      x: 189
+      y: 99
       width: 100
       height: 225
-  - text: An apple? Sure, that will do.
-    trigger: apple_completed
+  - text: How am I supposed to get pumped when the only sounds I hear are grunts and
+      the screams of the damned?
+    trigger: 
     priority: 0
     id: 2
     editorBox:
       serializedVersion: 2
-      x: 374
-      y: 173
+      x: 383
+      y: 108
       width: 100
-      height: 225
-  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
+      height: 150
+  - text: Hey man, can you get some kickass music going in here?
     trigger: 
     priority: 0
     id: 3
     editorBox:
       serializedVersion: 2
-      x: 532
-      y: 201
+      x: 524
+      y: 90
       width: 100
       height: 150
-  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
-      rate.
-    trigger: apple_started
+  - text: "Oh Hades yeah baby, this is what I\u2019m talking about, now I\u2019m getting
+      pumped!"
+    trigger: music_completed
     priority: 0
     id: 4
     editorBox:
       serializedVersion: 2
-      x: 139
-      y: 333
+      x: 276
+      y: 326
+      width: 100
+      height: 225
+  - text: hanks, little dude!
+    trigger: 
+    priority: 0
+    id: 5
+    editorBox:
+      serializedVersion: 2
+      x: 425
+      y: 305
+      width: 100
+      height: 150
+  - text: So. Many. Screams.
+    trigger: music_started
+    priority: 0
+    id: 6
+    editorBox:
+      serializedVersion: 2
+      x: 62
+      y: 244
       width: 100
       height: 225
   adjList:
-  - edges: 010000000200000004000000
+  - edges: 010000000400000006000000
   - edges: 02000000
   - edges: 03000000
+  - edges: 
+  - edges: 05000000
   - edges: 
   - edges: 
   root: 0
@@ -27130,10 +27305,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Apple
-  questCompletedTrigger: apple_completed
-  questStartedTrigger: apple_started
-  questEnabledTrigger: apple_enabled
+  questName: wife
+  questCompletedTrigger: wife_completed
+  questStartedTrigger: wife_started
+  questEnabledTrigger: wife_enabled
   karmaValue: 10
   questEnabled: 1
   questStarted: 0
@@ -27141,7 +27316,7 @@ MonoBehaviour:
   questTurnedIn: 0
   defaultDialogueAfterTurnIn: 1
   items:
-  - {fileID: 389421455}
+  - {fileID: 457834350}
   remaining: 0
 --- !u!114 &1179960342
 MonoBehaviour:
@@ -27161,56 +27336,68 @@ MonoBehaviour:
     id: 0
     editorBox:
       serializedVersion: 2
-      x: 20
-      y: 68
+      x: 25
+      y: 95
       width: 100
       height: 75
-  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
-      I\u2019m starving."
-    trigger: apple_enabled
+  - text: "Hey have you seen my wife? I can\u2019t find her anywhere."
+    trigger: wife_enabled
     priority: 0
     id: 1
     editorBox:
       serializedVersion: 2
-      x: 208
-      y: 68
+      x: 197
+      y: 63
       width: 100
       height: 225
-  - text: An apple? Sure, that will do.
-    trigger: apple_completed
+  - text: "Do you mind letting me know if you see her? She\u2019s a brunette with
+      a pink shirt. I last saw her on the bottom deck."
+    trigger: 
     priority: 0
     id: 2
     editorBox:
       serializedVersion: 2
-      x: 374
-      y: 173
+      x: 350
+      y: 74
       width: 100
-      height: 225
-  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
-    trigger: 
+      height: 150
+  - text: She said that? My gods, now everything in life makes so much more sense.
+    trigger: wife_completed
     priority: 0
     id: 3
     editorBox:
       serializedVersion: 2
-      x: 532
-      y: 201
+      x: 143
+      y: 320
       width: 100
-      height: 150
-  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
-      rate.
-    trigger: apple_started
+      height: 225
+  - text: Thanks for telling me, I needed to know at some point. Time for me to figure
+      out what to do now, and, hey, maybe this is a blessing in disguise.
+    trigger: 
     priority: 0
     id: 4
     editorBox:
       serializedVersion: 2
-      x: 139
-      y: 333
+      x: 292
+      y: 306
+      width: 100
+      height: 150
+  - text: She always was the independent type, all those late nights at the office
+      and on work trips...
+    trigger: wife_started
+    priority: 0
+    id: 5
+    editorBox:
+      serializedVersion: 2
+      x: 19
+      y: 281
       width: 100
       height: 225
   adjList:
-  - edges: 010000000200000004000000
+  - edges: 010000000300000005000000
   - edges: 02000000
   - edges: 03000000
+  - edges: 04000000
   - edges: 
   - edges: 
   root: 0
@@ -27245,6 +27432,38 @@ CapsuleCollider:
   m_Height: 2.11
   m_Direction: 1
   m_Center: {x: 0, y: 0.73, z: 0}
+--- !u!1 &1232028331 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: dee156421a7c95b4a97148bf60a72ddb,
+    type: 3}
+  m_PrefabInternal: {fileID: 817588560}
+--- !u!65 &1232028332
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1232028331}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1232028333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1232028331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
 --- !u!1001 &1255716033
 Prefab:
   m_ObjectHideFlags: 0
@@ -27579,7 +27798,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: dee156421a7c95b4a97148bf60a72ddb, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: dee156421a7c95b4a97148bf60a72ddb, type: 3}
       propertyPath: m_Layer
@@ -27630,7 +27849,7 @@ Prefab:
     - target: {fileID: 224392462932421566, guid: 57a7449804d314398babcd08dc7af3f4,
         type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224392462932421566, guid: 57a7449804d314398babcd08dc7af3f4,
         type: 2}
@@ -27670,7 +27889,7 @@ Prefab:
     - target: {fileID: 224392462932421566, guid: 57a7449804d314398babcd08dc7af3f4,
         type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224392462932421566, guid: 57a7449804d314398babcd08dc7af3f4,
         type: 2}
@@ -27768,7 +27987,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0c3a27d80d26bcc4aa9c5d03bccc520f, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 0c3a27d80d26bcc4aa9c5d03bccc520f, type: 3}
       propertyPath: m_Name
@@ -36552,10 +36771,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Apple
-  questCompletedTrigger: apple_completed
-  questStartedTrigger: apple_started
-  questEnabledTrigger: apple_enabled
+  questName: tennis
+  questCompletedTrigger: tennis_completed
+  questStartedTrigger: tennis_started
+  questEnabledTrigger: tennis_enabled
   karmaValue: 10
   questEnabled: 1
   questStarted: 0
@@ -36563,8 +36782,11 @@ MonoBehaviour:
   questTurnedIn: 0
   defaultDialogueAfterTurnIn: 1
   items:
-  - {fileID: 389421455}
-  remaining: 0
+  - {fileID: 171340560}
+  - {fileID: 1232028333}
+  - {fileID: 1714139218}
+  - {fileID: 2033197207}
+  remaining: 3
 --- !u!114 &1663054525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36583,56 +36805,66 @@ MonoBehaviour:
     id: 0
     editorBox:
       serializedVersion: 2
-      x: 20
-      y: 68
+      x: 7
+      y: 87
       width: 100
       height: 75
-  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
-      I\u2019m starving."
-    trigger: apple_enabled
+  - text: "Hey man, do you mind helping us out? We\u2019ve lost a lot of balls due
+      to SUSAN over here and were wondering if you could find some of them for us."
+    trigger: tennis_enabled
     priority: 0
     id: 1
     editorBox:
       serializedVersion: 2
-      x: 208
-      y: 68
+      x: 166
+      y: 47
       width: 100
       height: 225
-  - text: An apple? Sure, that will do.
-    trigger: apple_completed
+  - text: "We\u2019ve only got one ball left so if you can find 3, that would be great."
+    trigger: 
     priority: 0
     id: 2
     editorBox:
       serializedVersion: 2
-      x: 374
-      y: 173
+      x: 311
+      y: 65
       width: 100
-      height: 225
-  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
-    trigger: 
+      height: 150
+  - text: Oh thank you so much! This should last us until SUSAN loses them all again.
+    trigger: tennis_completed
     priority: 0
     id: 3
     editorBox:
       serializedVersion: 2
-      x: 532
-      y: 201
+      x: 258
+      y: 257
       width: 100
-      height: 150
-  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
-      rate.
-    trigger: apple_started
+      height: 225
+  - text: Have a good one!
+    trigger: 
     priority: 0
     id: 4
     editorBox:
       serializedVersion: 2
-      x: 139
-      y: 333
+      x: 438
+      y: 267
+      width: 100
+      height: 150
+  - text: Gotta hide this last ball so SUSAN doesn't lose this one too.
+    trigger: tennis_started
+    priority: 0
+    id: 5
+    editorBox:
+      serializedVersion: 2
+      x: 42
+      y: 301
       width: 100
       height: 225
   adjList:
-  - edges: 010000000200000004000000
+  - edges: 010000000300000005000000
   - edges: 02000000
   - edges: 03000000
+  - edges: 04000000
   - edges: 
   - edges: 
   root: 0
@@ -36691,7 +36923,7 @@ Transform:
   - {fileID: 1539963878}
   - {fileID: 1044857793}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1671763726 stripped
 GameObject:
@@ -36779,6 +37011,38 @@ CapsuleCollider:
   m_Height: 2.11
   m_Direction: 1
   m_Center: {x: 0, y: 0.73, z: 0}
+--- !u!1 &1714139216 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: dee156421a7c95b4a97148bf60a72ddb,
+    type: 3}
+  m_PrefabInternal: {fileID: 1256032288}
+--- !u!65 &1714139217
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1714139216}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1714139218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1714139216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
 --- !u!1001 &1715194064
 Prefab:
   m_ObjectHideFlags: 0
@@ -37785,7 +38049,7 @@ Transform:
   - {fileID: 1139608160}
   - {fileID: 1392408080}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1748674391
 Prefab:
@@ -40644,7 +40908,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0a62433b17d3af74eba0974e3b98abd8, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0a62433b17d3af74eba0974e3b98abd8, type: 3}
       propertyPath: m_LocalScale.x
@@ -41044,6 +41308,38 @@ CapsuleCollider:
   m_Height: 2.11
   m_Direction: 1
   m_Center: {x: 0, y: 0.73, z: 0}
+--- !u!1 &2033197205 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: dee156421a7c95b4a97148bf60a72ddb,
+    type: 3}
+  m_PrefabInternal: {fileID: 1034582887}
+--- !u!65 &2033197206
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2033197205}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2033197207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2033197205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
 --- !u!1 &2035452825 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1524116062441122, guid: 761e58f7d6c340047bef7fb6cf8edf8a,
@@ -41063,7 +41359,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Dustin
 --- !u!136 &2035452827
 CapsuleCollider:
   m_ObjectHideFlags: 0
