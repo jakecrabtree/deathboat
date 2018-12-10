@@ -42,13 +42,14 @@ public class SimpleCasinoGame : MonoBehaviour {
     }
 
     void OnTriggerStay(Collider other){
-        if (Input.GetKeyDown(KeyCode.E)){
+        if (Input.GetKeyDown(KeyCode.E) &&!started){
             if (other.CompareTag("Player")){
                 dialogueBox.UseDialogueTree(tree, gameName);
                 started = true;
             }
         }else if (Input.GetKeyDown(KeyCode.Return) && started){
             if (other.CompareTag("Player")){
+                bool res = !dialogueBox.ShowNextDialogue();
                 if (!played){
                     PlayGame();
                     played = true;
@@ -57,7 +58,6 @@ public class SimpleCasinoGame : MonoBehaviour {
                     played = false;
                     started = false;
                 }
-                ResetTriggers();
             }
         }else if (Input.GetKeyDown(KeyCode.Escape) && started){
             if (other.CompareTag("Player")){
@@ -65,7 +65,7 @@ public class SimpleCasinoGame : MonoBehaviour {
                 dialogueBox.EndDialogue();
                 ResetTriggers();
             }
-        }  
+        }
     } 
 
 	void PlayGame(){
