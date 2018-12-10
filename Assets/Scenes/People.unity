@@ -8247,7 +8247,7 @@ MonoBehaviour:
       y: 69
       width: 100
       height: 150
-  - text: 
+  - text: An apple? Sure, that will do.
     trigger: apple_completed
     priority: 0
     id: 2
@@ -8257,7 +8257,7 @@ MonoBehaviour:
       y: 196
       width: 100
       height: 225
-  - text: 
+  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
     trigger: 
     priority: 0
     id: 3
@@ -8288,7 +8288,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Abby
 --- !u!114 &434157931
 MonoBehaviour:
   m_ObjectHideFlags: 0
