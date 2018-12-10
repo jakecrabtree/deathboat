@@ -17,11 +17,15 @@ public class QuestItem : MonoBehaviour {
 
 	public bool collected = false;
 
-
+	static SoundManager soundMng;
 
 	void Start(){
 		if (triggerName != ""){
 			TriggerManager.AddTrigger(triggerName, false);
+		}
+
+		if(soundMng == null){
+			soundMng = GameObject.Find("SoundManager").GetComponent<SoundManager>();
 		}
 	}
 
@@ -34,6 +38,9 @@ public class QuestItem : MonoBehaviour {
 	void Collect(){
 		foreach(Quest quest in quests){
 			if (quest.CollectItem(this)){
+				if(soundMng != null){
+					soundMng.playPickup();
+				}
 				if (triggerName != ""){
 					TriggerManager.UpdateTrigger(triggerName, true);
 				}

@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour {
 	private GameObject endGameBox;
 
 	
-	
+	private SoundManager soundMng;
 
 	void Awake()
 	{
@@ -70,6 +70,7 @@ public class GameManager : MonoBehaviour {
 		UpdateScoreBar();
 		UpdateTimerUI();
 		endGameBox.SetActive(false);
+		soundMng = GameObject.Find("SoundManager").GetComponent<SoundManager>();
 	}
 
 	void GameOver(){
@@ -106,6 +107,9 @@ public class GameManager : MonoBehaviour {
 
 	public void AddScore(int scoreValue){
 		currentScore = Math.Min(scoreValue+currentScore, upperScoreBound);
+		if(soundMng != null){
+			soundMng.playKaChing();
+		}
 		UpdateScoreBar();
 	}
 
