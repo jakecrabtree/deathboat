@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour {
 	public float timeRemaining;
 
 	[SerializeField]
-	int[] scoreThresholds;
+	int[] scoreThresholds = {0, 50, 100};
 
 	[SerializeField]
 	string[] scoreLevelNames;
@@ -28,10 +28,10 @@ public class GameManager : MonoBehaviour {
 	int startingScore = -25;
 
 	[SerializeField]
-	int lowerScoreBound;
+	int lowerScoreBound = -120;
 
 	[SerializeField]
-	int upperScoreBound;
+	int upperScoreBound = 100;
 
 	int currentScore;
 	int scoreOffset = 0;
