@@ -387,7 +387,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh20618
+  m_Name: pb_Mesh10496
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -985,7 +985,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh9338
+  m_Name: pb_Mesh10758
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -13492,8 +13492,10 @@ MonoBehaviour:
   asset_guid: 
   dontDestroyMeshOnDelete: 0
   m_selectedFaces: 
-  m_SelectedEdges: []
-  m_selectedTriangles: 
+  m_SelectedEdges:
+  - x: 636
+    y: 634
+  m_selectedTriangles: 7c0200007a020000
 --- !u!33 &961741325
 MeshFilter:
   m_ObjectHideFlags: 0
