@@ -6397,6 +6397,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4612365265037564, guid: fc3d5a715c8006343b81e0e7183a18b1,
     type: 2}
   m_PrefabInternal: {fileID: 318762397}
+--- !u!1001 &320877342
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4372942286983552, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372942286983552, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372942286983552, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372942286983552, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372942286983552, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372942286983552, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372942286983552, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372942286983552, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 224198189712602442, guid: 14901c88cc23543e3a6a11e41f79ece0,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 25.400024
+      objectReference: {fileID: 0}
+    - target: {fileID: 224755479697663556, guid: 14901c88cc23543e3a6a11e41f79ece0,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -15.099976
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &323454926
 Prefab:
   m_ObjectHideFlags: 0
@@ -9517,8 +9569,8 @@ MonoBehaviour:
     id: 1
     editorBox:
       serializedVersion: 2
-      x: 208
-      y: 68
+      x: 178
+      y: 67
       width: 100
       height: 225
   - text: An apple? Sure, that will do.
@@ -9719,8 +9771,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 10
+      y: 84
+      width: 100
+      height: 75
+  - text: "My husband is looking for me? Well tell him that he shouldn\u2019t bother.
+      It said \u201CTil death do us part\u201D right? Well we\u2019re dead now, so
+      I got some other pursuits on my mind now."
+    trigger: wife_started
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 165
+      y: 98
+      width: 100
+      height: 225
+  - text: Be a sweetie and go let him down easy for me. K bye!
+    trigger: 
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 382
+      y: 135
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 02000000
+  - edges: 
   root: 0
   curr: 0
 --- !u!65 &457834352
