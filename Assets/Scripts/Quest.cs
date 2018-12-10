@@ -81,7 +81,7 @@ public abstract class Quest : MonoBehaviour {
 	}
 
 	public void StartQuest(){
-		if (!questTurnedIn && questEnabled){
+		if (!questTurnedIn && questEnabled && !questStarted){
 			if(soundMng != null){
 				soundMng.playQuestAccepted();
 			}
@@ -97,6 +97,8 @@ public abstract class Quest : MonoBehaviour {
 			DisableQuest();
 			if (defaultDialogueAfterTurnIn){
 				TriggerManager.UpdateTrigger(questCompletedTrigger, false);
+				TriggerManager.UpdateTrigger(questEnabledTrigger, false);
+				TriggerManager.UpdateTrigger(questStartedTrigger, false);
 			}
 			questTurnedIn = true;
 			return true;

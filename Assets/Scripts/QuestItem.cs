@@ -15,6 +15,9 @@ public class QuestItem : MonoBehaviour {
 	[SerializeField]
 	bool disappearOnCollect = true;
 
+	[SerializeField]
+	bool hasDialogue = false;
+
 	public bool collected = false;
 
 	static SoundManager soundMng;
@@ -27,15 +30,16 @@ public class QuestItem : MonoBehaviour {
 		if(soundMng == null){
 			soundMng = GameObject.Find("SoundManager").GetComponent<SoundManager>();
 		}
+		hasDialogue = GetComponent<DialogueTree>() != null;
 	}
 
 	void OnTriggerStay(Collider other){
-        if (Input.GetKeyDown(KeyCode.E) && other.CompareTag("Player")){
+        if (Input.GetKeyDown(KeyCode.E) && other.CompareTag("Player") && !hasDialogue){
 			Collect();
         }
     }
 
-	void Collect(){
+	public void Collect(){
 		foreach(CollectionQuest quest in quests){
 			if (quest.CollectItem(this)){
 				if(soundMng != null){

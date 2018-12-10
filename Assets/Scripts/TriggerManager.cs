@@ -21,6 +21,7 @@ public static class TriggerManager {
 	
 	public static void UpdateTrigger(string trigger, bool val){
 		if (triggers.ContainsKey(trigger)){
+			Debug.Log("Set: " + trigger + " " +val);
 			triggers[trigger] = val;
 		}
 		else {
@@ -30,6 +31,7 @@ public static class TriggerManager {
 
 	public static bool GetTrigger(string trigger){
 		if (triggers.ContainsKey(trigger)){
+			Debug.Log("Get: " + trigger + " " +triggers[trigger]);
 			return triggers[trigger];
 		}
 		else {

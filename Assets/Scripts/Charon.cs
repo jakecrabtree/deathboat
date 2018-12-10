@@ -13,6 +13,9 @@ public class Charon : MonoBehaviour {
     [SerializeField]
     private Quest quest;
 
+    [SerializeField]
+    private QuestItem item;
+
 	[SerializeField]
     private string[] nextTriggerStrings;
 
@@ -29,6 +32,7 @@ public class Charon : MonoBehaviour {
     void Start(){
         tree = GetComponent<DialogueTree>();
         quest = GetComponent<Quest>();
+        item = GetComponent<QuestItem>();
         foreach(string triggerString in nextTriggerStrings){
             TriggerManager.AddTrigger(triggerString, false);
         }
@@ -36,15 +40,15 @@ public class Charon : MonoBehaviour {
     }
 
     void OnTriggerStay(Collider other){
-         if (Input.GetKeyDown(KeyCode.E)){
+        if (Input.GetKeyDown(KeyCode.E) &&!started){
             if (other.CompareTag("Player")){
                 dialogueBox.UseDialogueTree(tree, speakerName);
                 started = true;
             }
         }else if (Input.GetKeyDown(KeyCode.Return) && started){
             if (other.CompareTag("Player")){
-                started = !dialogueBox.ShowNextDialogue();
-                if (!started && quest != null){
+                bool res = !dialogueBox.ShowNextDialogue();
+                if (!res && quest != null){
                     TriggerManager.UpdateTrigger(nextTriggerStrings[currTriggerString], false);
                     if(currTriggerString < nextTriggerStrings.Length - 1){
                         TriggerManager.UpdateTrigger(nextTriggerStrings[++currTriggerString], true);
@@ -54,6 +58,10 @@ public class Charon : MonoBehaviour {
                     }
                     quest.StartQuest();
                     quest.TurnIn();
+                    started = false;
+                }
+                if (!res && item!=null){
+                    item.Collect();
                 }
             }
         }else if (Input.GetKeyDown(KeyCode.Escape) && started){

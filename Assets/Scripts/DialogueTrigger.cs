@@ -13,6 +13,9 @@ public class DialogueTrigger : MonoBehaviour {
     private Quest quest;
 
     [SerializeField]
+    private QuestItem item;
+
+    [SerializeField]
     private string speakerName;
 
     bool started = false;
@@ -20,20 +23,25 @@ public class DialogueTrigger : MonoBehaviour {
     void Start(){
         tree = GetComponent<DialogueTree>();
         quest = GetComponent<Quest>();
+        item = GetComponent<QuestItem>();
     }
 
     void OnTriggerStay(Collider other){
-         if (Input.GetKeyDown(KeyCode.E)){
+         if (Input.GetKeyDown(KeyCode.E) &&!started){
             if (other.CompareTag("Player")){
                 dialogueBox.UseDialogueTree(tree, speakerName);
                 started = true;
             }
         }else if (Input.GetKeyDown(KeyCode.Return) && started){
             if (other.CompareTag("Player")){
-                started = !dialogueBox.ShowNextDialogue();
-                if (!started && quest != null){
+                bool res = !dialogueBox.ShowNextDialogue();
+                if (!res && quest != null){
                     quest.StartQuest();
                     quest.TurnIn();
+                    started = false;
+                }
+                if (!res && item!=null){
+                    item.Collect();
                 }
             }
         }else if (Input.GetKeyDown(KeyCode.Escape) && started){
