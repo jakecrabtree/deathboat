@@ -41,6 +41,14 @@ public abstract class Quest : MonoBehaviour {
 
 	protected GameObject questIndicator;
 
+	private static SoundManager soundMng;
+
+	void Awake(){
+		if(soundMng == null){
+			soundMng = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+		}
+	}
+
 	protected void CreateQuestIndicator(){
 		questIndicator = Instantiate<GameObject>(Resources.Load<GameObject>(questIndicatorPrefabPath), gameObject.transform.position + questIndicatorPositionOffset, Quaternion.identity);
 	}
@@ -64,6 +72,9 @@ public abstract class Quest : MonoBehaviour {
 
 	public void StartQuest(){
 		if (!questTurnedIn && questEnabled){
+			if(soundMng != null){
+				soundMng.playQuestAccepted();
+			}
 			ChangeQuestIndicatorColor(Color.yellow);
 			questStarted = true;
 			TriggerManager.UpdateTrigger(questStartedTrigger, true);
