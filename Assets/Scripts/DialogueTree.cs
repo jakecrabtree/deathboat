@@ -61,7 +61,7 @@ public class DialogueNode {
         Boolean hasTrigger = trigger != "";
         int compareTriggers = hasTrigger.CompareTo(other.trigger != "");
         if (compareTriggers == 0){
-            return other.priority.CompareTo(priority);
+            return priority.CompareTo(other.priority);
         }
         return compareTriggers;
     }

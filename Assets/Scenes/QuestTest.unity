@@ -834,6 +834,7 @@ MonoBehaviour:
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
+  secretQuest: 0
   defaultDialogueAfterTurnIn: 0
   items:
   - {fileID: 651293965}
