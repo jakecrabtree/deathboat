@@ -15,7 +15,9 @@ public class CollectionQuest : Quest {
 	// Use this for initialization
 	void Start () {
 		AssignQuestItems();
-		remaining = items.Length;
+		if (remaining == 0){
+			remaining = items.Length;
+		}
 		if (items.Length > 0){
 			collected = new bool[items.Length];
 		}

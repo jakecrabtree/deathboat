@@ -1777,13 +1777,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 155970202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
-  root: 0
-  curr: 0
+  questName: Apple
+  questCompletedTrigger: apple_completed
+  questStartedTrigger: apple_started
+  questEnabledTrigger: apple_enabled
+  karmaValue: 10
+  questEnabled: 1
+  questStarted: 0
+  questCompleted: 0
+  questTurnedIn: 0
+  defaultDialogueAfterTurnIn: 1
+  items:
+  - {fileID: 389421455}
+  remaining: 0
 --- !u!114 &155970206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1792,21 +1801,70 @@ MonoBehaviour:
   m_GameObject: {fileID: 155970202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
-  remaining: 0
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 20
+      y: 68
+      width: 100
+      height: 75
+  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
+      I\u2019m starving."
+    trigger: apple_enabled
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 208
+      y: 68
+      width: 100
+      height: 225
+  - text: An apple? Sure, that will do.
+    trigger: apple_completed
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 374
+      y: 173
+      width: 100
+      height: 225
+  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
+    trigger: 
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 532
+      y: 201
+      width: 100
+      height: 150
+  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
+      rate.
+    trigger: apple_started
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 139
+      y: 333
+      width: 100
+      height: 225
+  adjList:
+  - edges: 010000000200000004000000
+  - edges: 02000000
+  - edges: 03000000
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
 --- !u!65 &155970207
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4128,23 +4186,8 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Beverly
 --- !u!114 &259946283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 259946280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
-  root: 0
-  curr: 0
---- !u!114 &259946284
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4155,18 +4198,101 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
+  questName: mom
+  questCompletedTrigger: mom_completed
+  questStartedTrigger: mom_started
+  questEnabledTrigger: mom_enabled
+  karmaValue: 10
+  questEnabled: 1
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
+  defaultDialogueAfterTurnIn: 1
+  items:
+  - {fileID: 332003795}
   remaining: 0
+--- !u!114 &259946284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 259946280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 10
+      y: 52
+      width: 100
+      height: 75
+  - text: "Have you seen my child? He\u2019s always running off somewhere."
+    trigger: mom_enabled
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 149
+      y: 63
+      width: 100
+      height: 225
+  - text: That child, this is how we ended up here in the first place.
+    trigger: 
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 356
+      y: 66
+      width: 100
+      height: 150
+  - text: Billy! Billy, where are you?!
+    trigger: mom_started
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 180
+      y: 315
+      width: 100
+      height: 225
+  - text: "HE\u2019S IN THE CASINO?!? WHY???"
+    trigger: mom_completed
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 336
+      y: 265
+      width: 100
+      height: 225
+  - text: That child, oh when I get my hands on hi --Oh thank you so much, have a
+      wonderful rest of your cruise. Now I need to go find a certain someone...
+    trigger: 
+    priority: 0
+    id: 5
+    editorBox:
+      serializedVersion: 2
+      x: 492
+      y: 222
+      width: 100
+      height: 150
+  adjList:
+  - edges: 010000000300000004000000
+  - edges: 02000000
+  - edges: 04000000
+  - edges: 
+  - edges: 05000000
+  - edges: 
+  root: 0
+  curr: 0
 --- !u!65 &259946285
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7071,7 +7197,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Billy
 --- !u!136 &332003794
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7093,13 +7219,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 332003792}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
-  root: 0
-  curr: 0
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 0
+  collected: 0
 --- !u!114 &332003796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7108,21 +7234,47 @@ MonoBehaviour:
   m_GameObject: {fileID: 332003792}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
-  remaining: 0
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 13
+      y: 52
+      width: 100
+      height: 75
+  - text: "My mom\u2019s looking for me?"
+    trigger: mom_started
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 203
+      y: 46
+      width: 100
+      height: 225
+  - text: "OK just tell her where I am, this is fun so I\u2019m not going back. Bye
+      Mister!"
+    trigger: 
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 370
+      y: 49
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000
+  - edges: 02000000
+  - edges: 
+  root: 0
+  curr: 0
 --- !u!65 &332003797
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8202,6 +8354,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4052340458044754, guid: 761e58f7d6c340047bef7fb6cf8edf8a,
     type: 2}
   m_PrefabInternal: {fileID: 388377741}
+--- !u!1 &389421452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: 2adc343dad62ea24c8a5f7bb2f63849d,
+    type: 3}
+  m_PrefabInternal: {fileID: 111953769}
+--- !u!65 &389421454
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 389421452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6, y: 6, z: 6}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &389421455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 389421452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Apple
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
 --- !u!1001 &393319375
 Prefab:
   m_ObjectHideFlags: 0
@@ -9253,23 +9437,23 @@ MonoBehaviour:
       height: 75
   - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
       I\u2019m starving."
-    trigger: 
+    trigger: apple_enabled
     priority: 0
     id: 1
     editorBox:
       serializedVersion: 2
-      x: 197
-      y: 69
+      x: 208
+      y: 68
       width: 100
-      height: 150
+      height: 225
   - text: An apple? Sure, that will do.
     trigger: apple_completed
     priority: 0
     id: 2
     editorBox:
       serializedVersion: 2
-      x: 354
-      y: 196
+      x: 374
+      y: 173
       width: 100
       height: 225
   - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
@@ -9278,14 +9462,26 @@ MonoBehaviour:
     id: 3
     editorBox:
       serializedVersion: 2
-      x: 528
-      y: 266
+      x: 532
+      y: 201
       width: 100
       height: 150
+  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
+      rate.
+    trigger: apple_started
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 139
+      y: 333
+      width: 100
+      height: 225
   adjList:
-  - edges: 0100000002000000
+  - edges: 010000000200000004000000
   - edges: 02000000
   - edges: 03000000
+  - edges: 
   - edges: 
   root: 0
   curr: 0
@@ -9316,16 +9512,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questName: Apple
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
-  questStarted: 1
+  questCompletedTrigger: apple_completed
+  questStartedTrigger: apple_started
+  questEnabledTrigger: apple_enabled
+  karmaValue: 10
+  questEnabled: 1
+  questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
+  defaultDialogueAfterTurnIn: 1
+  items:
+  - {fileID: 389421455}
   remaining: 0
 --- !u!136 &434157932
 CapsuleCollider:
@@ -9340,59 +9537,6 @@ CapsuleCollider:
   m_Height: 2.11
   m_Direction: 1
   m_Center: {x: 0, y: 0.73, z: 0}
---- !u!114 &434157933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 434157928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68bfe53f2f5584dd6b5e61851d84fd0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 0}
-  tree: {fileID: 0}
-  quest: {fileID: 0}
-  speakerName: 
---- !u!114 &434157934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 434157928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
-  root: 0
-  curr: 0
---- !u!114 &434157935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 434157928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
-  remaining: 0
 --- !u!65 &434157936
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9482,13 +9626,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 457834347}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
-  root: 0
-  curr: 0
+  questName: Apple
+  questCompletedTrigger: apple_completed
+  questStartedTrigger: apple_started
+  questEnabledTrigger: apple_enabled
+  karmaValue: 10
+  questEnabled: 1
+  questStarted: 0
+  questCompleted: 0
+  questTurnedIn: 0
+  defaultDialogueAfterTurnIn: 1
+  items:
+  - {fileID: 389421455}
+  remaining: 0
 --- !u!114 &457834351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9497,21 +9650,70 @@ MonoBehaviour:
   m_GameObject: {fileID: 457834347}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
-  remaining: 0
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 20
+      y: 68
+      width: 100
+      height: 75
+  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
+      I\u2019m starving."
+    trigger: apple_enabled
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 208
+      y: 68
+      width: 100
+      height: 225
+  - text: An apple? Sure, that will do.
+    trigger: apple_completed
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 374
+      y: 173
+      width: 100
+      height: 225
+  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
+    trigger: 
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 532
+      y: 201
+      width: 100
+      height: 150
+  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
+      rate.
+    trigger: apple_started
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 139
+      y: 333
+      width: 100
+      height: 225
+  adjList:
+  - edges: 010000000200000004000000
+  - edges: 02000000
+  - edges: 03000000
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
 --- !u!65 &457834352
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9806,6 +10008,38 @@ CapsuleCollider:
   m_Height: 2.11
   m_Direction: 1
   m_Center: {x: 0, y: 0.73, z: 0}
+--- !u!1 &515911145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1082889431879044, guid: 075c161f0cc8edd479029743c50923f9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1770683261}
+--- !u!65 &515911146
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 515911145}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: -0.35, y: 0.3, z: -0.1}
+--- !u!114 &515911147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 515911145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
 --- !u!1001 &546863010
 Prefab:
   m_ObjectHideFlags: 0
@@ -13620,13 +13854,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 633169789}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
-  root: 0
-  curr: 0
+  questName: Addict
+  questCompletedTrigger: addict_completed
+  questStartedTrigger: addict_started
+  questEnabledTrigger: addict_enabled
+  karmaValue: 10
+  questEnabled: 1
+  questStarted: 0
+  questCompleted: 0
+  questTurnedIn: 0
+  defaultDialogueAfterTurnIn: 1
+  items:
+  - {fileID: 2035452828}
+  remaining: 0
 --- !u!114 &633169793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13635,21 +13878,93 @@ MonoBehaviour:
   m_GameObject: {fileID: 633169789}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
-  remaining: 0
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 10
+      y: 70
+      width: 100
+      height: 75
+  - text: "-I don\u2019t understand how people can just play slots all day. My friend
+      has been at it for hours."
+    trigger: addict_enabled
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 217
+      y: 46
+      width: 100
+      height: 225
+  - text: Do you mind trying to convince him to stop?
+    trigger: 
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 368
+      y: 65
+      width: 100
+      height: 150
+  - text: "I hear that there are places to spend your karma in The Underworld, so
+      he shouldn\u2019t blow it all here. Tell him Jack sent you."
+    trigger: 
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 489
+      y: 135
+      width: 100
+      height: 150
+  - text: He said he save some? But only for more gambling?
+    trigger: addict_complete
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 224
+      y: 296
+      width: 100
+      height: 225
+  - text: "*sigh* Well I guess that\u2019s a start. Thanks for the effort."
+    trigger: 
+    priority: 0
+    id: 5
+    editorBox:
+      serializedVersion: 2
+      x: 371
+      y: 325
+      width: 100
+      height: 150
+  - text: Did you find him? He's wearing a red and yellow hat, or at least he was
+      when he died...
+    trigger: addict_started
+    priority: 0
+    id: 6
+    editorBox:
+      serializedVersion: 2
+      x: 27
+      y: 237
+      width: 100
+      height: 225
+  adjList:
+  - edges: 010000000400000006000000
+  - edges: 02000000
+  - edges: 03000000
+  - edges: 04000000
+  - edges: 05000000
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
 --- !u!65 &633169794
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21793,7 +22108,7 @@ MonoBehaviour:
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
+  defaultDialogueAfterTurnIn: 1
   items:
   - {fileID: 40929815}
   remaining: 0
@@ -24194,6 +24509,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4052340458044754, guid: 761e58f7d6c340047bef7fb6cf8edf8a,
     type: 2}
   m_PrefabInternal: {fileID: 1074477597}
+--- !u!1 &1080110062 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 0a62433b17d3af74eba0974e3b98abd8,
+    type: 3}
+  m_PrefabInternal: {fileID: 1878684793}
+--- !u!65 &1080110063
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1080110062}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 50, y: 50, z: 50}
+  m_Center: {x: 0, y: 3.98, z: 0}
+--- !u!114 &1080110064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1080110062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
 --- !u!1 &1081472077 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1574276765922806, guid: 7d39598aa3700e045b0238a940e4a643,
@@ -24226,7 +24573,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Don
 --- !u!114 &1081472080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24238,8 +24585,76 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 10
+      y: 71
+      width: 100
+      height: 75
+  - text: "Ugh I\u2019m so parched, why does the only bar on this ship have to be
+      on a different deck?"
+    trigger: drink_enabled
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 203
+      y: 66
+      width: 100
+      height: 225
+  - text: "Hey, if you\u2019re heading down there, do you mind grabbing me something
+      on your way back?"
+    trigger: 
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 374
+      y: 75
+      width: 100
+      height: 150
+  - text: Oh thank you so much, this drink will really raise my spirits!
+    trigger: drink_completed
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 344
+      y: 278
+      width: 100
+      height: 225
+  - text: Did you get my drink from the casino's bar?
+    trigger: drink_started
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 142
+      y: 315
+      width: 100
+      height: 225
+  - text: '*hiccup*'
+    trigger: 
+    priority: 0
+    id: 5
+    editorBox:
+      serializedVersion: 2
+      x: 118
+      y: 107
+      width: 100
+      height: 150
+  adjList:
+  - edges: 01000000030000000400000005000000
+  - edges: 02000000
+  - edges: 03000000
+  - edges: 
+  - edges: 
+  - edges: 
   root: 0
   curr: 0
 --- !u!114 &1081472081
@@ -24253,17 +24668,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
+  questName: Drink
+  questCompletedTrigger: drink_completed
+  questStartedTrigger: drink_started
+  questEnabledTrigger: drink_enabled
+  karmaValue: 10
+  questEnabled: 1
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
+  defaultDialogueAfterTurnIn: 1
+  items:
+  - {fileID: 1080110064}
   remaining: 0
 --- !u!65 &1081472082
 BoxCollider:
@@ -24318,13 +24734,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1085284343}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
-  root: 0
-  curr: 0
+  questName: Apple
+  questCompletedTrigger: apple_completed
+  questStartedTrigger: apple_started
+  questEnabledTrigger: apple_enabled
+  karmaValue: 10
+  questEnabled: 1
+  questStarted: 0
+  questCompleted: 0
+  questTurnedIn: 0
+  defaultDialogueAfterTurnIn: 1
+  items:
+  - {fileID: 389421455}
+  remaining: 0
 --- !u!114 &1085284347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24333,21 +24758,70 @@ MonoBehaviour:
   m_GameObject: {fileID: 1085284343}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
-  remaining: 0
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 20
+      y: 68
+      width: 100
+      height: 75
+  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
+      I\u2019m starving."
+    trigger: apple_enabled
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 208
+      y: 68
+      width: 100
+      height: 225
+  - text: An apple? Sure, that will do.
+    trigger: apple_completed
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 374
+      y: 173
+      width: 100
+      height: 225
+  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
+    trigger: 
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 532
+      y: 201
+      width: 100
+      height: 150
+  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
+      rate.
+    trigger: apple_started
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 139
+      y: 333
+      width: 100
+      height: 225
+  adjList:
+  - edges: 010000000200000004000000
+  - edges: 02000000
+  - edges: 03000000
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
 --- !u!65 &1085284348
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24401,13 +24875,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1105600338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
-  root: 0
-  curr: 0
+  questName: Apple
+  questCompletedTrigger: apple_completed
+  questStartedTrigger: apple_started
+  questEnabledTrigger: apple_enabled
+  karmaValue: 10
+  questEnabled: 1
+  questStarted: 0
+  questCompleted: 0
+  questTurnedIn: 0
+  defaultDialogueAfterTurnIn: 1
+  items:
+  - {fileID: 389421455}
+  remaining: 0
 --- !u!114 &1105600342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24416,21 +24899,70 @@ MonoBehaviour:
   m_GameObject: {fileID: 1105600338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
-  remaining: 0
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 20
+      y: 68
+      width: 100
+      height: 75
+  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
+      I\u2019m starving."
+    trigger: apple_enabled
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 208
+      y: 68
+      width: 100
+      height: 225
+  - text: An apple? Sure, that will do.
+    trigger: apple_completed
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 374
+      y: 173
+      width: 100
+      height: 225
+  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
+    trigger: 
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 532
+      y: 201
+      width: 100
+      height: 150
+  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
+      rate.
+    trigger: apple_started
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 139
+      y: 333
+      width: 100
+      height: 225
+  adjList:
+  - edges: 010000000200000004000000
+  - edges: 02000000
+  - edges: 03000000
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
 --- !u!65 &1105600343
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24484,13 +25016,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1108129257}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
-  root: 0
-  curr: 0
+  questName: Apple
+  questCompletedTrigger: apple_completed
+  questStartedTrigger: apple_started
+  questEnabledTrigger: apple_enabled
+  karmaValue: 10
+  questEnabled: 1
+  questStarted: 0
+  questCompleted: 0
+  questTurnedIn: 0
+  defaultDialogueAfterTurnIn: 1
+  items:
+  - {fileID: 389421455}
+  remaining: 0
 --- !u!114 &1108129261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24499,21 +25040,70 @@ MonoBehaviour:
   m_GameObject: {fileID: 1108129257}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
-  remaining: 0
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 20
+      y: 68
+      width: 100
+      height: 75
+  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
+      I\u2019m starving."
+    trigger: apple_enabled
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 208
+      y: 68
+      width: 100
+      height: 225
+  - text: An apple? Sure, that will do.
+    trigger: apple_completed
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 374
+      y: 173
+      width: 100
+      height: 225
+  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
+    trigger: 
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 532
+      y: 201
+      width: 100
+      height: 150
+  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
+      rate.
+    trigger: apple_started
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 139
+      y: 333
+      width: 100
+      height: 225
+  adjList:
+  - edges: 010000000200000004000000
+  - edges: 02000000
+  - edges: 03000000
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
 --- !u!65 &1108129262
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24567,13 +25157,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1109137928}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
-  root: 0
-  curr: 0
+  questName: Apple
+  questCompletedTrigger: apple_completed
+  questStartedTrigger: apple_started
+  questEnabledTrigger: apple_enabled
+  karmaValue: 10
+  questEnabled: 1
+  questStarted: 0
+  questCompleted: 0
+  questTurnedIn: 0
+  defaultDialogueAfterTurnIn: 1
+  items:
+  - {fileID: 389421455}
+  remaining: 0
 --- !u!114 &1109137932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24582,21 +25181,70 @@ MonoBehaviour:
   m_GameObject: {fileID: 1109137928}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
-  remaining: 0
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 20
+      y: 68
+      width: 100
+      height: 75
+  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
+      I\u2019m starving."
+    trigger: apple_enabled
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 208
+      y: 68
+      width: 100
+      height: 225
+  - text: An apple? Sure, that will do.
+    trigger: apple_completed
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 374
+      y: 173
+      width: 100
+      height: 225
+  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
+    trigger: 
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 532
+      y: 201
+      width: 100
+      height: 150
+  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
+      rate.
+    trigger: apple_started
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 139
+      y: 333
+      width: 100
+      height: 225
+  adjList:
+  - edges: 010000000200000004000000
+  - edges: 02000000
+  - edges: 03000000
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
 --- !u!65 &1109137933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26406,6 +27054,38 @@ CapsuleCollider:
   m_Height: 2.11
   m_Direction: 1
   m_Center: {x: 0, y: 0.73, z: 0}
+--- !u!1 &1178990025 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1423743367888682, guid: 6857fc270263368478a2e8261d1d2a6c,
+    type: 2}
+  m_PrefabInternal: {fileID: 16106496}
+--- !u!65 &1178990026
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1178990025}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: -0.35, y: 0.3, z: -0.1}
+--- !u!114 &1178990027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1178990025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
 --- !u!1 &1179960338 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1500583030020254, guid: 1888e0d52c3b9b2478ff44fd6518dca7,
@@ -26447,13 +27127,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1179960338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
-  root: 0
-  curr: 0
+  questName: Apple
+  questCompletedTrigger: apple_completed
+  questStartedTrigger: apple_started
+  questEnabledTrigger: apple_enabled
+  karmaValue: 10
+  questEnabled: 1
+  questStarted: 0
+  questCompleted: 0
+  questTurnedIn: 0
+  defaultDialogueAfterTurnIn: 1
+  items:
+  - {fileID: 389421455}
+  remaining: 0
 --- !u!114 &1179960342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26462,21 +27151,70 @@ MonoBehaviour:
   m_GameObject: {fileID: 1179960338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
-  remaining: 0
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 20
+      y: 68
+      width: 100
+      height: 75
+  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
+      I\u2019m starving."
+    trigger: apple_enabled
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 208
+      y: 68
+      width: 100
+      height: 225
+  - text: An apple? Sure, that will do.
+    trigger: apple_completed
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 374
+      y: 173
+      width: 100
+      height: 225
+  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
+    trigger: 
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 532
+      y: 201
+      width: 100
+      height: 150
+  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
+      rate.
+    trigger: apple_started
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 139
+      y: 333
+      width: 100
+      height: 225
+  adjList:
+  - edges: 010000000200000004000000
+  - edges: 02000000
+  - edges: 03000000
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
 --- !u!65 &1179960343
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29481,6 +30219,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4479654776894582, guid: 494db11fe8975e44b9760bc8528f116c,
     type: 2}
   m_PrefabInternal: {fileID: 1322610792}
+--- !u!1 &1336246768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1878829789209990, guid: 82c0cf1fb74cbd541a812e6d40034f1b,
+    type: 2}
+  m_PrefabInternal: {fileID: 323454926}
+--- !u!65 &1336246769
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1336246768}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: -0.35, y: 0.3, z: -0.1}
+--- !u!114 &1336246770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1336246768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
+--- !u!1 &1353276847 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1423743367888682, guid: 6857fc270263368478a2e8261d1d2a6c,
+    type: 2}
+  m_PrefabInternal: {fileID: 943116988}
+--- !u!65 &1353276848
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353276847}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: -0.35, y: 0.3, z: -0.1}
+--- !u!114 &1353276849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353276847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
 --- !u!1001 &1364000881
 Prefab:
   m_ObjectHideFlags: 0
@@ -30670,6 +31472,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4840423141312748, guid: 7d39598aa3700e045b0238a940e4a643,
     type: 2}
   m_PrefabInternal: {fileID: 1418370211}
+--- !u!1 &1429339475 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1423743367888682, guid: 6857fc270263368478a2e8261d1d2a6c,
+    type: 2}
+  m_PrefabInternal: {fileID: 562249815}
+--- !u!65 &1429339476
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1429339475}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: -0.35, y: 0.3, z: -0.1}
+--- !u!114 &1429339477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1429339475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
 --- !u!1001 &1459766180
 Prefab:
   m_ObjectHideFlags: 0
@@ -31080,13 +31914,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1496459814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
-  root: 0
-  curr: 0
+  questName: Apple
+  questCompletedTrigger: apple_completed
+  questStartedTrigger: apple_started
+  questEnabledTrigger: apple_enabled
+  karmaValue: 10
+  questEnabled: 1
+  questStarted: 0
+  questCompleted: 0
+  questTurnedIn: 0
+  defaultDialogueAfterTurnIn: 1
+  items:
+  - {fileID: 389421455}
+  remaining: 0
 --- !u!114 &1496459818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31095,21 +31938,70 @@ MonoBehaviour:
   m_GameObject: {fileID: 1496459814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
-  remaining: 0
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 20
+      y: 68
+      width: 100
+      height: 75
+  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
+      I\u2019m starving."
+    trigger: apple_enabled
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 208
+      y: 68
+      width: 100
+      height: 225
+  - text: An apple? Sure, that will do.
+    trigger: apple_completed
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 374
+      y: 173
+      width: 100
+      height: 225
+  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
+    trigger: 
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 532
+      y: 201
+      width: 100
+      height: 150
+  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
+      rate.
+    trigger: apple_started
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 139
+      y: 333
+      width: 100
+      height: 225
+  adjList:
+  - edges: 010000000200000004000000
+  - edges: 02000000
+  - edges: 03000000
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
 --- !u!65 &1496459819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35657,13 +36549,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1663054521}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
-  root: 0
-  curr: 0
+  questName: Apple
+  questCompletedTrigger: apple_completed
+  questStartedTrigger: apple_started
+  questEnabledTrigger: apple_enabled
+  karmaValue: 10
+  questEnabled: 1
+  questStarted: 0
+  questCompleted: 0
+  questTurnedIn: 0
+  defaultDialogueAfterTurnIn: 1
+  items:
+  - {fileID: 389421455}
+  remaining: 0
 --- !u!114 &1663054525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35672,21 +36573,70 @@ MonoBehaviour:
   m_GameObject: {fileID: 1663054521}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
-  remaining: 0
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 20
+      y: 68
+      width: 100
+      height: 75
+  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
+      I\u2019m starving."
+    trigger: apple_enabled
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 208
+      y: 68
+      width: 100
+      height: 225
+  - text: An apple? Sure, that will do.
+    trigger: apple_completed
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 374
+      y: 173
+      width: 100
+      height: 225
+  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
+    trigger: 
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 532
+      y: 201
+      width: 100
+      height: 150
+  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
+      rate.
+    trigger: apple_started
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 139
+      y: 333
+      width: 100
+      height: 225
+  adjList:
+  - edges: 010000000200000004000000
+  - edges: 02000000
+  - edges: 03000000
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
 --- !u!65 &1663054526
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35779,6 +36729,38 @@ CapsuleCollider:
   m_Height: 2.11
   m_Direction: 1
   m_Center: {x: 0, y: 0.73, z: 0}
+--- !u!1 &1690939245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1082889431879044, guid: 075c161f0cc8edd479029743c50923f9,
+    type: 2}
+  m_PrefabInternal: {fileID: 975046384}
+--- !u!65 &1690939246
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1690939245}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: -0.35, y: 0.3, z: -0.1}
+--- !u!114 &1690939247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1690939245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
 --- !u!1 &1706761511 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1655701433218768, guid: fc3d5a715c8006343b81e0e7183a18b1,
@@ -36714,6 +37696,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4479654776894582, guid: 494db11fe8975e44b9760bc8528f116c,
     type: 2}
   m_PrefabInternal: {fileID: 1718080566}
+--- !u!1 &1719675011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1851179177050030, guid: 7edb77c825dbc9f4db041d2099ac12d7,
+    type: 2}
+  m_PrefabInternal: {fileID: 240669765}
+--- !u!65 &1719675012
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1719675011}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: -0.35, y: 0.3, z: -0.1}
+--- !u!114 &1719675013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1719675011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
 --- !u!1 &1740612263
 GameObject:
   m_ObjectHideFlags: 0
@@ -37554,13 +38568,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1770656114}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
-  root: 0
-  curr: 0
+  questName: Apple
+  questCompletedTrigger: apple_completed
+  questStartedTrigger: apple_started
+  questEnabledTrigger: apple_enabled
+  karmaValue: 10
+  questEnabled: 1
+  questStarted: 0
+  questCompleted: 0
+  questTurnedIn: 0
+  defaultDialogueAfterTurnIn: 1
+  items:
+  - {fileID: 389421455}
+  remaining: 0
 --- !u!114 &1770656118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37569,21 +38592,70 @@ MonoBehaviour:
   m_GameObject: {fileID: 1770656114}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
-  remaining: 0
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 20
+      y: 68
+      width: 100
+      height: 75
+  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
+      I\u2019m starving."
+    trigger: apple_enabled
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 208
+      y: 68
+      width: 100
+      height: 225
+  - text: An apple? Sure, that will do.
+    trigger: apple_completed
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 374
+      y: 173
+      width: 100
+      height: 225
+  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
+    trigger: 
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 532
+      y: 201
+      width: 100
+      height: 150
+  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
+      rate.
+    trigger: apple_started
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 139
+      y: 333
+      width: 100
+      height: 225
+  adjList:
+  - edges: 010000000200000004000000
+  - edges: 02000000
+  - edges: 03000000
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
 --- !u!65 &1770656119
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38389,6 +39461,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000234538037038, guid: 1888e0d52c3b9b2478ff44fd6518dca7,
     type: 2}
   m_PrefabInternal: {fileID: 1781635636}
+--- !u!1 &1805220060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1851179177050030, guid: 7edb77c825dbc9f4db041d2099ac12d7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1840634840}
+--- !u!65 &1805220061
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1805220060}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: -0.35, y: 0.3, z: -0.1}
+--- !u!114 &1805220062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1805220060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
 --- !u!1 &1821941322 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1500583030020254, guid: 1888e0d52c3b9b2478ff44fd6518dca7,
@@ -38448,13 +39552,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1826732812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
-  root: 0
-  curr: 0
+  questName: Apple
+  questCompletedTrigger: apple_completed
+  questStartedTrigger: apple_started
+  questEnabledTrigger: apple_enabled
+  karmaValue: 10
+  questEnabled: 1
+  questStarted: 0
+  questCompleted: 0
+  questTurnedIn: 0
+  defaultDialogueAfterTurnIn: 1
+  items:
+  - {fileID: 389421455}
+  remaining: 0
 --- !u!114 &1826732816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38463,21 +39576,70 @@ MonoBehaviour:
   m_GameObject: {fileID: 1826732812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
-  remaining: 0
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 20
+      y: 68
+      width: 100
+      height: 75
+  - text: "Oh hey, you\u2019re new on this ship right? Then go grab me some food,
+      I\u2019m starving."
+    trigger: apple_enabled
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 208
+      y: 68
+      width: 100
+      height: 225
+  - text: An apple? Sure, that will do.
+    trigger: apple_completed
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 374
+      y: 173
+      width: 100
+      height: 225
+  - text: "Have fun on this ship kid, last chance you\u2019ll ever get."
+    trigger: 
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 532
+      y: 201
+      width: 100
+      height: 150
+  - text: Did you get my dinner yet, dear? Might as well have died of hunger at this
+      rate.
+    trigger: apple_started
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 139
+      y: 333
+      width: 100
+      height: 225
+  adjList:
+  - edges: 010000000200000004000000
+  - edges: 02000000
+  - edges: 03000000
+  - edges: 
+  - edges: 
+  root: 0
+  curr: 0
 --- !u!65 &1826732817
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39454,7 +40616,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 0a62433b17d3af74eba0974e3b98abd8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.821
+      value: 14.973
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0a62433b17d3af74eba0974e3b98abd8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -39462,7 +40624,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0a62433b17d3af74eba0974e3b98abd8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.442
+      value: -8.633
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0a62433b17d3af74eba0974e3b98abd8, type: 3}
       propertyPath: m_LocalRotation.x
@@ -39814,6 +40976,38 @@ CapsuleCollider:
   m_Height: 2.11
   m_Direction: 1
   m_Center: {x: 0, y: 0.73, z: 0}
+--- !u!1 &1975388422 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1878829789209990, guid: 82c0cf1fb74cbd541a812e6d40034f1b,
+    type: 2}
+  m_PrefabInternal: {fileID: 554622557}
+--- !u!65 &1975388423
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1975388422}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: -0.35, y: 0.3, z: -0.1}
+--- !u!114 &1975388424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1975388422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
 --- !u!1 &1988354414 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1718734899725120, guid: 3478355fa946f79489bb697466ebddfa,
@@ -39891,13 +41085,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2035452825}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ad61b06656564dbaa3152b83aef0626, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
-  root: 0
-  curr: 0
+  itemName: 
+  triggerName: 
+  disappearOnCollect: 1
+  collected: 0
 --- !u!114 &2035452829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39906,21 +41100,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2035452825}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
-  questStarted: 0
-  questCompleted: 0
-  questTurnedIn: 0
-  defaultDialogueAfterTurnIn: 0
-  items: []
-  remaining: 0
+  nodes: []
+  adjList: []
+  root: 0
+  curr: 0
 --- !u!65 &2035452830
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41466,7 +42652,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1260094928}
   tree: {fileID: 0}
   quest: {fileID: 0}
-  speakerName: 
+  speakerName: Roger
 --- !u!114 &2109365061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41478,8 +42664,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa95e9ee49dea4821935f5f2b70337a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: []
-  adjList: []
+  nodes:
+  - text: 
+    trigger: 
+    priority: 0
+    id: 0
+    editorBox:
+      serializedVersion: 2
+      x: 16
+      y: 69
+      width: 100
+      height: 75
+  - text: "Gods-dammit! Why do all these people leave their weights everywhere after
+      they\u2019re done?"
+    trigger: weights_enabled
+    priority: 0
+    id: 1
+    editorBox:
+      serializedVersion: 2
+      x: 184
+      y: 76
+      width: 100
+      height: 225
+  - text: How do you expect my non-corporeal form to get SWOLE if I keep tripping
+      over everything?
+    trigger: 
+    priority: 0
+    id: 2
+    editorBox:
+      serializedVersion: 2
+      x: 321
+      y: 76
+      width: 100
+      height: 150
+  - text: '*grumbles muscularly*'
+    trigger: weights_started
+    priority: 0
+    id: 3
+    editorBox:
+      serializedVersion: 2
+      x: 166
+      y: 329
+      width: 100
+      height: 225
+  - text: Oh good, all the weights are racked. Finally I can hit my goal before we
+      land, gotta get those gains.
+    trigger: weights_completed
+    priority: 0
+    id: 4
+    editorBox:
+      serializedVersion: 2
+      x: 457
+      y: 289
+      width: 100
+      height: 225
+  adjList:
+  - edges: 010000000300000004000000
+  - edges: 02000000
+  - edges: 04000000
+  - edges: 
+  - edges: 
   root: 0
   curr: 0
 --- !u!114 &2109365062
@@ -41493,17 +42737,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: 
-  questCompletedTrigger: 
-  questStartedTrigger: 
-  questEnabledTrigger: 
-  karmaValue: 0
-  questEnabled: 0
+  questName: Weights
+  questCompletedTrigger: weights_completed
+  questStartedTrigger: weights_started
+  questEnabledTrigger: weights_enabled
+  karmaValue: 10
+  questEnabled: 1
   questStarted: 0
   questCompleted: 0
   questTurnedIn: 0
   defaultDialogueAfterTurnIn: 0
-  items: []
+  items:
+  - {fileID: 1336246770}
+  - {fileID: 1975388424}
+  - {fileID: 1719675013}
+  - {fileID: 1805220062}
+  - {fileID: 1353276849}
+  - {fileID: 1178990027}
+  - {fileID: 1429339477}
+  - {fileID: 515911147}
+  - {fileID: 1690939247}
   remaining: 0
 --- !u!65 &2109365063
 BoxCollider:

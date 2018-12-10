@@ -42,7 +42,7 @@ public abstract class Quest : MonoBehaviour {
 	protected GameObject questIndicator;
 
 	protected void CreateQuestIndicator(){
-		questIndicator = Instantiate<GameObject>(Resources.Load<GameObject>(questIndicatorPrefabPath), gameObject.transform.position + questIndicatorPositionOffset, gameObject.transform.rotation);
+		questIndicator = Instantiate<GameObject>(Resources.Load<GameObject>(questIndicatorPrefabPath), gameObject.transform.position + questIndicatorPositionOffset, Quaternion.identity);
 	}
 
 	protected void ChangeQuestIndicatorColor(Color color){
@@ -66,11 +66,12 @@ public abstract class Quest : MonoBehaviour {
 		if (!questTurnedIn && questEnabled){
 			ChangeQuestIndicatorColor(Color.yellow);
 			questStarted = true;
+			TriggerManager.UpdateTrigger(questStartedTrigger, true);
 		}
 	}
 
 	public bool TurnIn(){
-		if (questCompleted){
+		if (questCompleted && !questTurnedIn){
 			GameManager.instance.AddScore(karmaValue);
 			DisableQuest();
 			if (defaultDialogueAfterTurnIn){
