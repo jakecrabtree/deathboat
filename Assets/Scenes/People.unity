@@ -2125,7 +2125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
+  questIndicatorPositionOffset: {x: 0, y: 2.5, z: 0}
   questName: maitenance
   questCompletedTrigger: mait_completed
   questStartedTrigger: mait_started
@@ -22880,7 +22880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
+  questIndicatorPositionOffset: {x: 0, y: 0.5, z: 0.7}
   questName: hiding_man
   questCompletedTrigger: hiding_man_completed
   questStartedTrigger: hiding_man_started
@@ -24532,30 +24532,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 17
       objectReference: {fileID: 0}
-    - target: {fileID: 114644627157048880, guid: 14901c88cc23543e3a6a11e41f79ece0,
-        type: 2}
-      propertyPath: endGameBox
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 224020767327045382, guid: 14901c88cc23543e3a6a11e41f79ece0,
-        type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224020767327045382, guid: 14901c88cc23543e3a6a11e41f79ece0,
-        type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224020767327045382, guid: 14901c88cc23543e3a6a11e41f79ece0,
-        type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1501419235995512, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14901c88cc23543e3a6a11e41f79ece0, type: 2}
   m_IsPrefabAsset: 0
@@ -25517,7 +25493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d47602598254b36b78e7641af1f6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questIndicatorPositionOffset: {x: 0, y: 1.85, z: 0}
+  questIndicatorPositionOffset: {x: 0.5, y: 0.5, z: 0.5}
   questName: Drink
   questCompletedTrigger: drink_completed
   questStartedTrigger: drink_started
